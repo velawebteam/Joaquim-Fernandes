@@ -1,0 +1,8 @@
+{
+  "name": "Joaquim & Fernandes",
+  "description": "Website institucional da Joaquim & Fernandes - Engenharia e Construção, especializada em infraestruturas elétricas, iluminação e telecomunicações.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
