@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Facebook, Linkedin, Instagram } from 'lucide-react';
-import Logo from '@/components/Logo';
 import { useLanguage } from '@/context/LanguageContext';
 
 const Footer: React.FC = () => {
@@ -21,7 +20,11 @@ const Footer: React.FC = () => {
           {/* Company Info - Full width on mobile/tablet, 1 col on desktop */}
           <div className="col-span-2 lg:col-span-1">
             <Link to="/" className="inline-block mb-6 hover:opacity-90 transition-opacity" aria-label="JF - Início">
-               <Logo className="h-24 w-24" />
+               <img 
+                 src="https://drive.google.com/thumbnail?id=1BTpjyYhqw2fL_Dr_f9f1S_3ylE8dXwi5&sz=w1000" 
+                 alt="Joaquim & Fernandes" 
+                 className="h-24 w-24 object-contain"
+               />
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed mb-6 font-body max-w-md">
               {t.footer.desc}
