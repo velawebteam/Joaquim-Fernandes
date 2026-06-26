@@ -1,20 +1,20 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import Services from './pages/Services';
-import Contact from './pages/Contact';
-import About from './pages/About';
-import Careers from './pages/Careers';
-import Lighting from './pages/Lighting';
-import Partners from './pages/Partners';
-import ServiceDetail from './pages/ServiceDetail';
-import QualityPolicy from './pages/QualityPolicy';
-import PrivacyPolicy from './pages/PrivacyPolicy';
-import TermsConditions from './pages/TermsConditions';
-import FAQ from './pages/FAQ';
-import { LanguageProvider } from './context/LanguageContext';
+import Navbar from './components/Navbar.tsx';
+import Footer from './components/Footer.tsx';
+import Home from './pages/Home.tsx';
+import Services from './pages/Services.tsx';
+import Contact from './pages/Contact.tsx';
+import About from './pages/About.tsx';
+import Careers from './pages/Careers.tsx';
+import Lighting from './pages/Lighting.tsx';
+import Partners from './pages/Partners.tsx';
+import ServiceDetail from './pages/ServiceDetail.tsx';
+import QualityPolicy from './pages/QualityPolicy.tsx';
+import PrivacyPolicy from './pages/PrivacyPolicy.tsx';
+import TermsConditions from './pages/TermsConditions.tsx';
+import FAQ from './pages/FAQ.tsx';
+import { LanguageProvider } from './context/LanguageContext.tsx';
 
 // Helper to scroll to top on route change
 const ScrollToTop = () => {
