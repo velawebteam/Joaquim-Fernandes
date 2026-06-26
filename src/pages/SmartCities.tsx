@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Wifi, Cpu, Server, BatteryCharging, ArrowRight, Activity, TrendingUp, Zap } from 'lucide-react';
-import CTAButton from '../components/CTAButton';
-import SEO from '../components/SEO';
-import { useLanguage } from '../context/LanguageContext';
+import CTAButton from '@/components/CTAButton';
+import SEO from '@/components/SEO';
+import { useLanguage } from '@/context/LanguageContext';
 
 const SmartCities: React.FC = () => {
   const { t } = useLanguage();

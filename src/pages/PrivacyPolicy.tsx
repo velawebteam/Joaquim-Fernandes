@@ -1,7 +1,7 @@
 import React from 'react';
 import { Shield, Lock } from 'lucide-react';
-import { useLanguage } from '../context/LanguageContext';
-import SEO from '../components/SEO';
+import { useLanguage } from '@/context/LanguageContext';
+import SEO from '@/components/SEO';
 
 const PrivacyPolicy: React.FC = () => {
   const { t } = useLanguage();

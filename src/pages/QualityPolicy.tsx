@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Eye, Target, Diamond, Compass, CheckCircle, Scale, Mail } from 'lucide-react';
-import { useLanguage } from '../context/LanguageContext';
-import SEO from '../components/SEO';
+import { useLanguage } from '@/context/LanguageContext';
+import SEO from '@/components/SEO';
 
 const QualityPolicy: React.FC = () => {
   const { t } = useLanguage();

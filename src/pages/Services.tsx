@@ -1,9 +1,9 @@
 import React from 'react';
 import { Check } from 'lucide-react';
-import CTAButton from '../components/CTAButton';
+import CTAButton from '@/components/CTAButton';
 import { motion } from 'framer-motion';
-import SEO from '../components/SEO';
-import { useLanguage } from '../context/LanguageContext';
+import SEO from '@/components/SEO';
+import { useLanguage } from '@/context/LanguageContext';
 
 const Services: React.FC = () => {
   const { t } = useLanguage();
