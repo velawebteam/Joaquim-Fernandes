@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { CheckCircle } from 'lucide-react';
-import CTAButton from '@/components/CTAButton';
 import SEO from '@/components/SEO';
 import { useLanguage } from '@/context/LanguageContext';
 
@@ -131,12 +131,12 @@ const Lighting: React.FC = () => {
                   )}
 
                   <div className="flex mb-8">
-                    <CTAButton 
+                    <Link 
                       to="/contacto?subject=orcamento&interest=lighting" 
-                      text={t.common.requestService} 
-                      variant="primary" 
-                      className="rounded-sm shadow-md"
-                    />
+                      className="py-3 px-8 rounded-sm font-bold uppercase tracking-widest text-sm transition-all duration-300 transform hover:-translate-y-1 inline-block text-center bg-accent text-white hover:bg-[#2A3345] shadow-lg hover:shadow-xl border-b-2 border-transparent hover:border-brand-light"
+                    >
+                      {t.common.requestService}
+                    </Link>
                   </div>
                 </motion.div>
 
@@ -161,12 +161,12 @@ const Lighting: React.FC = () => {
                {t.lighting.ctaTitle}
              </h2>
              <p className="text-gray-300 text-lg mb-6 max-w-xl mx-auto">{t.lighting.ctaDesc}</p>
-             <CTAButton 
+             <Link 
                to="/contacto?subject=orcamento&interest=lighting" 
-               text={t.lighting.ctaButton} 
-               variant="outline" 
-               className="text-white border-white hover:bg-white hover:text-[#3B455B] rounded-sm" 
-             />
+               className="py-3 px-8 rounded-sm font-bold uppercase tracking-widest text-sm transition-all duration-300 transform hover:-translate-y-1 inline-block text-center border-2 border-white text-white hover:bg-white hover:text-[#3B455B]" 
+             >
+               {t.lighting.ctaButton}
+             </Link>
            </motion.div>
          </div>
       </div>

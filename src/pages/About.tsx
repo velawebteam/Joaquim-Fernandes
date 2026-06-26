@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { Calendar, Award, Briefcase, Users, HardHat, GraduationCap, GripHorizontal, FileText, ShieldCheck, CheckCircle, Zap, Star, ChevronDown } from 'lucide-react';
-import CTAButton from '@/components/CTAButton';
 import SEO from '@/components/SEO';
 import { useLanguage } from '@/context/LanguageContext';
 
@@ -481,12 +481,12 @@ const About: React.FC = () => {
                <p className="text-gray-300 max-w-xl mx-auto mb-6 text-lg">
                  {t.about.closingDesc}
                </p>
-               <CTAButton 
+               <Link 
                  to="/recrutamento" 
-                 text={t.about.closingCta} 
-                 variant="outline"
-                 className="text-white border-white hover:bg-white hover:text-[#3B455B] rounded-sm"
-               />
+                 className="py-3 px-8 rounded-sm font-bold uppercase tracking-widest text-sm transition-all duration-300 transform hover:-translate-y-1 inline-block text-center border-2 border-white text-white hover:bg-white hover:text-[#3B455B]"
+               >
+                 {t.about.closingCta}
+               </Link>
             </motion.div>
          </div>
       </div>

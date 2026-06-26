@@ -2,7 +2,6 @@ import React, { useState, useRef } from 'react';
 import { ArrowRight, Mail, CheckCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import CTAButton from '@/components/CTAButton';
 import SEO from '@/components/SEO';
 import { useLanguage } from '@/context/LanguageContext';
 

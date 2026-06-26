@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Phone, Mail, MapPin, Clock, Send, Check, Upload, FileText, X, MessageCircle, AlertTriangle, Loader2 } from 'lucide-react';
-import { useLocation } from 'react-router-dom';
-import CTAButton from '@/components/CTAButton';
+import { useLocation, Link } from 'react-router-dom';
 import SEO from '@/components/SEO';
 import { useLanguage } from '@/context/LanguageContext';
 import { motion, AnimatePresence } from 'framer-motion';

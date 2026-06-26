@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { Zap, CheckCircle, Star, Activity, Wrench, Wifi, FileText, Layers, Pen, ChevronLeft, ChevronRight, Lightbulb } from 'lucide-react';
 import { motion, useScroll, useTransform, useSpring, useInView, AnimatePresence } from 'framer-motion';
-import CTAButton from '@/components/CTAButton';
+import { Link } from 'react-router-dom';
 import ServiceCard from '@/components/ServiceCard';
 import SEO from '@/components/SEO';
 import { useLanguage } from '@/context/LanguageContext';
@@ -376,7 +376,12 @@ const Home: React.FC = () => {
                 className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto items-center"
               >
                 {/* RESTORED: Standard button sizing */}
-                <CTAButton to="/contacto" text={t.home.hero.ctaPrimary} variant="primary" className="w-full sm:w-auto text-center" />
+                <Link 
+                  to="/contacto" 
+                  className="py-3 px-8 rounded-sm font-bold uppercase tracking-widest text-sm transition-all duration-300 transform hover:-translate-y-1 inline-block text-center bg-accent text-white hover:bg-[#2A3345] shadow-lg hover:shadow-xl border-b-2 border-transparent hover:border-brand-light w-full sm:w-auto"
+                >
+                  {t.home.hero.ctaPrimary}
+                </Link>
               </motion.div>
             </motion.div>
             <div className="hidden lg:block w-full lg:w-1/4"></div>
@@ -455,7 +460,12 @@ const Home: React.FC = () => {
               ))}
             </div>
             <div className="mt-10">
-              <CTAButton to="/servicos" text={t.home.ctaButton} variant="secondary" className="w-full sm:w-auto text-center" />
+              <Link 
+                to="/servicos" 
+                className="py-3 px-8 rounded-sm font-bold uppercase tracking-widest text-sm transition-all duration-300 transform hover:-translate-y-1 inline-block text-center bg-corporate text-white hover:bg-accent shadow-lg border-b-2 border-transparent hover:border-brand-light w-full sm:w-auto"
+              >
+                {t.home.ctaButton}
+              </Link>
             </div>
           </div>
         </div>
@@ -516,7 +526,12 @@ const Home: React.FC = () => {
                {animStep === 3 && (
                  <div className="absolute inset-0 bg-brand-light blur-2xl opacity-20 animate-pulse rounded-full"></div>
                )}
-               <CTAButton to="/contacto" text={t.home.lightUp.cta} variant="primary" className="text-base md:text-lg py-3 md:py-4 px-8 md:px-10 relative z-10 w-full sm:w-auto shadow-[0_0_20px_rgba(141,200,232,0.3)]" />
+               <Link 
+                 to="/contacto" 
+                 className="py-3 px-8 rounded-sm font-bold uppercase tracking-widest text-sm transition-all duration-300 transform hover:-translate-y-1 inline-block text-center bg-accent text-white hover:bg-[#2A3345] shadow-lg hover:shadow-xl border-b-2 border-transparent hover:border-brand-light text-base md:text-lg py-3 md:py-4 px-8 md:px-10 relative z-10 w-full sm:w-auto shadow-[0_0_20px_rgba(141,200,232,0.3)]"
+               >
+                 {t.home.lightUp.cta}
+               </Link>
             </div>
           </motion.div>
         </div>

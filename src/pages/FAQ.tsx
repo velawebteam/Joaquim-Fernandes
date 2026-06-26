@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { ChevronDown, ChevronUp, MessageCircle } from 'lucide-react';
 import SEO from '@/components/SEO';
-import CTAButton from '@/components/CTAButton';
 import { useLanguage } from '@/context/LanguageContext';
 
 const FAQ: React.FC = () => {
@@ -129,11 +129,12 @@ const FAQ: React.FC = () => {
             <p className="text-gray-600 mb-8 max-w-xl mx-auto">
                Não encontrou a resposta que procurava? Entre em contacto com a nossa equipa.
             </p>
-            <CTAButton 
+            <Link 
                to="/contacto" 
-               text="Contacte-nos" 
-               variant="primary" 
-            />
+               className="py-3 px-8 rounded-sm font-bold uppercase tracking-widest text-sm transition-all duration-300 transform hover:-translate-y-1 inline-block text-center bg-accent text-white hover:bg-[#2A3345] shadow-lg hover:shadow-xl border-b-2 border-transparent hover:border-brand-light"
+            >
+               Contacte-nos
+            </Link>
          </div>
 
       </div>
