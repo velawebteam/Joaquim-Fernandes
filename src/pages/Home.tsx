@@ -271,7 +271,7 @@ const Home: React.FC = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-black/30 z-10"></div>
         </div>
 
-        <div className="container mx-auto px-4 md:px-12 relative z-10 pt-12 md:pt-6 lg:pt-0">
+        <div className="container mx-auto px-4 md:px-12 relative z-10 pt-4 md:pt-0 lg:pt-0 lg:-mt-12">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
             <motion.div 
               initial="hidden"
