@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, ChevronUp, MessageCircle } from 'lucide-react';
-import SEO from '../components/SEO.tsx';
-import CTAButton from '../components/CTAButton.tsx';
-import { useLanguage } from '../context/LanguageContext.tsx';
+import SEO from '../components/SEO';
+import CTAButton from '../components/CTAButton';
+import { useLanguage } from '../context/LanguageContext';
 
 const FAQ: React.FC = () => {
   const { t } = useLanguage();

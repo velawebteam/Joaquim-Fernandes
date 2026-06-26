@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
-import Logo from './Logo.tsx';
-import { useLanguage, Language } from '../context/LanguageContext.tsx';
+import Logo from './Logo';
+import { useLanguage, Language } from '../context/LanguageContext';
 
 const LanguageSwitcher = ({ 
   isMobile = false, 

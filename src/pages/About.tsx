@@ -1,9 +1,9 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Calendar, Award, Briefcase, Users, HardHat, GraduationCap, GripHorizontal, FileText, ShieldCheck, CheckCircle, Zap, Star, ChevronDown } from 'lucide-react';
-import CTAButton from '../components/CTAButton.tsx';
-import SEO from '../components/SEO.tsx';
-import { useLanguage } from '../context/LanguageContext.tsx';
+import CTAButton from '../components/CTAButton';
+import SEO from '../components/SEO';
+import { useLanguage } from '../context/LanguageContext';
 
 const About: React.FC = () => {
   const { t } = useLanguage();

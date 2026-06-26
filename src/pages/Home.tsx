@@ -1,10 +1,10 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { Zap, CheckCircle, Star, Activity, Wrench, Wifi, FileText, Layers, Pen, ChevronLeft, ChevronRight, Lightbulb } from 'lucide-react';
 import { motion, useScroll, useTransform, useSpring, useInView, AnimatePresence } from 'framer-motion';
-import CTAButton from '../components/CTAButton.tsx';
-import ServiceCard from '../components/ServiceCard.tsx';
-import SEO from '../components/SEO.tsx';
-import { useLanguage } from '../context/LanguageContext.tsx';
+import CTAButton from '../components/CTAButton';
+import ServiceCard from '../components/ServiceCard';
+import SEO from '../components/SEO';
+import { useLanguage } from '../context/LanguageContext';
 
 // Partners list
 const partners = [

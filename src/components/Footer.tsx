@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Facebook, Linkedin, Instagram } from 'lucide-react';
-import Logo from './Logo.tsx';
-import { useLanguage } from '../context/LanguageContext.tsx';
+import Logo from './Logo';
+import { useLanguage } from '../context/LanguageContext';
 
 const Footer: React.FC = () => {
   const { t } = useLanguage();

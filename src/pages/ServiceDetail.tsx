@@ -2,9 +2,9 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Check, ArrowLeft, Tag, ShieldCheck, ImageIcon } from 'lucide-react';
-import CTAButton from '../components/CTAButton.tsx';
-import SEO from '../components/SEO.tsx';
-import { useLanguage } from '../context/LanguageContext.tsx';
+import CTAButton from '../components/CTAButton';
+import SEO from '../components/SEO';
+import { useLanguage } from '../context/LanguageContext';
 
 const ServiceDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();

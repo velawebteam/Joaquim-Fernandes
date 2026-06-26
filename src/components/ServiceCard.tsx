@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { useLanguage } from '../context/LanguageContext.tsx';
+import { useLanguage } from '../context/LanguageContext';
 
 interface ServiceCardProps {
   title: string;

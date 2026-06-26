@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { CheckCircle } from 'lucide-react';
-import CTAButton from '../components/CTAButton.tsx';
-import SEO from '../components/SEO.tsx';
-import { useLanguage } from '../context/LanguageContext.tsx';
+import CTAButton from '../components/CTAButton';
+import SEO from '../components/SEO';
+import { useLanguage } from '../context/LanguageContext';
 
 const Lighting: React.FC = () => {
   const { t } = useLanguage();
