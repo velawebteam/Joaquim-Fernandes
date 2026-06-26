@@ -3,6 +3,8 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { useLanguage, Language } from '@/context/LanguageContext';
 
+import Logo from '@/components/Logo';
+
 const LanguageSwitcher = ({ 
   isMobile = false, 
   showSolidNav, 
@@ -143,19 +145,7 @@ const Navbar: React.FC = () => {
       {/* Logo Container - Aligned with Site Content (Container) */}
       <div className="absolute inset-0 flex items-center pointer-events-none">
         <div className="container mx-auto px-4 md:px-12">
-          <Link to="/" className="inline-flex items-center gap-3 md:gap-4 group relative z-50 pointer-events-auto" aria-label="Joaquim & Fernandes">
-            <div className="hover:scale-105 transition-transform duration-300">
-              {/* Adjusted logo size for mobile vs desktop */}
-              <img 
-                src="https://drive.google.com/thumbnail?id=1BTpjyYhqw2fL_Dr_f9f1S_3ylE8dXwi5&sz=w1000" 
-                alt="Joaquim & Fernandes" 
-                className="h-12 w-12 md:h-20 md:w-20 object-contain"
-              />
-            </div>
-            <span className={`font-heading font-bold text-[18px] tracking-wider uppercase transition-colors ${showSolidNav ? 'text-corporate' : 'text-white drop-shadow-lg'}`}>
-              Joaquim & Fernandes, Lda
-            </span>
-          </Link>
+          <Logo showSolidNav={showSolidNav} />
         </div>
       </div>
 

@@ -3,6 +3,7 @@ import { ArrowRight, Mail, CheckCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import SEO from '@/components/SEO';
+import CTAButton from '@/components/CTAButton';
 import { useLanguage } from '@/context/LanguageContext';
 
 const Careers: React.FC = () => {
@@ -172,12 +173,12 @@ const Careers: React.FC = () => {
                   </ul>
                 </div>
 
-                <Link 
+                <CTAButton 
                   to={`/contact?subject=recrutamento&job=${encodeURIComponent(job.title)}`}
-                  className="mt-auto w-full flex items-center justify-center gap-2 bg-white border-2 border-accent text-accent hover:bg-accent hover:text-white font-bold py-3 px-4 rounded transition-colors uppercase text-xs tracking-widest"
-                >
-                  {t.careers.applyBtn} <ArrowRight size={14} />
-                </Link>
+                  text={t.careers.applyBtn}
+                  variant="outline"
+                  className="mt-auto w-full"
+                />
               </motion.div>
             ))}
           </div>
@@ -213,13 +214,11 @@ const Careers: React.FC = () => {
              {t.careers.spontaneousDesc}
            </p>
            
-           <a 
-             href="mailto:mail@joaquimfernandes.pt?subject=Candidatura%20Espont%C3%A2nea"
-             className="inline-flex items-center gap-3 border-2 border-white text-white hover:bg-white hover:text-[#3B455B] font-bold py-3 px-8 rounded-sm transition-all uppercase tracking-widest text-sm"
-           >
-             <Mail size={18} />
-             {t.careers.spontaneousBtn}
-           </a>
+           <CTAButton 
+             to="mailto:mail@joaquimfernandes.pt?subject=Candidatura%20Espont%C3%A2nea"
+             text={t.careers.spontaneousBtn}
+             variant="white"
+           />
            
            <p className="mt-6 text-xs text-gray-400">
              {t.careers.spontaneousDisclaimer}

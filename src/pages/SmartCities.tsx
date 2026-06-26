@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Wifi, Cpu, Server, BatteryCharging, ArrowRight, Activity, TrendingUp, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import SEO from '@/components/SEO';
+import CTAButton from '@/components/CTAButton';
 import { useLanguage } from '@/context/LanguageContext';
 
 const SmartCities: React.FC = () => {
@@ -200,12 +201,11 @@ const SmartCities: React.FC = () => {
           >
             <h2 className="text-2xl md:text-3xl font-bold text-corporate mb-4 uppercase">{t.smartCities.ctaTitle}</h2>
             <p className="text-gray-600 mb-8 text-base md:text-lg">{t.smartCities.ctaDesc}</p>
-            <Link 
+            <CTAButton 
               to="/contacto" 
-              className="py-3 px-8 rounded-sm font-bold uppercase tracking-widest text-sm transition-all duration-300 transform hover:-translate-y-1 inline-block text-center bg-accent text-white hover:bg-[#2A3345] shadow-lg hover:shadow-xl border-b-2 border-transparent hover:border-brand-light"
-            >
-              {t.smartCities.ctaButton}
-            </Link>
+              text={t.smartCities.ctaButton}
+              variant="primary"
+            />
           </motion.div>
         </div>
       </section>

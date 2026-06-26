@@ -3,6 +3,7 @@ import { Check } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import SEO from '@/components/SEO';
+import CTAButton from '@/components/CTAButton';
 import { useLanguage } from '@/context/LanguageContext';
 
 const Services: React.FC = () => {
@@ -86,12 +87,11 @@ const Services: React.FC = () => {
                 ))}
               </ul>
 
-              <Link 
+              <CTAButton 
                 to={`/${service.id}`} 
-                className="py-3 px-8 rounded-sm font-bold uppercase tracking-widest text-sm transition-all duration-300 transform hover:-translate-y-1 inline-block text-center bg-accent text-white hover:bg-[#2A3345] shadow-lg hover:shadow-xl border-b-2 border-transparent hover:border-brand-light"
-              >
-                {t.common.seeMore}
-              </Link>
+                text={t.common.seeMore}
+                variant="primary"
+              />
             </div>
           </motion.div>
         ))}
@@ -112,12 +112,11 @@ const Services: React.FC = () => {
                {t.services.notFoundTitle}
              </h2>
              <p className="text-gray-300 text-lg mb-6 max-w-xl mx-auto">{t.services.notFoundDesc}</p>
-             <Link 
+             <CTAButton 
                to="/contacto" 
-               className="py-3 px-8 rounded-sm font-bold uppercase tracking-widest text-sm transition-all duration-300 transform hover:-translate-y-1 inline-block text-center border-2 border-white text-white hover:bg-white hover:text-[#3B455B]" 
-             >
-               {t.services.notFoundCta}
-             </Link>
+               text={t.services.notFoundCta}
+               variant="white"
+             />
            </motion.div>
          </div>
       </div>

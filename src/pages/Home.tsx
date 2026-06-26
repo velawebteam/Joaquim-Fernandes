@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform, useSpring, useInView, AnimatePresence 
 import { Link } from 'react-router-dom';
 import ServiceCard from '@/components/ServiceCard';
 import SEO from '@/components/SEO';
+import CTAButton from '@/components/CTAButton';
 import { useLanguage } from '@/context/LanguageContext';
 
 // Partners list
@@ -376,12 +377,12 @@ const Home: React.FC = () => {
                 className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto items-center"
               >
                 {/* RESTORED: Standard button sizing */}
-                <Link 
+                <CTAButton 
                   to="/contacto" 
-                  className="py-3 px-8 rounded-sm font-bold uppercase tracking-widest text-sm transition-all duration-300 transform hover:-translate-y-1 inline-block text-center bg-accent text-white hover:bg-[#2A3345] shadow-lg hover:shadow-xl border-b-2 border-transparent hover:border-brand-light w-full sm:w-auto"
-                >
-                  {t.home.hero.ctaPrimary}
-                </Link>
+                  text={t.home.hero.ctaPrimary}
+                  variant="primary"
+                  className="w-full sm:w-auto"
+                />
               </motion.div>
             </motion.div>
             <div className="hidden lg:block w-full lg:w-1/4"></div>

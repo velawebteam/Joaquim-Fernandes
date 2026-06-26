@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { ShieldCheck, Zap, Award, Check } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import SEO from '@/components/SEO';
+import CTAButton from '@/components/CTAButton';
 import { useLanguage } from '@/context/LanguageContext';
 
 const Partners: React.FC = () => {
@@ -243,12 +244,11 @@ const Partners: React.FC = () => {
               {t.partners.ctaTitle}
             </h2>
             <div className="flex justify-center">
-               <Link 
+               <CTAButton 
                   to="/contacto?subject=parceria" 
-                  className="py-3 px-8 rounded-sm font-bold uppercase tracking-widest text-sm transition-all duration-300 transform hover:-translate-y-1 inline-block text-center border-2 border-white text-white hover:bg-white hover:text-[#3B455B]"
-               >
-                  {t.partners.ctaButton}
-               </Link>
+                  text={t.partners.ctaButton}
+                  variant="white"
+               />
             </div>
          </div>
       </div>

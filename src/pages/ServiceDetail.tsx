@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Check, ArrowLeft, Tag, ShieldCheck, ImageIcon } from 'lucide-react';
 import SEO from '@/components/SEO';
+import CTAButton from '@/components/CTAButton';
 import { useLanguage } from '@/context/LanguageContext';
 
 const ServiceDetail: React.FC = () => {
@@ -98,12 +99,11 @@ const ServiceDetail: React.FC = () => {
       <div className="pt-32 pb-20 text-center container mx-auto px-6">
         <SEO title="Serviço Não Encontrado | JF" description="O serviço que procura não foi encontrado." />
         <h2 className="text-2xl font-normal text-corporate mb-4">Serviço não encontrado / Service not found</h2>
-        <Link 
+        <CTAButton 
           to="/servicos" 
-          className="py-3 px-8 rounded-sm font-bold uppercase tracking-widest text-sm transition-all duration-300 transform hover:-translate-y-1 inline-block text-center bg-corporate text-white hover:bg-accent shadow-lg border-b-2 border-transparent hover:border-brand-light"
-        >
-          Voltar / Back
-        </Link>
+          text="Voltar / Back"
+          variant="primary"
+        />
       </div>
     );
   }
@@ -262,12 +262,12 @@ const ServiceDetail: React.FC = () => {
                 <p className="text-gray-400 mb-8 text-sm">
                   Fale com a nossa equipa técnica especializada para obter um orçamento personalizado para o seu projeto.
                 </p>
-                <Link 
+                <CTAButton 
                   to={`/contact?subject=orcamento&interest=${id}`}
-                  className="block w-full text-center bg-white hover:bg-detail text-accent font-bold py-3 px-6 rounded transition-colors uppercase tracking-widest text-sm"
-                >
-                  {t.nav.quote}
-                </Link>
+                  text={t.nav.quote}
+                  variant="white"
+                  className="w-full text-corporate hover:text-white"
+                />
               </div>
 
               {/* SEO Keyword Cloud (Visible) */}
@@ -296,12 +296,11 @@ const ServiceDetail: React.FC = () => {
            <h3 className="text-xl md:text-2xl font-bold text-white mb-6 uppercase tracking-wide">
              Explore outros serviços
            </h3>
-           <Link 
+           <CTAButton 
              to="/servicos" 
-             className="py-3 px-8 rounded-sm font-bold uppercase tracking-widest text-sm transition-all duration-300 transform hover:-translate-y-1 inline-block text-center border-2 border-white text-white hover:bg-white hover:text-[#3B455B]" 
-           >
-             Ver todos os serviços
-           </Link>
+             text="Ver todos os serviços"
+             variant="white"
+           />
         </div>
       </div>
     </div>
