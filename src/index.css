@@ -11,3 +11,11 @@
   --font-heading: "Oswald", sans-serif;
   --font-body: "Montserrat", sans-serif;
 }
+
+@layer base {
+  img {
+    @apply select-none;
+    -webkit-user-drag: none;
+    -webkit-touch-callout: none;
+  }
+}
