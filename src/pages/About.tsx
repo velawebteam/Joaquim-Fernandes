@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Calendar, Award, Briefcase, Users, HardHat, GraduationCap, GripHorizontal, FileText, ShieldCheck, CheckCircle, Zap, Star, ChevronDown } from 'lucide-react';
+import { Calendar, Award, Briefcase, Users, HardHat, GraduationCap, GripHorizontal, FileText, ShieldCheck, CheckCircle, Zap, Star, ChevronDown, ChevronUp } from 'lucide-react';
 import SEO from '@/components/SEO';
 import CTAButton from '@/components/CTAButton';
 import { useLanguage } from '@/context/LanguageContext';
@@ -10,6 +10,7 @@ const About: React.FC = () => {
   const { t } = useLanguage();
   const [width, setWidth] = useState(0);
   const [isCapabilitiesOpen, setIsCapabilitiesOpen] = useState(false);
+  const [isTeamOpen, setIsTeamOpen] = useState(false);
   const carouselRef = useRef<HTMLDivElement>(null);
 
   // Safe access for dependency array
@@ -329,13 +330,13 @@ const About: React.FC = () => {
                >
                   <div className="absolute top-4 left-4 w-full h-full border-2 border-corporate rounded-sm z-0"></div>
                   <img 
-                    src="https://drive.google.com/thumbnail?id=1g2FamKcgGLjgcyCIeuRb-hLdjLnmxWtH&sz=w1000" 
+                    src="https://drive.google.com/thumbnail?id=1r7unzphEyKVA-a-_zE-tlyM63TTGRdsA&sz=w1000" 
                     alt="Equipa JF" 
                     className="relative z-10 rounded-sm shadow-xl w-full object-cover h-[300px] md:h-[400px]"
                   />
                   {/* Floating Badge */}
                   <div className="absolute -bottom-6 -right-6 bg-accent text-white p-4 md:p-6 rounded-sm shadow-lg z-20 hidden md:block">
-                     <span className="block text-3xl md:text-4xl font-bold font-heading">35+</span>
+                     <span className="block text-3xl md:text-4xl font-bold font-heading">40+</span>
                      <span className="text-xs uppercase tracking-widest font-semibold">Anos de Experiência</span>
                   </div>
                </motion.div>
@@ -389,9 +390,82 @@ const About: React.FC = () => {
                      <div className="p-6 bg-white rounded-sm border-l-4 border-brand-light shadow-sm">
                         <p className="text-sm italic text-gray-500">"{t.about.teamSection.highlight}"</p>
                      </div>
+
+                     <div className="mt-8">
+                        <button 
+                          onClick={() => setIsTeamOpen(!isTeamOpen)}
+                          className="flex items-center gap-2 text-brand-light font-bold uppercase tracking-wider text-xs md:text-sm hover:text-accent transition-colors group"
+                        >
+                          {isTeamOpen ? t.about.teamSection.hideTeam : t.about.teamSection.viewTeam}
+                          {isTeamOpen ? <ChevronUp size={18} className="group-hover:-translate-y-0.5 transition-transform" /> : <ChevronDown size={18} className="group-hover:translate-y-0.5 transition-transform" />}
+                        </button>
+                     </div>
                   </motion.div>
                </div>
             </div>
+
+            <AnimatePresence>
+              {isTeamOpen && (
+                <motion.div
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{ height: "auto", opacity: 1 }}
+                  exit={{ height: 0, opacity: 0 }}
+                  transition={{ duration: 0.5, ease: "easeInOut" }}
+                  className="overflow-hidden mt-12 w-full"
+                >
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-8 md:mb-12">
+                    {t.about.teamSection.teamMembers.slice(0, 4).map((member: any, idx: number) => (
+                      <motion.div 
+                        key={idx}
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: idx * 0.1 }}
+                        className="bg-white p-3 md:p-4 rounded-sm shadow-sm border border-gray-100 flex flex-col items-center text-center"
+                      >
+                        <div className="w-20 h-20 md:w-32 md:h-32 rounded-full overflow-hidden mb-3 md:mb-4 border-2 border-brand-light/30">
+                          <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
+                        </div>
+                        <h5 className="font-bold text-corporate text-xs md:text-sm mb-1">{member.name}</h5>
+                        <p className="text-[10px] md:text-xs text-gray-500 mb-2 leading-tight">{member.role}</p>
+                        {member.id && <span className="text-[9px] md:text-[10px] bg-gray-100 px-2 py-0.5 rounded-full text-gray-400 font-mono">ID: {member.id}</span>}
+                      </motion.div>
+                    ))}
+                  </div>
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-8 md:mb-12">
+                    {t.about.teamSection.teamMembers.slice(4, 8).map((member: any, idx: number) => (
+                      <motion.div 
+                        key={idx}
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: (idx + 4) * 0.1 }}
+                        className="bg-white p-3 md:p-4 rounded-sm shadow-sm border border-gray-100 flex flex-col items-center text-center"
+                      >
+                        <div className="w-20 h-20 md:w-32 md:h-32 rounded-full overflow-hidden mb-3 md:mb-4 border-2 border-brand-light/30">
+                          <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
+                        </div>
+                        <h5 className="font-bold text-corporate text-xs md:text-sm mb-1">{member.name}</h5>
+                        <p className="text-[10px] md:text-xs text-gray-500 mb-2 leading-tight">{member.role}</p>
+                        {member.id && <span className="text-[9px] md:text-[10px] bg-gray-100 px-2 py-0.5 rounded-full text-gray-400 font-mono">ID: {member.id}</span>}
+                      </motion.div>
+                    ))}
+                  </div>
+                  
+                  {/* Member without photo */}
+                  {t.about.teamSection.teamMembers[8] && (
+                     <motion.div
+                       initial={{ opacity: 0 }}
+                       animate={{ opacity: 1 }}
+                       className="flex justify-center mb-12"
+                     >
+                        <div className="bg-gray-50 px-6 py-3 md:px-8 md:py-4 rounded-sm border border-dashed border-gray-200 text-center">
+                           <h5 className="font-bold text-corporate text-xs md:text-sm">{t.about.teamSection.teamMembers[8].name}</h5>
+                           <p className="text-[10px] md:text-xs text-gray-500">{t.about.teamSection.teamMembers[8].role}</p>
+                        </div>
+                     </motion.div>
+                  )}
+                </motion.div>
+              )}
+            </AnimatePresence>
          </div>
       </section>
 

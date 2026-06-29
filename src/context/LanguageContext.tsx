@@ -86,7 +86,7 @@ const translations = {
     home: {
       hero: {
         title: "JF,|Infraestruturas Elétricas,|Iluminação, PT’s e PLR’s",
-        subtitle: "A sua empresa de eletricidade de referência no Algarve e Alentejo. Excelência técnica em Baixadas, PLR's e Infraestruturas.",
+        subtitle: "Quatro décadas a desenvolver soluções elétricas com rigor, inovação e compromisso. Conheça a nossa história e o percurso que nos consolidou como uma referencia no setor da eletricidade.",
         ctaPrimary: "Contacte-nos",
         ctaSecondary: "Conheça os Serviços"
       },
@@ -658,12 +658,14 @@ const translations = {
     },
     about: {
       heroTitle: "A Nossa História",
-      heroDesc: "Quase quatro décadas de engenharia, construção e inovação. Conheça o percurso que nos trouxe até aqui.",
+      heroDesc: "Quatro décadas a desenvolver soluções elétricas com rigor, inovação e compromisso. Conheça a nossa história e o percurso que nos consolidou como uma referencia no setor da eletricidade.",
       timeline: [
         { year: "1986", title: "Fundação da Empresa", description: "JF inicia a sua atividade como uma pequena empresa familiar focada em instalações elétricas residenciais na zona de Faro." },
+        { year: "1992", title: "Mudança de Instalações", description: "Mudança para a localização atual." },
         { year: "1998", title: "Criamos o 1º Site", description: "Lançamento da nossa primeira presença digital, acompanhando a evolução tecnológica." },
-        { year: "2000", title: "Chefe do Consórcio", description: "Reconhecidos como Chefe do Consórcio no Algarve para a EDP (atual E-REDES)." },
+        { year: "2000", title: "Líder do Consórcio", description: "Reconhecidos como Líder do Consórcio no Algarve para a EDP (atual E-REDES)." },
         { year: "2001", title: "Certificação de Qualidade", description: "Reconhecidos com a Certificação de Qualidade, reforçando o nosso compromisso com o rigor." },
+        { year: "2005", title: "Construção de Escritórios", description: "Construção dos escritórios atuais." },
         { year: "2008", title: "1º PME Líder", description: "Distinção pública da nossa solidez financeira e desempenho económico." },
         { year: "2011", title: "Nova Gerência", description: "Início de um novo ciclo estratégico com a entrada de uma nova liderança." },
         { year: "2017", title: "Renovação da Imagem", description: "Modernização da identidade visual da empresa, refletindo a inovação constante." },
@@ -684,13 +686,26 @@ const translations = {
         ]
       },
       teamSection: {
-        title: "Quem Somos Nós",
-        subtitle: "A Força da Nossa Equipa",
-        description: "Mais do que uma empresa, somos um coletivo de profissionais apaixonados pelo que fazem. Com uma estrutura sólida e multidisciplinar, a nossa equipa combina a experiência de engenheiros seniores com a energia de técnicos especializados.",
+        title: "A Nossa Equipa",
+        subtitle: "Quem Somos Nós",
+        description: "Uma equipa experiente, qualificada e comprometida com a excelência. A combinação entre conhecimento técnico, inovação e experiência permite-nos responder aos desafios do setor elétrico com eficiência, segurança e profissionalismo.",
         stat1: "+50 Colaboradores",
         stat2: "Engenharia & Civil",
         stat3: "Técnicos Certificados",
-        highlight: "Investimos continuamente na formação e segurança dos nossos quadros, garantindo que cada projeto é executado com o máximo rigor."
+        highlight: "Investimos continuamente na formação e segurança dos nossos quadros, garantindo que cada projeto é executado com o máximo rigor.",
+        viewTeam: "CONHEÇA A NOSSA EQUIPA",
+        hideTeam: "Ocultar Equipa",
+        teamMembers: [
+          { id: "2299", name: "Mário Martins", role: "Gerência", image: "https://drive.google.com/thumbnail?id=1G_pNFv9yzmRi5tMykO8dQ9imPQzO1A68&sz=w1000" },
+          { id: "2316", name: "David Sousa", role: "Qualidade, Ambiente e Segurança", image: "https://drive.google.com/thumbnail?id=1kvf1Tsh-AKu--sa_FfmQ2k3uolESBHt-&sz=w1000" },
+          { id: "2616", name: "Eng.º Cláudio Condinho", role: "Departamento Energia", image: "https://drive.google.com/thumbnail?id=1aDPu8t2iJroaUtuGY4lMe9h_k06pCICS&sz=w1000" },
+          { id: "7462", name: "Eng.º Afonso Reis", role: "Departamento Energia", image: "https://drive.google.com/thumbnail?id=13jbcDgWQecxCZzxBVmYbMds3uk7soB-5&sz=w1000" },
+          { id: "2328", name: "Eng.º Luis Iria", role: "Departamento Energia", image: "https://drive.google.com/thumbnail?id=1DQ62imXT4_o7rXHmXDnWV4D8wsoOkmBm&sz=w1000" },
+          { id: "2336", name: "Eng.º Tiago Pancinha", role: "Departamento Orçamentação", image: "https://drive.google.com/thumbnail?id=1KCFO90oQ4prOA5ftEnJiKOfrzXNhQCSj&sz=w1000" },
+          { id: "2576", name: "Eng.º Alexandre Cruz", role: "Departamento Energia", image: "https://drive.google.com/thumbnail?id=1Vt0RAGtkA3ce0B90zVOMZyjWOePvW_tC&sz=w1000" },
+          { id: "2626", name: "Eng.º Diogo Nunes", role: "Apoio ao Cliente", image: "https://drive.google.com/thumbnail?id=11nC7yA_xv9pzRSuQmTfVkwE89S3eW93j&sz=w1000" },
+          { id: "", name: "Eng.º João Trigueiros", role: "Departamento Energia", image: null }
+        ]
       },
       closingTitle: "Pronto para fazer parte do futuro?",
       closingDesc: "A nossa história continua a ser escrita todos os dias, em cada projeto que entregamos.",
@@ -774,7 +789,7 @@ const translations = {
     home: {
       hero: {
         title: "JF,|Electrical Infrastructures,|Lighting, PT's and PLR's",
-        subtitle: "Your reference electricity company in Algarve and Alentejo. Technical excellence in Grid Connections, PLRs and Infrastructures.",
+        subtitle: "Four decades of developing electrical solutions with rigor, innovation, and commitment. Learn about our history and the journey that has established us as a benchmark in the electricity sector.",
         ctaPrimary: "Contact Us",
         ctaSecondary: "Explore Services"
       },
@@ -1038,12 +1053,14 @@ const translations = {
     },
     about: {
       heroTitle: "Our History",
-      heroDesc: "Almost four decades of engineering, construction, and innovation. Discover the journey that brought us here.",
+      heroDesc: "Four decades of developing electrical solutions with rigor, innovation, and commitment. Learn about our history and the journey that has established us as a benchmark in the electricity sector.",
       timeline: [
         { year: "1986", title: "Company Foundation", description: "JF begins its activity as a small family business focused on residential electrical installations in the Faro area." },
+        { year: "1992", title: "Relocation", description: "Move to the current location." },
         { year: "1998", title: "1st Website", description: "Launch of our first digital presence, following technological evolution." },
         { year: "2000", title: "Consortium Leader", description: "Recognized as Consortium Leader in Algarve for EDP (now E-REDES)." },
         { year: "2001", title: "Quality Certification", description: "Recognized with Quality Certification, reinforcing our commitment to precision." },
+        { year: "2005", title: "Office Construction", description: "Construction of the current offices." },
         { year: "2008", title: "1st PME Leader", description: "Public distinction of our financial soundness and economic performance." },
         { year: "2011", title: "New Management", description: "Start of a new strategic cycle with the entry of new leadership." },
         { year: "2017", title: "Brand Renewal", description: "Modernization of the company's visual identity, reflecting constant innovation." },
@@ -1064,13 +1081,26 @@ const translations = {
         ]
       },
       teamSection: {
-        title: "Who We Are",
-        subtitle: "The Strength of Our Team",
-        description: "More than a company, we are a collective of professionals passionate about what they do. With a solid and multidisciplinary structure, our team combines the experience of senior engineers with the energy of specialized technicians.",
+        title: "Our Team",
+        subtitle: "Who We Are",
+        description: "An experienced, qualified team committed to excellence. The combination of technical knowledge, innovation and experience allows us to respond to the challenges of the electrical sector with efficiency, safety and professionalism.",
         stat1: "+50 Employees",
         stat2: "Engineering & Civil",
         stat3: "Certified Technicians",
-        highlight: "We continuously invest in training and safety of our staff, ensuring each project is executed with maximum rigor."
+        highlight: "We continuously invest in training and safety of our staff, ensuring each project is executed with maximum rigor.",
+        viewTeam: "MEET OUR TEAM",
+        hideTeam: "Hide Team",
+        teamMembers: [
+          { id: "2299", name: "Mário Martins", role: "Management", image: "https://drive.google.com/thumbnail?id=1G_pNFv9yzmRi5tMykO8dQ9imPQzO1A68&sz=w1000" },
+          { id: "2316", name: "David Sousa", role: "Quality, Environment and Safety", image: "https://drive.google.com/thumbnail?id=1kvf1Tsh-AKu--sa_FfmQ2k3uolESBHt-&sz=w1000" },
+          { id: "2616", name: "Eng.º Cláudio Condinho", role: "Energy Department", image: "https://drive.google.com/thumbnail?id=1aDPu8t2iJroaUtuGY4lMe9h_k06pCICS&sz=w1000" },
+          { id: "7462", name: "Eng.º Afonso Reis", role: "Energy Department", image: "https://drive.google.com/thumbnail?id=13jbcDgWQecxCZzxBVmYbMds3uk7soB-5&sz=w1000" },
+          { id: "2328", name: "Eng.º Luis Iria", role: "Energy Department", image: "https://drive.google.com/thumbnail?id=1DQ62imXT4_o7rXHmXDnWV4D8wsoOkmBm&sz=w1000" },
+          { id: "2336", name: "Eng.º Tiago Pancinha", role: "Budgeting Department", image: "https://drive.google.com/thumbnail?id=1KCFO90oQ4prOA5ftEnJiKOfrzXNhQCSj&sz=w1000" },
+          { id: "2576", name: "Eng.º Alexandre Cruz", role: "Energy Department", image: "https://drive.google.com/thumbnail?id=1Vt0RAGtkA3ce0B90zVOMZyjWOePvW_tC&sz=w1000" },
+          { id: "2626", name: "Eng.º Diogo Nunes", role: "Customer Support", image: "https://drive.google.com/thumbnail?id=11nC7yA_xv9pzRSuQmTfVkwE89S3eW93j&sz=w1000" },
+          { id: "", name: "Eng.º João Trigueiros", role: "Energy Department", image: null }
+        ]
       },
       closingTitle: "Ready to be part of the future?",
       closingDesc: "Our story continues to be written every day, in every project we deliver.",
@@ -1463,7 +1493,7 @@ const translations = {
     "home": {
       "hero": {
         "title": "JF,|Infraestructuras Eléctricas,|Iluminación, PTs y PLRs",
-        "subtitle": "Su compañía eléctrica de referencia en el Algarve y Alentejo. Excelencia técnica en Baixadas, PLR's e Infraestructura.",
+        "subtitle": "Cuatro décadas desarrollando soluciones eléctricas con rigor, innovación y compromiso. Conozca nuestra historia y el camino que nos ha consolidado como un referente en el sector eléctrico.",
         "ctaPrimary": "Contáctenos",
         "ctaSecondary": "Descubra los servicios"
       },
@@ -2221,12 +2251,17 @@ const translations = {
   },
   "about": {
     "heroTitle": "Nuestra Historia",
-    "heroDesc": "Casi cuatro décadas de ingeniería, construcción e innovación. Descubra el viaje que nos trajo hasta aquí.",
+    "heroDesc": "Cuatro décadas desarrollando soluciones eléctricas con rigor, innovación y compromiso. Conozca nuestra historia y el camino que nos ha consolidado como un referente en el sector eléctrico.",
     "timeline": [
       {
         "year": "1986",
         "title": "Fundación de la Empresa",
         "description": "JF inicia su actividad como una pequeña empresa familiar centrada en las instalaciones eléctricas residenciales en la zona de Faro."
+      },
+      {
+        "year": "1992",
+        "title": "Traslado de Instalaciones",
+        "description": "Traslado a la ubicación actual."
       },
       {
         "year": "1998",
@@ -2235,13 +2270,18 @@ const translations = {
       },
       {
         "year": "2000",
-        "title": "Jefe de Consorcio",
-        "description": "Reconocidos como Jefe de Consorcio en Algarve para EDP (actual E-REDES)."
+        "title": "Líder de Consorcio",
+        "description": "Reconocidos como Líder de Consorcio en Algarve para EDP (actual E-REDES)."
       },
       {
         "year": "2001",
         "title": "Certificación de Calidad",
         "description": "Reconocidos con la Certificación de Calidad, reforzando nuestro compromiso con el rigor."
+      },
+      {
+        "year": "2005",
+        "title": "Construcción de Oficinas",
+        "description": "Construcción de las oficinas actuales."
       },
       {
         "year": "2008",
@@ -2305,13 +2345,26 @@ const translations = {
       ]
     },
     "teamSection": {
-      "title": "¿Quiénes somos?",
-      "subtitle": "La fuerza de nuestro equipo",
-      "description": "Más que una empresa, somos un colectivo de profesionales apasionados por lo que hacen. Con una estructura sólida y multidisciplinar, nuestro equipo combina la experiencia de ingenieros senior con la energía de técnicos especializados.",
+      "title": "Nuestro Equipo",
+      "subtitle": "¿Quiénes somos?",
+      "description": "Un equipo experimentado, cualificado y comprometido con la excelencia. La combinación de conocimientos técnicos, innovación y experiencia nos permite responder a los retos del sector eléctrico con eficiencia, seguridad y profesionalismo.",
       "stat1": "+50 Colaboradores",
       "stat2": "Ingeniería y Civil",
       "stat3": "Técnicos Certificados",
-      "highlight": "Invertimos continuamente en la formación y seguridad de nuestro personal, asegurando que cada proyecto se ejecute con el máximo rigor."
+      "highlight": "Invertimos continuamente en la formación y seguridad de nuestro personal, asegurando que cada proyecto se ejecute con el máximo rigor.",
+      "viewTeam": "CONOZCA NUESTRO EQUIPO",
+      "hideTeam": "Ocultar Equipo",
+      "teamMembers": [
+        { "id": "2299", "name": "Mário Martins", "role": "Gerencia", "image": "https://drive.google.com/thumbnail?id=1G_pNFv9yzmRi5tMykO8dQ9imPQzO1A68&sz=w1000" },
+        { "id": "2316", "name": "David Sousa", "role": "Calidad, Ambiente y Seguridad", "image": "https://drive.google.com/thumbnail?id=1kvf1Tsh-AKu--sa_FfmQ2k3uolESBHt-&sz=w1000" },
+        { "id": "2616", "name": "Eng.º Cláudio Condinho", "role": "Departamento Energía", "image": "https://drive.google.com/thumbnail?id=1aDPu8t2iJroaUtuGY4lMe9h_k06pCICS&sz=w1000" },
+        { "id": "7462", "name": "Eng.º Afonso Reis", "role": "Departamento Energía", "image": "https://drive.google.com/thumbnail?id=13jbcDgWQecxCZzxBVmYbMds3uk7soB-5&sz=w1000" },
+        { "id": "2328", "name": "Eng.º Luis Iria", "role": "Departamento Energía", "image": "https://drive.google.com/thumbnail?id=1DQ62imXT4_o7rXHmXDnWV4D8wsoOkmBm&sz=w1000" },
+        { "id": "2336", "name": "Eng.º Tiago Pancinha", "role": "Departamento de Presupuestación", "image": "https://drive.google.com/thumbnail?id=1KCFO90oQ4prOA5ftEnJiKOfrzXNhQCSj&sz=w1000" },
+        { "id": "2576", "name": "Eng.º Alexandre Cruz", "role": "Departamento Energía", "image": "https://drive.google.com/thumbnail?id=1Vt0RAGtkA3ce0B90zVOMZyjWOePvW_tC&sz=w1000" },
+        { "id": "2626", "name": "Eng.º Diogo Nunes", "role": "Atención al Cliente", "image": "https://drive.google.com/thumbnail?id=11nC7yA_xv9pzRSuQmTfVkwE89S3eW93j&sz=w1000" },
+        { "id": "", "name": "Eng.º João Trigueiros", "role": "Departamento Energía", "image": null }
+      ]
     },
     "closingTitle": "¿Listo para ser parte del futuro?",
     "closingDesc": "Nuestra historia continúa escribiéndose todos los días, en cada proyecto que entregamos.",
@@ -2395,7 +2448,7 @@ const translations = {
   "home": {
     "hero": {
       "title": "JF,|Infrastructures Électriques,|Éclairage, PT et PLR",
-      "subtitle": "Votre compagnie d'électricité de référence en Algarve et en Alentejo. Excellence technique dans les Baixadas, les PLR et les infrastructures.",
+      "subtitle": "Quatre décennies de développement de solutions électriques avec rigueur, innovation et engagement. Découvrez notre histoire et le parcours qui nous a consolidés comme une référence dans le secteur de l'électricité.",
       "ctaPrimary": "Contactez-nous",
       "ctaSecondary": "Découvrez les prestations"
     },
@@ -3167,12 +3220,17 @@ const translations = {
   },
   "about": {
     "heroTitle": "Notre histoire",
-    "heroDesc": "Près de quatre décennies d’ingénierie, de construction et d’innovation. Découvrez le voyage qui nous a amené ici.",
+    "heroDesc": "Quatre décennies de développement de solutions électriques avec rigueur, innovation et engagement. Découvrez notre histoire et le parcours qui nous a consolidés comme une référence dans le secteur de l'électricité.",
     "timeline": [
       {
         "year": "1986",
         "title": "Fondation de l'Entreprise",
         "description": "JF démarre son activité en tant que petite entreprise familiale axée sur les installations électriques résidentielles dans la région de Faro."
+      },
+      {
+        "year": "1992",
+        "title": "Déménagement",
+        "description": "Déménagement vers l'emplacement actuel."
       },
       {
         "year": "1998",
@@ -3181,13 +3239,18 @@ const translations = {
       },
       {
         "year": "2000",
-        "title": "Chef de Consortium",
-        "description": "Reconnu comme Chef de Consortium en Algarve pour EDP (actuel E-REDES)."
+        "title": "Leader de Consortium",
+        "description": "Reconnu comme Leader de Consortium en Algarve pour EDP (actuel E-REDES)."
       },
       {
         "year": "2001",
         "title": "Certification de Qualité",
         "description": "Reconnu avec la Certification de Qualité, renforçant notre engagement envers la rigueur."
+      },
+      {
+        "year": "2005",
+        "title": "Construction de Bureaux",
+        "description": "Construction des bureaux actuels."
       },
       {
         "year": "2008",
@@ -3251,13 +3314,26 @@ const translations = {
       ]
     },
     "teamSection": {
-      "title": "Qui sommes-nous",
-      "subtitle": "La force de notre équipe",
-      "description": "Plus qu'une entreprise, nous sommes un collectif de professionnels passionnés par ce qu'ils font. Dotée d'une structure solide et multidisciplinaire, notre équipe allie l'expérience d'ingénieurs seniors à l'énergie de techniciens spécialisés.",
+      "title": "Notre Équipe",
+      "subtitle": "Qui sommes-nous",
+      "description": "Une équipe expérimentée, qualifiée et engagée envers l'excellence. La combinaison des connaissances techniques, de l'innovation et de l'expérience nous permet de répondre aux défis du secteur électrique avec efficacité, sécurité et professionnalisme.",
       "stat1": "+50 Collaborateurs",
       "stat2": "Ingénierie et génie civil",
       "stat3": "Techniciens certifiés",
-      "highlight": "Nous investissons continuellement dans la formation et la sécurité de notre personnel, garantissant que chaque projet est exécuté avec la plus grande rigueur."
+      "highlight": "Nous investissons continuellement dans la formation et la sécurité de notre personnel, garantissant que chaque projet est exécuté avec la plus grande rigueur.",
+      "viewTeam": "RENCONTREZ NOTRE ÉQUIPE",
+      "hideTeam": "Masquer l'Équipe",
+      "teamMembers": [
+        { "id": "2299", "name": "Mário Martins", "role": "Gérance", "image": "https://drive.google.com/thumbnail?id=1G_pNFv9yzmRi5tMykO8dQ9imPQzO1A68&sz=w1000" },
+        { "id": "2316", "name": "David Sousa", "role": "Qualité, Environnement et Sécurité", "image": "https://drive.google.com/thumbnail?id=1kvf1Tsh-AKu--sa_FfmQ2k3uolESBHt-&sz=w1000" },
+        { "id": "2616", "name": "Eng.º Cláudio Condinho", "role": "Département Énergie", "image": "https://drive.google.com/thumbnail?id=1aDPu8t2iJroaUtuGY4lMe9h_k06pCICS&sz=w1000" },
+        { "id": "7462", "name": "Eng.º Afonso Reis", "role": "Département Énergie", "image": "https://drive.google.com/thumbnail?id=13jbcDgWQecxCZzxBVmYbMds3uk7soB-5&sz=w1000" },
+        { "id": "2328", "name": "Eng.º Luis Iria", "role": "Département Énergie", "image": "https://drive.google.com/thumbnail?id=1DQ62imXT4_o7rXHmXDnWV4D8wsoOkmBm&sz=w1000" },
+        { "id": "2336", "name": "Eng.º Tiago Pancinha", "role": "Département Budgétisation", "image": "https://drive.google.com/thumbnail?id=1KCFO90oQ4prOA5ftEnJiKOfrzXNhQCSj&sz=w1000" },
+        { "id": "2576", "name": "Eng.º Alexandre Cruz", "role": "Département Énergie", "image": "https://drive.google.com/thumbnail?id=1Vt0RAGtkA3ce0B90zVOMZyjWOePvW_tC&sz=w1000" },
+        { "id": "2626", "name": "Eng.º Diogo Nunes", "role": "Service Client", "image": "https://drive.google.com/thumbnail?id=11nC7yA_xv9pzRSuQmTfVkwE89S3eW93j&sz=w1000" },
+        { "id": "", "name": "Eng.º João Trigueiros", "role": "Département Énergie", "image": null }
+      ]
     },
     "closingTitle": "Prêt à faire partie du futur ?",
     "closingDesc": "Notre histoire continue de s’écrire chaque jour, dans chaque projet que nous réalisons.",

@@ -290,14 +290,14 @@ const Home: React.FC = () => {
               className="w-full lg:w-3/4 max-w-4xl"
             >
               <motion.div 
-                className="flex items-center gap-3 mb-4 md:mb-6 overflow-hidden"
+                className="flex items-center gap-4 md:gap-6 mb-6 md:mb-8 overflow-hidden"
                 initial="hidden"
                 animate="visible"
               >
                 {/* Left Line */}
                 <motion.span 
-                  className="h-0.5 bg-brand-light block"
-                  style={{ width: "2rem", transformOrigin: "left" }} 
+                  className="h-1 bg-brand-light block"
+                  style={{ width: "2.5rem", transformOrigin: "left" }} 
                   variants={{
                     hidden: { scaleX: 0 },
                     visible: { 
@@ -309,7 +309,7 @@ const Home: React.FC = () => {
                 
                 {/* Text with Typing Effect */}
                 <motion.span 
-                  className="text-brand-light font-bold uppercase tracking-[0.2em] text-xs md:text-base font-body shadow-black drop-shadow-md whitespace-nowrap overflow-hidden block"
+                  className="text-brand-light font-bold uppercase tracking-[0.15em] text-xl md:text-[25px] font-sans shadow-black drop-shadow-lg whitespace-nowrap overflow-hidden block"
                   variants={{
                     hidden: { opacity: 1 },
                     visible: { opacity: 1 }
@@ -345,8 +345,8 @@ const Home: React.FC = () => {
 
                 {/* Right Line */}
                 <motion.span 
-                  className="h-0.5 bg-brand-light block"
-                  style={{ width: "2rem", transformOrigin: "left" }}
+                  className="h-1 bg-brand-light block"
+                  style={{ width: "2.5rem", transformOrigin: "left" }}
                   variants={{
                     hidden: { scaleX: 0 },
                     visible: { 
@@ -360,6 +360,24 @@ const Home: React.FC = () => {
                   }}
                 ></motion.span>
               </motion.div>
+
+              <motion.p 
+                variants={{
+                  hidden: { opacity: 0, y: 20 },
+                  visible: { 
+                    opacity: 1, 
+                    y: 0, 
+                    transition: { 
+                      delay: 2.5, 
+                      duration: 0.8, 
+                      ease: "easeOut" 
+                    } 
+                  }
+                }}
+                className="text-gray-300 text-sm md:text-lg mb-8 max-w-2xl leading-relaxed"
+              >
+                {t.home.hero.subtitle}
+              </motion.p>
 
               <motion.div 
                 variants={{
