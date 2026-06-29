@@ -123,6 +123,7 @@ const About: React.FC = () => {
                              src="https://drive.google.com/thumbnail?id=1qD8Or_lSCFWQCETFNj8Fpb5lQn08_FhE&sz=w1000" 
                              alt={badge.label}
                              className="h-24 md:h-32 w-auto object-contain transition-all duration-300"
+                             referrerPolicy="no-referrer"
                            />
                         </div>
 
@@ -333,6 +334,7 @@ const About: React.FC = () => {
                     src="https://drive.google.com/thumbnail?id=1r7unzphEyKVA-a-_zE-tlyM63TTGRdsA&sz=w1000" 
                     alt="Equipa JF" 
                     className="relative z-10 rounded-sm shadow-xl w-full object-cover h-[300px] md:h-[400px]"
+                    referrerPolicy="no-referrer"
                   />
                   {/* Floating Badge */}
                   <div className="absolute -bottom-6 -right-6 bg-accent text-white p-4 md:p-6 rounded-sm shadow-lg z-20 hidden md:block">
@@ -423,7 +425,7 @@ const About: React.FC = () => {
                         className="bg-white p-3 md:p-4 rounded-sm shadow-sm border border-gray-100 flex flex-col items-center text-center"
                       >
                         <div className="w-20 h-20 md:w-32 md:h-32 rounded-full overflow-hidden mb-3 md:mb-4 border-2 border-brand-light/30">
-                          <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
+                          <img src={member.image} alt={member.name} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
                         </div>
                         <h5 className="font-bold text-corporate text-xs md:text-sm mb-1">{member.name}</h5>
                         <p className="text-[10px] md:text-xs text-gray-500 mb-2 leading-tight">{member.role}</p>
@@ -441,7 +443,7 @@ const About: React.FC = () => {
                         className="bg-white p-3 md:p-4 rounded-sm shadow-sm border border-gray-100 flex flex-col items-center text-center"
                       >
                         <div className="w-20 h-20 md:w-32 md:h-32 rounded-full overflow-hidden mb-3 md:mb-4 border-2 border-brand-light/30">
-                          <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
+                          <img src={member.image} alt={member.name} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
                         </div>
                         <h5 className="font-bold text-corporate text-xs md:text-sm mb-1">{member.name}</h5>
                         <p className="text-[10px] md:text-xs text-gray-500 mb-2 leading-tight">{member.role}</p>

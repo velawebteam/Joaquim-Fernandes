@@ -29,6 +29,7 @@ const Lighting: React.FC = () => {
             src="https://drive.google.com/thumbnail?id=1Q7Ak5kMhDW4Xxk9VWPrOu5mThEKDGo0x&sz=w1000" 
             alt={t.lighting.heroTitle} 
             className="w-full h-full object-cover"
+            referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 bg-corporate/80"></div>
         </div>
@@ -69,6 +70,7 @@ const Lighting: React.FC = () => {
                src="https://drive.google.com/thumbnail?id=1Q7Ak5kMhDW4Xxk9VWPrOu5mThEKDGo0x&sz=w1000" 
                alt="Festive Lighting" 
                className="relative rounded-lg shadow-2xl z-10 w-full h-[400px] object-cover object-center"
+               referrerPolicy="no-referrer"
              />
           </div>
         </div>
@@ -98,6 +100,7 @@ const Lighting: React.FC = () => {
                       src={type.image} 
                       alt={type.title} 
                       className="relative z-10 w-full h-[300px] md:h-[450px] object-cover rounded-lg shadow-xl"
+                      referrerPolicy="no-referrer"
                     />
                   </div>
                 </motion.div>

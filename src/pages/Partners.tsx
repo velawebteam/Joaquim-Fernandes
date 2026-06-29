@@ -85,6 +85,7 @@ const Partners: React.FC = () => {
                         src="https://drive.google.com/thumbnail?id=1UTAnm_KyFRSMMJbhwzrlkhB9kGsphfO6&sz=w1000" 
                         alt="E-REDES" 
                         className="w-full h-auto object-contain" 
+                        referrerPolicy="no-referrer"
                      />
                  </div>
                  
@@ -145,6 +146,7 @@ const Partners: React.FC = () => {
                               src={slot.image} 
                               alt={slot.type} 
                               className={`w-full h-full max-h-[60px] md:max-h-[100px] object-contain transition-all duration-300 ${slot.scaleClass || ''}`} 
+                              referrerPolicy="no-referrer"
                           />
                       ) : (
                           <div className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-gray-300">
@@ -222,6 +224,7 @@ const Partners: React.FC = () => {
                           src={partner.logo} 
                           alt={partner.name} 
                           className="max-h-24 w-auto object-contain" 
+                          referrerPolicy="no-referrer"
                        />
                     </div>
                     <h3 className="text-xl font-bold mb-3 uppercase tracking-widest text-white group-hover:text-brand-light transition-colors">{partner.name}</h3>

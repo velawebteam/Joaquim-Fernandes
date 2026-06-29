@@ -24,6 +24,7 @@ const Footer: React.FC = () => {
                  src="https://drive.google.com/thumbnail?id=1BTpjyYhqw2fL_Dr_f9f1S_3ylE8dXwi5&sz=w1000" 
                  alt="Joaquim & Fernandes" 
                  className="h-24 w-24 object-contain"
+                 referrerPolicy="no-referrer"
                />
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed mb-6 font-body max-w-md">

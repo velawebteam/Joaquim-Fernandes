@@ -267,6 +267,7 @@ const Home: React.FC = () => {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 1.5, ease: "easeInOut" }}
+              referrerPolicy="no-referrer"
             />
           </AnimatePresence>
           <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-black/30 z-10"></div>
@@ -459,7 +460,12 @@ const Home: React.FC = () => {
       <section className="py-12 md:py-20 bg-detail relative z-20">
         <div className="container mx-auto px-4 md:px-12 flex flex-col lg:flex-row items-center gap-12">
           <div className="w-full lg:w-1/2">
-            <img src="https://drive.google.com/thumbnail?id=16SefoRSV3dPLvfVbIJHTmXMmKMi9JSNg&sz=w1000" alt="Engenheiro" className="rounded-lg shadow-2xl w-full h-auto object-cover" />
+            <img 
+              src="https://drive.google.com/thumbnail?id=16SefoRSV3dPLvfVbIJHTmXMmKMi9JSNg&sz=w1000" 
+              alt="Engenheiro" 
+              className="rounded-lg shadow-2xl w-full h-auto object-cover" 
+              referrerPolicy="no-referrer"
+            />
           </div>
           <div className="w-full lg:w-1/2">
             <h2 className="text-2xl md:text-3xl font-bold uppercase text-corporate mb-6">{t.home.whyUsTitle}</h2>
@@ -664,6 +670,7 @@ const Home: React.FC = () => {
                          src={partner.image} 
                          alt={partner.name} 
                          className={`h-16 md:h-20 w-auto max-w-[150px] md:max-w-[180px] object-contain ${partner.scaleClass || ''}`}
+                         referrerPolicy="no-referrer"
                        />
                      ) : (
                        <span className="text-xl md:text-3xl font-bold text-gray-400 font-heading transition-all duration-300 cursor-pointer whitespace-nowrap hover:text-corporate">{partner.name}</span>
@@ -675,6 +682,7 @@ const Home: React.FC = () => {
                        src={partner.image} 
                        alt={partner.name} 
                        className={`h-16 md:h-20 w-auto max-w-[150px] md:max-w-[180px] object-contain ${partner.scaleClass || ''}`}
+                       referrerPolicy="no-referrer"
                      />
                    ) : (
                      <span className="text-xl md:text-3xl font-bold text-gray-400 font-heading transition-all duration-300 cursor-default whitespace-nowrap">{partner.name}</span>

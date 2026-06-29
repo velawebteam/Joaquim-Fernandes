@@ -125,6 +125,7 @@ const ServiceDetail: React.FC = () => {
             src={getImage(id || '')} 
             alt={serviceData.seoTitle} 
             className="w-full h-full object-cover"
+            referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 bg-corporate/80"></div>
         </div>
@@ -240,7 +241,7 @@ const ServiceDetail: React.FC = () => {
                          <div key={index} className={`rounded-lg overflow-hidden h-48 md:h-48 relative group ${index === 0 && !['outros', 'instalacoes', 'plrs', 'projetos', 'postos-transformacao', 'telecomunicacoes', 'infraestruturas', 'ev_charging'].includes(id || '') ? 'md:col-span-2 md:h-full' : ''}`}>
                             <img 
                                src={img} 
-                               alt="Exemplo de Obra" 
+                               alt="Exemplo de Obra" referrerPolicy="no-referrer" 
                                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" 
                             />
                             <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>

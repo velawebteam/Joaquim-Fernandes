@@ -146,6 +146,7 @@ const Careers: React.FC = () => {
                 src="https://drive.google.com/thumbnail?id=1FlGqNgp5eVSgTpJrvHss9j8D_YTDkqdN&sz=w1000" 
                 alt="Equipa a trabalhar" 
                 className="rounded-lg shadow-xl w-full h-80 md:h-[500px] object-cover object-[50%_25%]"
+                referrerPolicy="no-referrer"
               />
             </div>
           </div>
