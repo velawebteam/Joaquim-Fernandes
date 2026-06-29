@@ -290,14 +290,14 @@ const Home: React.FC = () => {
               className="w-full lg:w-3/4 max-w-4xl"
             >
               <motion.div 
-                className="flex items-center gap-4 md:gap-6 mb-6 md:mb-8 overflow-hidden"
+                className="flex items-center gap-2 md:gap-6 mb-6 md:mb-8 overflow-hidden"
                 initial="hidden"
                 animate="visible"
               >
                 {/* Left Line */}
                 <motion.span 
-                  className="h-1 bg-brand-light block"
-                  style={{ width: "2.5rem", transformOrigin: "left" }} 
+                  className="h-1 bg-brand-light block w-8 md:w-12"
+                  style={{ transformOrigin: "left" }} 
                   variants={{
                     hidden: { scaleX: 0 },
                     visible: { 
@@ -309,7 +309,7 @@ const Home: React.FC = () => {
                 
                 {/* Text with Typing Effect */}
                 <motion.span 
-                  className="text-brand-light font-bold uppercase tracking-[0.15em] text-xl md:text-[25px] font-sans shadow-black drop-shadow-lg whitespace-nowrap overflow-hidden block"
+                  className="text-brand-light font-bold uppercase tracking-[0.1em] md:tracking-[0.15em] text-base sm:text-2xl md:text-[32px] font-sans shadow-black drop-shadow-lg whitespace-nowrap overflow-hidden block"
                   variants={{
                     hidden: { opacity: 1 },
                     visible: { opacity: 1 }
@@ -345,8 +345,8 @@ const Home: React.FC = () => {
 
                 {/* Right Line */}
                 <motion.span 
-                  className="h-1 bg-brand-light block"
-                  style={{ width: "2.5rem", transformOrigin: "left" }}
+                  className="h-1 bg-brand-light block w-8 md:w-12"
+                  style={{ transformOrigin: "left" }}
                   variants={{
                     hidden: { scaleX: 0 },
                     visible: { 
@@ -416,31 +416,33 @@ const Home: React.FC = () => {
             <div className="w-16 md:w-20 h-1 bg-brand-light mx-auto"></div>
           </div>
           
-          {/* MOBILE: Horizontal Scroll Carousel */}
-          <div 
-            ref={servicesScrollRef}
-            onScroll={handleServicesScroll}
-            className="md:hidden flex items-stretch overflow-x-auto snap-x snap-mandatory gap-4 pb-6 -mx-4 px-4 scrollbar-hide"
-          >
-            {services.map((service, index) => (
-              <div key={index} className="min-w-[85vw] snap-center flex flex-col">
-                <ServiceCard {...service} delay={0} className="flex-1" />
-              </div>
-            ))}
-          </div>
+          {/* MOBILE & TABLET: Horizontal Scroll Carousel */}
+          <div className="lg:hidden relative group/services">
+            <div 
+              ref={servicesScrollRef}
+              onScroll={handleServicesScroll}
+              className="flex items-stretch overflow-x-auto snap-x snap-mandatory gap-4 pb-6 -mx-4 px-4 scrollbar-hide"
+            >
+              {services.map((service, index) => (
+                <div key={index} className="min-w-[85vw] md:min-w-[calc(50%-8px)] snap-center flex flex-col">
+                  <ServiceCard {...service} delay={0} className="flex-1" />
+                </div>
+              ))}
+            </div>
 
-          {/* MOBILE: Navigation Dots */}
-          <div className="md:hidden flex justify-center gap-2 mb-8">
-            {services.map((_, index) => (
-              <div 
-                key={index}
-                className={`h-2 rounded-full transition-all duration-300 ${index === activeServiceIndex ? 'w-6 bg-brand-light' : 'w-2 bg-gray-300'}`}
-              />
-            ))}
+            {/* Navigation Dots */}
+            <div className="flex justify-center gap-2 mb-8">
+              {services.map((_, index) => (
+                <div 
+                  key={index}
+                  className={`h-2 rounded-full transition-all duration-300 ${index === activeServiceIndex ? 'w-6 bg-brand-light' : 'w-2 bg-gray-300'}`}
+                />
+              ))}
+            </div>
           </div>
 
           {/* DESKTOP: Grid */}
-          <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 justify-center">
+          <div className="hidden lg:grid lg:grid-cols-4 gap-8 justify-center">
             <ServiceCard title={t.home.serviceCards.plrs.title} description={t.home.serviceCards.plrs.desc} icon={<Activity size={32} />} delay={0.1} link="/plrs" />
             <ServiceCard title={t.home.serviceCards.infraestruturas.title} description={t.home.serviceCards.infraestruturas.desc} icon={<Zap size={32} />} delay={0.2} link="/infraestruturas" />
             <ServiceCard title={t.home.serviceCards['postos-transformacao'].title} description={t.home.serviceCards['postos-transformacao'].desc} icon={<Zap size={32} />} delay={0.3} link="/postos-transformacao" />

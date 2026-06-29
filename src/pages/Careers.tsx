@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { ArrowRight, Mail, CheckCircle } from 'lucide-react';
+import { ArrowRight, Mail, CheckCircle, ChevronLeft, ChevronRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import SEO from '@/components/SEO';
@@ -9,9 +9,43 @@ import { useLanguage } from '@/context/LanguageContext';
 const Careers: React.FC = () => {
   const { t } = useLanguage();
   const [activeJobIndex, setActiveJobIndex] = useState(0);
+  const [isMouseDown, setIsMouseDown] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeftState, setScrollLeftState] = useState(0);
   const jobsContainerRef = useRef<HTMLDivElement>(null);
 
   if (!t || !t.careers) return null;
+
+  const handleMouseDown = (e: React.MouseEvent) => {
+    if (!jobsContainerRef.current) return;
+    setIsMouseDown(true);
+    setStartX(e.pageX - jobsContainerRef.current.offsetLeft);
+    setScrollLeftState(jobsContainerRef.current.scrollLeft);
+    
+    // Disable smooth scroll and snap during drag for immediate response
+    jobsContainerRef.current.style.scrollSnapType = 'none';
+    jobsContainerRef.current.style.scrollBehavior = 'auto';
+  };
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (!isMouseDown || !jobsContainerRef.current) return;
+    e.preventDefault();
+    const x = e.pageX - jobsContainerRef.current.offsetLeft;
+    const walk = (x - startX) * 1.5;
+    jobsContainerRef.current.scrollLeft = scrollLeftState - walk;
+  };
+
+  const handleMouseUp = () => {
+    if (!jobsContainerRef.current) return;
+    setIsMouseDown(false);
+    
+    // Re-enable snap and smooth behavior
+    jobsContainerRef.current.style.scrollSnapType = 'x mandatory';
+    jobsContainerRef.current.style.scrollBehavior = 'smooth';
+    
+    // Trigger scroll check to update active index
+    handleScroll();
+  };
 
   const handleScroll = () => {
     if (jobsContainerRef.current) {
@@ -124,13 +158,36 @@ const Careers: React.FC = () => {
           </h2>
 
           <div className="relative group/carousel">
+            {/* Navigation Arrows (PC only) */}
+            <button 
+              onClick={() => scrollToJob(Math.max(0, activeJobIndex - 1))}
+              disabled={activeJobIndex === 0}
+              className="absolute -left-4 md:-left-12 top-1/2 -translate-y-1/2 z-20 p-2 md:p-4 bg-white shadow-xl rounded-full border border-gray-100 text-corporate hover:bg-brand-light hover:text-white transition-all duration-300 disabled:opacity-0 disabled:pointer-events-none hidden md:flex items-center justify-center group/btn"
+              aria-label="Previous job"
+            >
+              <ChevronLeft size={28} className="group-hover/btn:-translate-x-1 transition-transform" />
+            </button>
+            
+            <button 
+              onClick={() => scrollToJob(Math.min(t.careers.jobs.length - 1, activeJobIndex + 1))}
+              disabled={activeJobIndex === t.careers.jobs.length - 1}
+              className="absolute -right-4 md:-right-12 top-1/2 -translate-y-1/2 z-20 p-2 md:p-4 bg-white shadow-xl rounded-full border border-gray-100 text-corporate hover:bg-brand-light hover:text-white transition-all duration-300 disabled:opacity-0 disabled:pointer-events-none hidden md:flex items-center justify-center group/btn"
+              aria-label="Next job"
+            >
+              <ChevronRight size={28} className="group-hover/btn:translate-x-1 transition-transform" />
+            </button>
+
             <div 
               ref={jobsContainerRef}
               onScroll={handleScroll}
-              className="
+              onMouseDown={handleMouseDown}
+              onMouseMove={handleMouseMove}
+              onMouseUp={handleMouseUp}
+              onMouseLeave={handleMouseUp}
+              className={`
                 flex items-stretch overflow-x-auto snap-x snap-mandatory gap-6 pb-8 -mx-6 px-6 scrollbar-hide
-                md:mx-auto md:px-0
-              "
+                md:mx-auto md:px-0 cursor-grab ${isMouseDown ? 'cursor-grabbing select-none' : ''}
+              `}
             >
               {t.careers.jobs.map((job: any, index: number) => (
                 <motion.div 

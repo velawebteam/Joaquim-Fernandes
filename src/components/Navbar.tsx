@@ -139,58 +139,58 @@ const Navbar: React.FC = () => {
   return (
     <nav 
       className={`fixed w-full z-50 transition-all duration-300 ${
-        showSolidNav ? 'bg-white shadow-md py-3' : 'bg-transparent py-4 md:py-5'
+        showSolidNav ? 'bg-white shadow-md' : 'bg-transparent'
       }`}
     >
-      {/* Logo Container - Aligned with Site Content (Container) */}
-      <div className="absolute inset-0 flex items-center pointer-events-none">
-        <div className="container mx-auto px-4 md:px-12">
-          <Logo showSolidNav={showSolidNav} />
-        </div>
-      </div>
+      <div className={`container mx-auto px-4 md:px-12 flex items-center justify-between transition-all duration-300 ${
+        showSolidNav ? 'py-2 md:py-3' : 'py-4 md:py-6'
+      }`}>
+        {/* Logo - Always aligned left in the container */}
+        <Logo showSolidNav={showSolidNav} />
 
-      {/* Navigation Container - Min height ensures navbar size is maintained */}
-      <div className="w-full px-4 md:px-8 flex justify-end items-center relative z-50 pointer-events-none min-h-[3rem] md:min-h-[5rem]">
-        {/* Desktop Navigation */}
-        <div className="hidden lg:flex items-center gap-6 xl:gap-8 whitespace-nowrap pointer-events-auto">
-          {navLinks.map((link) => (
+        {/* Navigation Group - Aligned right */}
+        <div className="flex items-center gap-6 xl:gap-8 relative z-50">
+          {/* Desktop Navigation */}
+          <div className="hidden lg:flex items-center gap-6 xl:gap-8 whitespace-nowrap">
+            {navLinks.map((link) => (
+              <Link
+                key={link.path}
+                to={link.path}
+                className={`font-semibold text-xs xl:text-sm uppercase tracking-wide transition-colors hover:text-brand-light whitespace-nowrap ${
+                  location.pathname === link.path 
+                    ? 'text-brand-light' 
+                    : (showSolidNav ? 'text-corporate' : 'text-white drop-shadow-md')
+                }`}
+              >
+                {link.name}
+              </Link>
+            ))}
+            
+            {/* Language Switcher */}
+            <LanguageSwitcher showSolidNav={showSolidNav} />
+
             <Link
-              key={link.path}
-              to={link.path}
-              className={`font-semibold text-xs xl:text-sm uppercase tracking-wide transition-colors hover:text-brand-light whitespace-nowrap ${
-                location.pathname === link.path 
-                  ? 'text-brand-light' 
-                  : (showSolidNav ? 'text-corporate' : 'text-white drop-shadow-md')
-              }`}
+              to="/contacto"
+              className="bg-accent hover:bg-[#2A3345] text-white font-bold py-2 px-6 rounded-sm transition-colors uppercase text-xs tracking-widest shadow-lg border-b-2 border-transparent hover:border-brand-light whitespace-nowrap"
             >
-              {link.name}
+              {t.nav.quote}
             </Link>
-          ))}
-          
-          {/* Language Switcher */}
-          <LanguageSwitcher showSolidNav={showSolidNav} />
+          </div>
 
-          <Link
-            to="/contacto"
-            className="bg-accent hover:bg-[#2A3345] text-white font-bold py-2 px-6 rounded-sm transition-colors uppercase text-xs tracking-widest shadow-lg border-b-2 border-transparent hover:border-brand-light whitespace-nowrap"
-          >
-            {t.nav.quote}
-          </Link>
-        </div>
+          {/* Mobile Menu Button - Visible on mobile/tablet */}
+          <div className="lg:hidden flex items-center gap-2 sm:gap-3">
+            <LanguageSwitcher isMobile showSolidNav={showSolidNav} isOpen={isOpen} />
 
-        {/* Mobile Menu Button - Z-Index 50 to stay above menu overlay */}
-        <div className="lg:hidden flex items-center gap-2 sm:gap-3 relative z-50 pointer-events-auto">
-          <LanguageSwitcher isMobile showSolidNav={showSolidNav} isOpen={isOpen} />
-
-          <button
-            className={`p-2 rounded shadow-sm transition-colors ${
-              showSolidNav || isOpen ? 'text-corporate bg-gray-100' : 'text-white bg-black/20 backdrop-blur-sm'
-            }`}
-            onClick={() => setIsOpen(!isOpen)}
-            aria-label="Toggle menu"
-          >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+            <button
+              className={`p-2 rounded shadow-sm transition-colors ${
+                showSolidNav || isOpen ? 'text-corporate bg-gray-100' : 'text-white bg-black/20 backdrop-blur-sm'
+              }`}
+              onClick={() => setIsOpen(!isOpen)}
+              aria-label="Toggle menu"
+            >
+              {isOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
       </div>
 

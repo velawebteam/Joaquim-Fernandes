@@ -13,10 +13,10 @@ const Logo: React.FC<LogoProps> = ({ showSolidNav = false, className = "" }) => 
         <img 
           src="https://drive.google.com/thumbnail?id=1BTpjyYhqw2fL_Dr_f9f1S_3ylE8dXwi5&sz=w1000" 
           alt="Joaquim & Fernandes" 
-          className="h-12 w-12 md:h-20 md:w-20 object-contain"
+          className="h-10 w-10 sm:h-14 md:h-20 md:w-20 object-contain"
         />
       </div>
-      <span className={`font-heading font-bold text-[18px] tracking-wider uppercase transition-colors ${showSolidNav ? 'text-corporate' : 'text-white drop-shadow-lg'}`}>
+      <span className={`font-heading font-bold text-[11px] sm:text-[16px] md:text-[18px] tracking-wider uppercase transition-colors ${showSolidNav ? 'text-corporate' : 'text-white drop-shadow-lg'}`}>
         Joaquim & Fernandes, Lda
       </span>
     </Link>
