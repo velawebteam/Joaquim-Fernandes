@@ -317,11 +317,12 @@ const Home: React.FC = () => {
                   }}
                 >
                   {hasAnimatedSlogan ? (
-                    <span>{t.home.slogan}</span>
+                    <span className="text-[27px]">{t.home.slogan}</span>
                   ) : (
                     t.home.slogan.split('').map((char, index) => (
                       <motion.span
                         key={index}
+                        className="text-[27px]"
                         variants={{
                           hidden: { opacity: 0 },
                           visible: { 

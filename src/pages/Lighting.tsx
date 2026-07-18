@@ -1,13 +1,40 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { CheckCircle } from 'lucide-react';
+import { CheckCircle, X, ChevronLeft, ChevronRight, Maximize2 } from 'lucide-react';
 import SEO from '@/components/SEO';
 import CTAButton from '@/components/CTAButton';
 import { useLanguage } from '@/context/LanguageContext';
 
 const Lighting: React.FC = () => {
   const { t } = useLanguage();
+  const [activeGallery, setActiveGallery] = useState<string[] | null>(null);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const openGallery = (images: string[]) => {
+    setActiveGallery(images);
+    setCurrentImageIndex(0);
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeGallery = () => {
+    setActiveGallery(null);
+    document.body.style.overflow = 'auto';
+  };
+
+  const nextImage = (e?: React.MouseEvent) => {
+    e?.stopPropagation();
+    if (activeGallery) {
+      setCurrentImageIndex((prev) => (prev + 1) % activeGallery.length);
+    }
+  };
+
+  const prevImage = (e?: React.MouseEvent) => {
+    e?.stopPropagation();
+    if (activeGallery) {
+      setCurrentImageIndex((prev) => (prev - 1 + activeGallery.length) % activeGallery.length);
+    }
+  };
 
   // Defensive guard against undefined translations
   if (!t || !t.lighting) {
@@ -40,41 +67,15 @@ const Lighting: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-white mb-4 uppercase tracking-wider">
+            <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-white mb-6 uppercase tracking-wider">
               {t.lighting.heroTitle}
             </h1>
+            <p className="text-lg md:text-xl text-white/90 leading-relaxed font-body max-w-3xl mx-auto drop-shadow-md">
+              {t.lighting.introDesc}
+            </p>
           </motion.div>
         </div>
       </div>
-
-      {/* 2. INTRO */}
-      <section className="py-16 md:py-24 bg-white relative">
-        <div className="container mx-auto px-4 md:px-12 flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
-          <div className="w-full lg:w-1/2">
-             <motion.div
-               initial={{ opacity: 0, x: -50 }}
-               whileInView={{ opacity: 1, x: 0 }}
-               viewport={{ once: true }}
-               transition={{ duration: 0.6 }}
-             >
-
-               <p className="text-lg text-gray-600 leading-relaxed font-body">
-                 {t.lighting.introDesc}
-               </p>
-
-             </motion.div>
-          </div>
-          <div className="w-full lg:w-1/2 relative">
-             <div className="absolute -inset-4 bg-brand-light/20 rounded-lg blur-xl transform -rotate-2"></div>
-             <img 
-               src="https://drive.google.com/thumbnail?id=1Q7Ak5kMhDW4Xxk9VWPrOu5mThEKDGo0x&sz=w1000" 
-               alt="Festive Lighting" 
-               className="relative rounded-lg shadow-2xl z-10 w-full h-[400px] object-cover object-center"
-               referrerPolicy="no-referrer"
-             />
-          </div>
-        </div>
-      </section>
 
       {/* 3. LIGHTING TYPES SECTIONS (Alternating) */}
       <section className="bg-white">
@@ -134,12 +135,21 @@ const Lighting: React.FC = () => {
                     </div>
                   )}
 
-                  <div className="flex mb-8">
+                  <div className="flex flex-wrap gap-4 mb-8">
                     <CTAButton 
                       to="/contacto?subject=orcamento&interest=lighting" 
                       text={t.common.requestService}
                       variant="primary"
                     />
+                    {type.gallery && type.gallery.length > 0 && (
+                      <button 
+                        onClick={() => openGallery(type.gallery)}
+                        className="flex items-center gap-2 px-6 py-3 border-2 border-corporate text-corporate font-bold uppercase text-xs tracking-widest hover:bg-corporate hover:text-white transition-all duration-300 rounded-sm"
+                      >
+                        <Maximize2 size={16} />
+                        {t.common.seeGallery || "Ver Galeria"}
+                      </button>
+                    )}
                   </div>
                 </motion.div>
 
@@ -172,6 +182,66 @@ const Lighting: React.FC = () => {
            </motion.div>
          </div>
       </div>
+
+      {/* Gallery Modal */}
+      <AnimatePresence>
+        {activeGallery && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[100] bg-black/95 flex items-center justify-center p-4 md:p-10"
+            onClick={closeGallery}
+          >
+            <button 
+              className="absolute top-6 right-6 text-white/70 hover:text-white z-[110] transition-colors"
+              onClick={closeGallery}
+            >
+              <X size={32} />
+            </button>
+
+            <div 
+              className="relative w-full max-w-5xl aspect-video flex items-center justify-center"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {activeGallery.length > 1 && (
+                <>
+                  <button 
+                    className="absolute left-0 -translate-x-full md:-translate-x-16 text-white/50 hover:text-white transition-colors p-2"
+                    onClick={prevImage}
+                  >
+                    <ChevronLeft size={48} />
+                  </button>
+                  <button 
+                    className="absolute right-0 translate-x-full md:translate-x-16 text-white/50 hover:text-white transition-colors p-2"
+                    onClick={nextImage}
+                  >
+                    <ChevronRight size={48} />
+                  </button>
+                </>
+              )}
+
+              <AnimatePresence mode="wait">
+                <motion.img
+                  key={currentImageIndex}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 1.1 }}
+                  transition={{ duration: 0.3 }}
+                  src={activeGallery[currentImageIndex]}
+                  alt={`Gallery image ${currentImageIndex + 1}`}
+                  className="max-w-full max-h-[80vh] object-contain shadow-2xl rounded-sm"
+                  referrerPolicy="no-referrer"
+                />
+              </AnimatePresence>
+
+              <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 text-white/50 text-sm font-mono tracking-widest uppercase">
+                {currentImageIndex + 1} / {activeGallery.length}
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
     </div>
   );

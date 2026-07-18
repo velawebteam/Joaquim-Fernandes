@@ -79,6 +79,7 @@ const translations = {
     common: {
       learnMore: 'Saber Mais',
       seeMore: 'Ver Mais',
+      seeGallery: 'Ver Galeria',
       requestService: 'Pedir Serviço',
       address: 'Estrada Nacional 125, Bias Norte, Moncarapacho',
       city: '8700-066 Olhão'
@@ -321,14 +322,28 @@ const translations = {
           image: "https://drive.google.com/thumbnail?id=1MFt1qWei6hz80tPGkX91j-g86uHVA7vi&sz=w1000",
           desc: "Garantimos a segurança e o bem-estar das populações através de redes de iluminação pública eficientes e fiáveis. Realizamos a instalação e manutenção de armaduras viárias, projetores e colunas, assegurando a correta luminosidade em estradas, ruas e espaços públicos, sempre com foco na redução da pegada ecológica e custos energéticos.",
           applicationsTitle: "Onde aplicamos:",
-          applications: ["Zonas Viárias", "Zonas pedonais", "Urbanizações/ Loteamentos", "Parques de Estacionamento", "Zonas Portuárias"]
+          applications: ["Zonas Viárias", "Zonas pedonais", "Urbanizações/ Loteamentos", "Parques de Estacionamento", "Zonas Portuárias"],
+          gallery: [
+            "https://drive.google.com/thumbnail?id=1NUSmNSRlveC_dvohy7p_e_V5OddYROlw&sz=w1000",
+            "https://drive.google.com/thumbnail?id=1oIb-4UKGjTM0gjrDmQ_70TLDfriV0CWt&sz=w1000",
+            "https://drive.google.com/thumbnail?id=1QbTNDz4x7rzjY2qwaBNYs_DLwoOR1RBR&sz=w1000",
+            "https://drive.google.com/thumbnail?id=1juY37c98sdlno0eTg4uwb8ko7ajh1HbS&sz=w1000",
+            "https://drive.google.com/thumbnail?id=1SglyL6elHYo8R7RSEVBf6zE_er0fGQm8&sz=w1000"
+          ]
         },
         {
           title: "Iluminação Desportiva",
           image: "https://drive.google.com/thumbnail?id=15ZTaJZVipA-lCRWq5r5I0oelf5cJDUTF&sz=w1000",
           desc: "No desporto, a luz é fundamental para o desempenho dos atletas e experiência dos espectadores. Projetamos e instalamos sistemas de iluminação que cumprem rigorosamente os níveis de lux exigidos pelas federations e normas de transmissão televisiva. Garantimos uniformidade no campo, controlo de encadeamento e sistemas de acendimento instantâneo para pavilhões e estádios.",
           applicationsTitle: "Onde aplicamos:",
-          applications: ["Campos de Futebol e Estádios", "Pavilhões Desportivos", "Campos de Ténis e Padel", "Piscinas Municipais"]
+          applications: ["Campos de Futebol e Estádios", "Pavilhões Desportivos", "Campos de Ténis e Padel", "Piscinas Municipais"],
+          gallery: [
+            "https://drive.google.com/thumbnail?id=1FMXRXRVynx69PsSvzXJyypB2QAKm1uv_&sz=w1000",
+            "https://drive.google.com/thumbnail?id=1zri54HC34keEPySSfeVAxGfrrw3dulJm&sz=w1000",
+            "https://drive.google.com/thumbnail?id=1k7um6AYzBfn4-poB595CUcqtqzEKkc9i&sz=w1000",
+            "https://drive.google.com/thumbnail?id=1cNwkL6l_mw1seGTvfVbSdidy2g4-ibM-&sz=w1000",
+            "https://drive.google.com/thumbnail?id=1ecZo9WtYyPpvbllZ_oYG7DNtiS89QJvp&sz=w1000"
+          ]
         },
         {
           title: "Iluminação Inteligente",
@@ -349,7 +364,18 @@ const translations = {
           image: "https://drive.google.com/thumbnail?id=1Q7Ak5kMhDW4Xxk9VWPrOu5mThEKDGo0x&sz=w1000",
           desc: "A Iluminação Festiva é a arte de criar emoções através da luz. Desenvolvemos projetos chave-na-mão para ocasiões especiais, transformando o ambiente urbano e comercial. Desde o design criativo dos motivos (2D e 3D) até à instalação e desmontagem segura, garantimos um espetáculo visual que atrai visitantes, dinamiza o comércio local e celebra a tradição com tecnologia LED de baixo consumo.",
           applicationsTitle: "Onde aplicamos:",
-          applications: ["Centros Históricos e Cidades", "Centros Comerciais", "Praças e Jardins Públicos", "Fachadas de Edifícios"]
+          applications: ["Centros Históricos e Cidades", "Centros Comerciais", "Praças e Jardins Públicos", "Fachadas de Edifícios"],
+          gallery: [
+            "https://drive.google.com/thumbnail?id=17UsdDWU6F48wh6NYogKYoHpknoLd5_LO&sz=w1000",
+            "https://drive.google.com/thumbnail?id=1TkqIGwnN2oPXJopsWS5jrw_KyrK5wfxk&sz=w1000",
+            "https://drive.google.com/thumbnail?id=1Y3xrL6deaf-8PwJmWmmh0kKs6uXbLic5&sz=w1000",
+            "https://drive.google.com/thumbnail?id=19fMNMp98QyyHWg2gKpgVL7nOn-WvzSY1&sz=w1000",
+            "https://drive.google.com/thumbnail?id=1lMSvioog8B6uMIj1EfjxYs4UGt2HjcgP&sz=w1000",
+            "https://drive.google.com/thumbnail?id=1l5gesjB6RMx631fjxfQSiVPM4XgOHGOm&sz=w1000",
+            "https://drive.google.com/thumbnail?id=1RBwnETZ7fm9zZWl3z5xx4mBeXEDh_FAs&sz=w1000",
+            "https://drive.google.com/thumbnail?id=1UUBsJEhHYH6lgpDt5L8QS9UKwNZ5LMIM&sz=w1000",
+            "https://drive.google.com/thumbnail?id=1w_yjqQACzWPSMTBkuHE1UV51RxTA6hIG&sz=w1000"
+          ]
         }
       ],
       ctaTitle: "Vamos iluminar o seu projeto?",
@@ -782,6 +808,7 @@ const translations = {
     common: {
       learnMore: 'Learn More',
       seeMore: 'See More',
+      seeGallery: 'See Gallery',
       requestService: 'Request Service',
       address: 'Estrada Nacional 125, Bias Norte, Moncarapacho',
       city: '8700-066 Olhão, Portugal'
@@ -1180,14 +1207,28 @@ const translations = {
           image: "https://drive.google.com/thumbnail?id=1MFt1qWei6hz80tPGkX91j-g86uHVA7vi&sz=w1000",
           desc: "We ensure the safety and well-being of populations through efficient and reliable public lighting networks. We install and maintain street luminaires, floodlights, and columns, ensuring correct luminosity on roads, streets, and public spaces, always focusing on reducing the ecological footprint and energy costs.",
           applicationsTitle: "Where applied:",
-          applications: ["Road Zones", "Pedestrian Zones", "Urbanizations/ Allotments", "Parking Lots", "Port Areas"]
+          applications: ["Road Zones", "Pedestrian Zones", "Urbanizations/ Allotments", "Parking Lots", "Port Areas"],
+          gallery: [
+            "https://drive.google.com/thumbnail?id=1NUSmNSRlveC_dvohy7p_e_V5OddYROlw&sz=w1000",
+            "https://drive.google.com/thumbnail?id=1oIb-4UKGjTM0gjrDmQ_70TLDfriV0CWt&sz=w1000",
+            "https://drive.google.com/thumbnail?id=1QbTNDz4x7rzjY2qwaBNYs_DLwoOR1RBR&sz=w1000",
+            "https://drive.google.com/thumbnail?id=1juY37c98sdlno0eTg4uwb8ko7ajh1HbS&sz=w1000",
+            "https://drive.google.com/thumbnail?id=1SglyL6elHYo8R7RSEVBf6zE_er0fGQm8&sz=w1000"
+          ]
         },
         {
           title: "Sports Lighting",
           image: "https://drive.google.com/thumbnail?id=15ZTaJZVipA-lCRWq5r5I0oelf5cJDUTF&sz=w1000",
           desc: "In sports, light is fundamental for athlete performance and spectator experience. We design and install lighting systems that strictly comply with lux levels required by federations and TV transmission standards. We guarantee uniformity on the field, glare control, and instant strike systems for pavilions and stadiums.",
           applicationsTitle: "Where applied:",
-          applications: ["Football Fields and Stadiums", "Sports Pavilions", "Tennis and Padel Courts", "Municipal Pools"]
+          applications: ["Football Fields and Stadiums", "Sports Pavilions", "Tennis and Padel Courts", "Municipal Pools"],
+          gallery: [
+            "https://drive.google.com/thumbnail?id=1FMXRXRVynx69PsSvzXJyypB2QAKm1uv_&sz=w1000",
+            "https://drive.google.com/thumbnail?id=1zri54HC34keEPySSfeVAxGfrrw3dulJm&sz=w1000",
+            "https://drive.google.com/thumbnail?id=1k7um6AYzBfn4-poB595CUcqtqzEKkc9i&sz=w1000",
+            "https://drive.google.com/thumbnail?id=1cNwkL6l_mw1seGTvfVbSdidy2g4-ibM-&sz=w1000",
+            "https://drive.google.com/thumbnail?id=1ecZo9WtYyPpvbllZ_oYG7DNtiS89QJvp&sz=w1000"
+          ]
         },
         {
           title: "Smart Lighting",
@@ -1208,7 +1249,18 @@ const translations = {
           image: "https://drive.google.com/thumbnail?id=1Q7Ak5kMhDW4Xxk9VWPrOu5mThEKDGo0x&sz=w1000",
           desc: "Festive Lighting is the art of creating emotions through light. We develop turnkey projects for special occasions, transforming the urban and commercial environment. From creative design of motifs (2D and 3D) to safe installation and dismantling, we guarantee a visual spectacle that attracts visitors, boosts local commerce, and celebrates tradition with low-consumption LED technology.",
           applicationsTitle: "Where applied:",
-          applications: ["Historic Centers and Cities", "Shopping Centers", "Squares and Public Gardens", "Building Facades"]
+          applications: ["Historic Centers and Cities", "Shopping Centers", "Squares and Public Gardens", "Building Facades"],
+          gallery: [
+            "https://drive.google.com/thumbnail?id=17UsdDWU6F48wh6NYogKYoHpknoLd5_LO&sz=w1000",
+            "https://drive.google.com/thumbnail?id=1TkqIGwnN2oPXJopsWS5jrw_KyrK5wfxk&sz=w1000",
+            "https://drive.google.com/thumbnail?id=1Y3xrL6deaf-8PwJmWmmh0kKs6uXbLic5&sz=w1000",
+            "https://drive.google.com/thumbnail?id=19fMNMp98QyyHWg2gKpgVL7nOn-WvzSY1&sz=w1000",
+            "https://drive.google.com/thumbnail?id=1lMSvioog8B6uMIj1EfjxYs4UGt2HjcgP&sz=w1000",
+            "https://drive.google.com/thumbnail?id=1l5gesjB6RMx631fjxfQSiVPM4XgOHGOm&sz=w1000",
+            "https://drive.google.com/thumbnail?id=1RBwnETZ7fm9zZWl3z5xx4mBeXEDh_FAs&sz=w1000",
+            "https://drive.google.com/thumbnail?id=1UUBsJEhHYH6lgpDt5L8QS9UKwNZ5LMIM&sz=w1000",
+            "https://drive.google.com/thumbnail?id=1w_yjqQACzWPSMTBkuHE1UV51RxTA6hIG&sz=w1000"
+          ]
         }
       ],
       ctaTitle: "Let's light up your project?",
@@ -1486,6 +1538,7 @@ const translations = {
   "common": {
     "learnMore": "Descubra más",
     "seeMore": "Ver más",
+    "seeGallery": "Ver Galería",
     "requestService": "Solicitar Servicio",
     "address": "Ruta Nacional 125, Bias Norte, Moncarapacho",
     "city": "8700-066 Olhao"
@@ -1836,7 +1889,14 @@ const translations = {
         "image": "https://drive.google.com/thumbnail?id=1MFt1qWei6hz80tPGkX91j-g86uHVA7vi&sz=w1000",
         "desc": "Garantizamos la seguridad y el bienestar de las poblaciones a través de redes de alumbrado público eficientes y confiables. Instalamos y mantenemos refuerzos viarios, proyectores y columnas, asegurando una correcta iluminación en vías, calles y espacios públicos, siempre enfocados en reducir la huella ecológica y los costos energéticos.",
         "applicationsTitle": "Donde aplicamos:",
-        "applications": ["Zonas Viarias", "Zonas peatonales", "Urbanizaciones/ Loteamientos", "Aparcamientos", "Zonas Portuarias"]
+        "applications": ["Zonas Viarias", "Zonas peatonales", "Urbanizaciones/ Loteamientos", "Aparcamientos", "Zonas Portuarias"],
+        "gallery": [
+          "https://drive.google.com/thumbnail?id=1NUSmNSRlveC_dvohy7p_e_V5OddYROlw&sz=w1000",
+          "https://drive.google.com/thumbnail?id=1oIb-4UKGjTM0gjrDmQ_70TLDfriV0CWt&sz=w1000",
+          "https://drive.google.com/thumbnail?id=1QbTNDz4x7rzjY2qwaBNYs_DLwoOR1RBR&sz=w1000",
+          "https://drive.google.com/thumbnail?id=1juY37c98sdlno0eTg4uwb8ko7ajh1HbS&sz=w1000",
+          "https://drive.google.com/thumbnail?id=1SglyL6elHYo8R7RSEVBf6zE_er0fGQm8&sz=w1000"
+        ]
       },
       {
         "title": "Iluminación deportiva",
@@ -1848,6 +1908,13 @@ const translations = {
           "Pabellones deportivos",
           "Pistas de Tenis y Padel",
           "Piscinas Municipales"
+        ],
+        "gallery": [
+          "https://drive.google.com/thumbnail?id=1FMXRXRVynx69PsSvzXJyypB2QAKm1uv_&sz=w1000",
+          "https://drive.google.com/thumbnail?id=1zri54HC34keEPySSfeVAxGfrrw3dulJm&sz=w1000",
+          "https://drive.google.com/thumbnail?id=1k7um6AYzBfn4-poB595CUcqtqzEKkc9i&sz=w1000",
+          "https://drive.google.com/thumbnail?id=1cNwkL6l_mw1seGTvfVbSdidy2g4-ibM-&sz=w1000",
+          "https://drive.google.com/thumbnail?id=1ecZo9WtYyPpvbllZ_oYG7DNtiS89QJvp&sz=w1000"
         ]
       },
       {
@@ -1879,6 +1946,17 @@ const translations = {
           "Centros Comerciales",
           "Plazas Públicas y Jardines",
           "Fachadas de edificios"
+        ],
+        "gallery": [
+          "https://drive.google.com/thumbnail?id=17UsdDWU6F48wh6NYogKYoHpknoLd5_LO&sz=w1000",
+          "https://drive.google.com/thumbnail?id=1TkqIGwnN2oPXJopsWS5jrw_KyrK5wfxk&sz=w1000",
+          "https://drive.google.com/thumbnail?id=1Y3xrL6deaf-8PwJmWmmh0kKs6uXbLic5&sz=w1000",
+          "https://drive.google.com/thumbnail?id=19fMNMp98QyyHWg2gKpgVL7nOn-WvzSY1&sz=w1000",
+          "https://drive.google.com/thumbnail?id=1lMSvioog8B6uMIj1EfjxYs4UGt2HjcgP&sz=w1000",
+          "https://drive.google.com/thumbnail?id=1l5gesjB6RMx631fjxfQSiVPM4XgOHGOm&sz=w1000",
+          "https://drive.google.com/thumbnail?id=1RBwnETZ7fm9zZWl3z5xx4mBeXEDh_FAs&sz=w1000",
+          "https://drive.google.com/thumbnail?id=1UUBsJEhHYH6lgpDt5L8QS9UKwNZ5LMIM&sz=w1000",
+          "https://drive.google.com/thumbnail?id=1w_yjqQACzWPSMTBkuHE1UV51RxTA6hIG&sz=w1000"
         ]
       }
     ],
@@ -2441,6 +2519,7 @@ const translations = {
   "common": {
     "learnMore": "En savoir plus",
     "seeMore": "Voir plus",
+    "seeGallery": "Voir la Galerie",
     "requestService": "Demander un Service",
     "address": "Route nationale 125, Bias Norte, Moncarapacho",
     "city": "8700-066 Olhão"
@@ -2805,7 +2884,14 @@ const translations = {
         "image": "https://drive.google.com/thumbnail?id=1MFt1qWei6hz80tPGkX91j-g86uHVA7vi&sz=w1000",
         "desc": "Nous garantissons la sécurité et le bien-être des populations grâce à des réseaux d'éclairage public efficaces et fiables. Nous installons et entretenons des luminaires de rue, des projecteurs et des colonnes, assurant une luminosité correcte sur les routes, les rues et les espaces publics, en nous concentrant toujours sur la réduction de l'empreinte écologique et des coûts énergétiques.",
         "applicationsTitle": "Où nous appliquons :",
-        "applications": ["Zones Routières", "Zones piétonnes", "Urbanisations/ Lotissements", "Parkings", "Zones Portuaires"]
+        "applications": ["Zones Routières", "Zones piétonnes", "Urbanisations/ Lotissements", "Parkings", "Zones Portuaires"],
+        "gallery": [
+          "https://drive.google.com/thumbnail?id=1NUSmNSRlveC_dvohy7p_e_V5OddYROlw&sz=w1000",
+          "https://drive.google.com/thumbnail?id=1oIb-4UKGjTM0gjrDmQ_70TLDfriV0CWt&sz=w1000",
+          "https://drive.google.com/thumbnail?id=1QbTNDz4x7rzjY2qwaBNYs_DLwoOR1RBR&sz=w1000",
+          "https://drive.google.com/thumbnail?id=1juY37c98sdlno0eTg4uwb8ko7ajh1HbS&sz=w1000",
+          "https://drive.google.com/thumbnail?id=1SglyL6elHYo8R7RSEVBf6zE_er0fGQm8&sz=w1000"
+        ]
       },
       {
         "title": "Éclairage sportif",
@@ -2817,6 +2903,13 @@ const translations = {
           "Gymnases sportifs",
           "Courts de tennis et de padel",
           "Piscines municipales"
+        ],
+        "gallery": [
+          "https://drive.google.com/thumbnail?id=1FMXRXRVynx69PsSvzXJyypB2QAKm1uv_&sz=w1000",
+          "https://drive.google.com/thumbnail?id=1zri54HC34keEPySSfeVAxGfrrw3dulJm&sz=w1000",
+          "https://drive.google.com/thumbnail?id=1k7um6AYzBfn4-poB595CUcqtqzEKkc9i&sz=w1000",
+          "https://drive.google.com/thumbnail?id=1cNwkL6l_mw1seGTvfVbSdidy2g4-ibM-&sz=w1000",
+          "https://drive.google.com/thumbnail?id=1ecZo9WtYyPpvbllZ_oYG7DNtiS89QJvp&sz=w1000"
         ]
       },
       {
@@ -2848,6 +2941,17 @@ const translations = {
           "Centres commerciaux",
           "Places et jardins publics",
           "Façades de bâtiments"
+        ],
+        "gallery": [
+          "https://drive.google.com/thumbnail?id=17UsdDWU6F48wh6NYogKYoHpknoLd5_LO&sz=w1000",
+          "https://drive.google.com/thumbnail?id=1TkqIGwnN2oPXJopsWS5jrw_KyrK5wfxk&sz=w1000",
+          "https://drive.google.com/thumbnail?id=1Y3xrL6deaf-8PwJmWmmh0kKs6uXbLic5&sz=w1000",
+          "https://drive.google.com/thumbnail?id=19fMNMp98QyyHWg2gKpgVL7nOn-WvzSY1&sz=w1000",
+          "https://drive.google.com/thumbnail?id=1lMSvioog8B6uMIj1EfjxYs4UGt2HjcgP&sz=w1000",
+          "https://drive.google.com/thumbnail?id=1l5gesjB6RMx631fjxfQSiVPM4XgOHGOm&sz=w1000",
+          "https://drive.google.com/thumbnail?id=1RBwnETZ7fm9zZWl3z5xx4mBeXEDh_FAs&sz=w1000",
+          "https://drive.google.com/thumbnail?id=1UUBsJEhHYH6lgpDt5L8QS9UKwNZ5LMIM&sz=w1000",
+          "https://drive.google.com/thumbnail?id=1w_yjqQACzWPSMTBkuHE1UV51RxTA6hIG&sz=w1000"
         ]
       }
     ],
