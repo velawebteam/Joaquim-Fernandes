@@ -162,9 +162,11 @@ const ServiceDetail: React.FC = () => {
               <h2 className="text-2xl md:text-3xl font-bold text-corporate mb-6 md:mb-8 border-l-4 border-brand-light pl-4 uppercase">
                 {serviceData.title}
               </h2>
-              <div className="prose prose-lg text-gray-600 font-body leading-relaxed mb-12 text-sm md:text-base text-justify">
-                <p>{serviceData.fullText}</p>
-              </div>
+              {serviceData.fullText && (
+                <div className="prose prose-lg text-gray-600 font-body leading-relaxed mb-12 text-sm md:text-base text-justify">
+                  <p>{serviceData.fullText}</p>
+                </div>
+              )}
 
               {/* FEATURES LIST */}
               <h3 className="text-2xl font-bold font-heading text-corporate mb-6 md:mb-8 uppercase tracking-wide">

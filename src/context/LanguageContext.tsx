@@ -180,7 +180,7 @@ const translations = {
           id: 'projetos',
           title: "PROJETOS E CERTIFICAÇÕES",
           description: "Execução de projetos elétricos de licenciamento e execução para Baixa e Média Tensão.",
-          details: ["Projetos de Média Tensão", "Projetos de Baixa Tensão", "Projetos de Instalações Elétricas", "Projetos iluminotécnicos"]
+          details: ["Projetos de Média Tensão", "Projetos de Baixa Tensão", "Projetos de Instalações Elétricas", "Projetos Luminotécnicos"]
         },
         {
           id: 'telecomunicacoes',
@@ -224,7 +224,7 @@ const translations = {
         seoTitle: "TELECOMUNICAÇÕES ITED E ITUR",
         title: "TELECOMUNICAÇÕES",
         description: "Projeção e instalação de infraestruturas de telecomunicações (ITED e ITUR) em conformidade com as normas regulamentares.",
-        fullText: "A JF assegura a execução de infraestruturas de telecomunicações em edifícios (ITED) e em loteamentos ou urbanizações (ITUR).",
+        fullText: "",
         features: ["Projetos ITED/ITUR", "Instalações de rede", "Instalações de fibra", "Instalações de CCTV"],
         keywords: ["ITED", "ITUR", "Fibra Ótica", "CCTV", "Telecom"],
         benefits: [
@@ -271,7 +271,7 @@ const translations = {
         title: "PROJETOS E CERTIFICAÇÕES",
         description: "Execução de projetos elétricos de licenciamento e execução para Baixa e Média Tensão.",
         fullText: "A JF realiza todo o tipo de projeto elétrico que precisar.",
-        features: ["Projetos de Média Tensão", "Projetos de Baixa Tensão", "Projetos de Instalações Elétricas", "Projetos iluminotécnicos"],
+        features: ["Projetos de Média Tensão", "Projetos de Baixa Tensão", "Projetos de Instalações Elétricas", "Projetos Luminotécnicos"],
         keywords: ["Projetos", "Certificações", "Engenharia", "DGEG"],
         benefits: [
           { title: "Conformidade Legal", desc: "Garantimos o cumprimento de todas as normas e regulamentos." },
@@ -1382,7 +1382,7 @@ const translations = {
         seoTitle: "Telecommunications ITED and ITUR",
         title: "Telecommunications",
         description: "Design and installation of telecommunications infrastructure (ITED and ITUR) in compliance with regulatory standards.",
-        fullText: "JF ensures the execution of telecommunications infrastructure in buildings (ITED) and in subdivisions or urbanizations (ITUR).",
+        fullText: "",
         features: ["ITED/ITUR Projects", "Network Installations", "Fiber Installations", "CCTV Installations"],
         keywords: ["ITED", "ITUR", "Fiber Optic", "CCTV", "Telecom"],
         benefits: [
@@ -1689,7 +1689,7 @@ const translations = {
           "Proyectos de Media Tensión",
           "Proyectos de Baja Tensión",
           "Proyectos de Instalaciones Eléctricas",
-          "Proyectos iluminotécnicos"
+          "Proyectos Luminotécnicos"
         ]
       },
       {
@@ -1767,7 +1767,7 @@ const translations = {
       "seoTitle": "Telecomunicaciones ITED e ITUR",
       "title": "Telecomunicaciones",
       "description": "JF diseña e instala infraestructuras de telecomunicaciones en edificios (ITED) y en urbanizaciones y conjuntos de edificios (ITUR).",
-      "fullText": "JF asegura la ejecución de infraestructuras de telecomunicaciones en edificios (ITED) y en urbanizaciones (ITUR).",
+      "fullText": "",
       "features": ["Proyectos ITED/ITUR", "Instalaciones de red", "Instalaciones de fibra", "Instalaciones de CCTV"],
       "keywords": ["ITED", "ITUR", "Fibra Óptica", "CCTV", "Telecom"],
       "benefits": [
@@ -1811,7 +1811,7 @@ const translations = {
         "Proyectos de Media Tensión",
         "Proyectos de Baja Tensión",
         "Proyectos de Instalaciones Eléctricas",
-        "Proyectos iluminotécnicos"
+        "Proyectos Luminotécnicos"
       ],
       "keywords": [
         "Proyectos",
@@ -2763,7 +2763,7 @@ const translations = {
       "seoTitle": "Télécommunications ITED et ITUR",
       "title": "Télécommunications",
       "description": "JF conçoit et installe des infrastructures de télécommunications dans les bâtiments (ITED) et dans les lotissements et ensembles de bâtiments (ITUR).",
-      "fullText": "JF assure l'exécution des infrastructures de télécommunications dans les bâtiments (ITED) et dans les lotissements ou urbanisations (ITUR).",
+      "fullText": "",
       "features": ["Projets ITED/ITUR", "Installations de réseau", "Installations de fibre", "Installations de CCTV"],
       "keywords": ["ITED", "ITUR", "Fibre Optique", "CCTV", "Telecom"],
       "benefits": [

@@ -106,7 +106,7 @@ const Partners: React.FC = () => {
                    </p>
                  )}
                  <a 
-                   href="https://www.impic.pt/impic/pt-pt/consultar/empresas-titulares-de-alvara-de-empreiteiro-de-obras-publicas" 
+                   href="https://www.e-redes.pt/pt-pt" 
                    target="_blank" 
                    rel="noopener noreferrer"
                    className="inline-flex items-center gap-2 text-brand-light font-bold text-sm uppercase tracking-widest hover:text-corporate transition-colors border-b-2 border-brand-light pb-1"
