@@ -363,23 +363,25 @@ const Home: React.FC = () => {
                 ></motion.span>
               </motion.div>
 
-              <motion.p 
-                variants={{
-                  hidden: { opacity: 0, y: 20 },
-                  visible: { 
-                    opacity: 1, 
-                    y: 0, 
-                    transition: { 
-                      delay: 2.5, 
-                      duration: 0.8, 
-                      ease: "easeOut" 
-                    } 
-                  }
-                }}
-                className="text-gray-300 text-sm md:text-lg mb-8 max-w-2xl leading-relaxed"
-              >
-                {t.home.hero.subtitle}
-              </motion.p>
+              {t.home.hero.subtitle && (
+                <motion.p 
+                  variants={{
+                    hidden: { opacity: 0, y: 20 },
+                    visible: { 
+                      opacity: 1, 
+                      y: 0, 
+                      transition: { 
+                        delay: 2.5, 
+                        duration: 0.8, 
+                        ease: "easeOut" 
+                      } 
+                    }
+                  }}
+                  className="text-gray-300 text-sm md:text-lg mb-8 max-w-2xl leading-relaxed"
+                >
+                  {t.home.hero.subtitle}
+                </motion.p>
+              )}
 
               <motion.div 
                 variants={{

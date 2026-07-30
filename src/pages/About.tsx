@@ -88,9 +88,11 @@ const About: React.FC = () => {
       <div className="bg-corporate py-16 mb-0 text-center text-white relative">
         <div className="container mx-auto px-4 md:px-12 relative z-10">
           <h1 className="text-3xl md:text-4xl font-bold uppercase font-heading mb-4">{t.about.heroTitle}</h1>
-          <p className="text-gray-300 max-w-2xl mx-auto font-light text-base md:text-lg">
-            {t.about.heroDesc}
-          </p>
+          {t.about.heroDesc && (
+            <p className="text-gray-300 max-w-2xl mx-auto font-light text-base md:text-lg">
+              {t.about.heroDesc}
+            </p>
+          )}
         </div>
         {/* Background Element */}
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10 pointer-events-none">

@@ -17,7 +17,7 @@ const Logo: React.FC<LogoProps> = ({ showSolidNav = false, className = "" }) => 
           referrerPolicy="no-referrer"
         />
       </div>
-      <span className={`font-heading font-bold text-[11px] sm:text-[16px] md:text-[18px] tracking-wider uppercase transition-colors ${showSolidNav ? 'text-corporate' : 'text-white drop-shadow-lg'}`}>
+      <span className={`font-heading font-bold text-[15px] tracking-wider uppercase transition-colors ${showSolidNav ? 'text-corporate' : 'text-white drop-shadow-lg'}`}>
         Joaquim & Fernandes, Lda
       </span>
     </Link>

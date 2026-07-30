@@ -67,15 +67,30 @@ const Lighting: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-white mb-6 uppercase tracking-wider">
+            <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-white uppercase tracking-wider">
               {t.lighting.heroTitle}
             </h1>
-            <p className="text-lg md:text-xl text-white/90 leading-relaxed font-body max-w-3xl mx-auto drop-shadow-md">
-              {t.lighting.introDesc}
-            </p>
           </motion.div>
         </div>
       </div>
+
+      {/* New Description Section */}
+      <section className="py-16 md:py-24 bg-white border-b border-gray-100">
+        <div className="container mx-auto px-6 md:px-12">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="max-w-4xl mx-auto text-center"
+          >
+            <div className="h-1 w-20 bg-brand-light mx-auto mb-8"></div>
+            <p className="text-gray-700 text-lg md:text-xl leading-relaxed font-light">
+              {t.lighting.heroDesc}
+            </p>
+          </motion.div>
+        </div>
+      </section>
 
       {/* 3. LIGHTING TYPES SECTIONS (Alternating) */}
       <section className="bg-white">
@@ -119,22 +134,6 @@ const Lighting: React.FC = () => {
                   </h3>
 
                   
-                  {type.applications && (
-                    <div className="bg-white border border-gray-100 p-6 rounded-lg shadow-sm mb-8">
-                      <h4 className="font-bold text-corporate mb-4 uppercase text-xs tracking-widest flex items-center gap-2">
-                        {type.applicationsTitle || "Onde aplicamos"}
-                      </h4>
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                        {type.applications?.map((app: string, i: number) => (
-                          <div key={i} className="flex items-center gap-3">
-                            <CheckCircle size={18} className="text-accent shrink-0" />
-                            <span className="text-sm text-gray-700">{app}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-
                   <div className="flex flex-wrap gap-4 mb-8">
                     <CTAButton 
                       to="/contacto?subject=orcamento&interest=lighting" 

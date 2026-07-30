@@ -137,7 +137,17 @@ const ServiceDetail: React.FC = () => {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6 leading-tight max-w-4xl mx-auto px-2 uppercase">
-              {serviceData.seoTitle}
+              {serviceData.seoTitle.includes('|') ? (
+                <>
+                  {serviceData.seoTitle.split('|')[0]}
+                  <br />
+                  <span className="text-[30px] block mt-2 opacity-90">
+                    {serviceData.seoTitle.split('|')[1]}
+                  </span>
+                </>
+              ) : (
+                serviceData.seoTitle
+              )}
             </h1>
           </motion.div>
         </div>

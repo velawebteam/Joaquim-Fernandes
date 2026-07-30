@@ -87,7 +87,7 @@ const translations = {
     home: {
       hero: {
         title: "JF,|Infraestruturas Elétricas,|Iluminação, PT’s e PLR’s",
-        subtitle: "Quatro décadas a desenvolver soluções elétricas com rigor, inovação e compromisso. Conheça a nossa história e o percurso que nos consolidou como uma referencia no setor da eletricidade.",
+        subtitle: "",
         ctaPrimary: "Contacte-nos",
         ctaSecondary: "Conheça os Serviços"
       },
@@ -128,7 +128,7 @@ const translations = {
       leaveReview: "Deixe a sua avaliação",
       partnersTitle: "Parceiros e Marcas de Confiança",
       serviceCards: {
-         plrs: { title: "Ramais de Ligação à Rede Elétrica", desc: "Executamos o seu ramal de ligação à rede elétrica, subterrâneo ou aéreo." },
+         plrs: { title: "Ramais de Ligação à Rede Elétrica", desc: "" },
          infraestruturas: { title: "Infraestruturas Elétricas", desc: "Redes de Baixa e Média Tensão e Postos de Transformação." },
          'postos-transformacao': { title: "PT’s", desc: "Fornecimento, limpeza, manutenção e assistência a postos de transformação." },
          iluminacao: { title: "Iluminação", desc: "Iluminação festiva, soluções inteligentes e iluminação técnica." },
@@ -149,7 +149,7 @@ const translations = {
         {
           id: 'plrs',
           title: "RAMAIS DE LIGAÇÃO À REDE ELÉTRICA",
-          description: "A JF é especialista em Pedidos de Ligação à Rede (PLR) em todo o Algarve e Alentejo. Tratamos de todo o processo junto da E-Redes e executamos toda a obra.",
+          description: "Executamos o seu ramal de ligação à rede elétrica, subterrâneo ou aéreo.",
           details: ["Pedidos de Ligação à rede elétrica", "Execução de Ramais elétricos", "Aumentos de Potência", "Certificação"]
         },
         {
@@ -198,10 +198,10 @@ const translations = {
     },
     serviceDetails: {
       plrs: {
-        seoTitle: "RAMAIS DE LIGAÇÃO À REDE ELÉTRICA",
+        seoTitle: "RAMAIS DE LIGAÇÃO|À REDE ELÉTRICA",
         title: "Ramais de Ligação à Rede Elétrica",
-        description: "A JF é especialista em Pedidos de Ligação à Rede (PLR) em todo o Algarve e Alentejo. Tratamos de todo o processo junto da E-Redes e executamos toda a obra.",
-        fullText: "A JF é especialista em Pedidos de Ligação à Rede (PLR) em todo o Algarve e Alentejo. Tratamos de todo o processo junto da E-Redes e executamos toda a obra, para que tenha eletricidade no seu imóvel o mais rapidamente possível.",
+        description: "Executamos o seu ramal de ligação à rede elétrica, subterrâneo ou aéreo.",
+        fullText: "Acompanhamos todo o processo desde o Pedido de Ligação à rede até à execução da obra, garantindo uma solução completa, eficiente e sem preocupações.",
         features: ["Pedidos de Ligação à rede elétrica", "Execução de Ramais elétricos", "Aumentos de Potência", "Certificação"],
         keywords: ["PLR", "E-Redes", "Ramais", "Baixadas", "Eletricidade"],
         benefits: [
@@ -311,7 +311,7 @@ const translations = {
     },
     lighting: {
       heroTitle: "Iluminação",
-      heroDesc: "Soluções de iluminação pública, decorativa e festiva. Eficiência energética e manutenção técnica especializada.",
+      heroDesc: "Disponibilizamos soluções completas de iluminação, desde a iluminação pública até projetos decorativos para épocas festivas, assegurando sempre serviços de manutenção e assistência técnica especializada. Desenvolvemos estudos luminotécnicos personalizados, com foco na eficiência energética, garantindo soluções sustentáveis, funcionais e adaptadas às necessidades de cada projeto.",
       introTitle: "Soluções de Luz 360º",
       introDesc: "Soluções integrais de iluminação pública, técnica e decorativa. Realizamos estudos luminotécnicos, instalação e manutenção de sistemas de iluminação com foco na eficiência energética.",
       stat1: "Projetos Festivos",
@@ -321,7 +321,6 @@ const translations = {
           title: "Iluminação Pública",
           image: "https://drive.google.com/thumbnail?id=1MFt1qWei6hz80tPGkX91j-g86uHVA7vi&sz=w1000",
           desc: "Garantimos a segurança e o bem-estar das populações através de redes de iluminação pública eficientes e fiáveis. Realizamos a instalação e manutenção de armaduras viárias, projetores e colunas, assegurando a correta luminosidade em estradas, ruas e espaços públicos, sempre com foco na redução da pegada ecológica e custos energéticos.",
-          applicationsTitle: "Onde aplicamos:",
           applications: ["Zonas Viárias", "Zonas pedonais", "Urbanizações/ Loteamentos", "Parques de Estacionamento", "Zonas Portuárias"],
           gallery: [
             "https://drive.google.com/thumbnail?id=1NUSmNSRlveC_dvohy7p_e_V5OddYROlw&sz=w1000",
@@ -335,7 +334,6 @@ const translations = {
           title: "Iluminação Desportiva",
           image: "https://drive.google.com/thumbnail?id=15ZTaJZVipA-lCRWq5r5I0oelf5cJDUTF&sz=w1000",
           desc: "No desporto, a luz é fundamental para o desempenho dos atletas e experiência dos espectadores. Projetamos e instalamos sistemas de iluminação que cumprem rigorosamente os níveis de lux exigidos pelas federations e normas de transmissão televisiva. Garantimos uniformidade no campo, controlo de encadeamento e sistemas de acendimento instantâneo para pavilhões e estádios.",
-          applicationsTitle: "Onde aplicamos:",
           applications: ["Campos de Futebol e Estádios", "Pavilhões Desportivos", "Campos de Ténis e Padel", "Piscinas Municipais"],
           gallery: [
             "https://drive.google.com/thumbnail?id=1FMXRXRVynx69PsSvzXJyypB2QAKm1uv_&sz=w1000",
@@ -349,21 +347,18 @@ const translations = {
           title: "Iluminação Inteligente",
           image: "https://drive.google.com/thumbnail?id=1KOWLU95F6pomAZjmTO0WUY_UbxGsrw-s&sz=w1000",
           desc: "Mais do que iluminar estradas, criamos smart cities. A nossa abordagem à Iluminação Pública foca-se na eficiência energética e segurança. Substituímos luminárias convencionais por tecnologia LED de alto rendimento, integrada com sistemas de telegestão que permitem o controlo remoto da intensidade da luz, deteção de avarias em tempo real e redução da fatura energética municipal até 60%. Destacamos a instalação de passadeiras inteligentes em Portimão, que aumentam a segurança dos peões através de sinalização luminosa ativa.",
-          applicationsTitle: "Onde aplicamos:",
           applications: ["Zonas Viárias", "Zonas pedonais", "Parques de Estacionamento", "Zonas Portuárias"]
         },
         {
           title: "Iluminação Técnica",
           image: "https://drive.google.com/thumbnail?id=1lwzRh0LtxEQH2ypr8C1FBzYpO-PW82Yr&sz=w1000",
           desc: "A Iluminação Técnica visa valorizar o património edificado à noite, respeitando a sua história e traça original. Utilizamos projetores de precisão, fitas LED e sistemas RGBW para criar cenários dinâmicos ou estáticos que realçam texturas e volumes. É a solução ideal para dar nova vida a edifícios icónicos, hotéis ou monumentos, reforçando a identidade visual do local.",
-          applicationsTitle: "Onde aplicamos:",
           applications: ["Monumentos e Igrejas", "Hotéis e Resorts", "Edifícios Corporativos", "Pontes e Estruturas"]
         },
         {
           title: "Iluminação Festiva",
           image: "https://drive.google.com/thumbnail?id=1Q7Ak5kMhDW4Xxk9VWPrOu5mThEKDGo0x&sz=w1000",
           desc: "A Iluminação Festiva é a arte de criar emoções através da luz. Desenvolvemos projetos chave-na-mão para ocasiões especiais, transformando o ambiente urbano e comercial. Desde o design criativo dos motivos (2D e 3D) até à instalação e desmontagem segura, garantimos um espetáculo visual que atrai visitantes, dinamiza o comércio local e celebra a tradição com tecnologia LED de baixo consumo.",
-          applicationsTitle: "Onde aplicamos:",
           applications: ["Centros Históricos e Cidades", "Centros Comerciais", "Praças e Jardins Públicos", "Fachadas de Edifícios"],
           gallery: [
             "https://drive.google.com/thumbnail?id=17UsdDWU6F48wh6NYogKYoHpknoLd5_LO&sz=w1000",
@@ -684,7 +679,7 @@ const translations = {
     },
     about: {
       heroTitle: "A Nossa História",
-      heroDesc: "Quatro décadas a desenvolver soluções elétricas com rigor, inovação e compromisso. Conheça a nossa história e o percurso que nos consolidou como uma referencia no setor da eletricidade.",
+      heroDesc: "",
       timeline: [
         { year: "1986", title: "Fundação da Empresa", description: "JF inicia a sua atividade como uma pequena empresa familiar focada em instalações elétricas residenciais na zona de Faro." },
         { year: "1992", title: "Mudança de Instalações", description: "Mudança para a localização atual." },
@@ -816,7 +811,7 @@ const translations = {
     home: {
       hero: {
         title: "JF,|Electrical Infrastructures,|Lighting, PT's and PLR's",
-        subtitle: "Four decades of developing electrical solutions with rigor, innovation, and commitment. Learn about our history and the journey that has established us as a benchmark in the electricity sector.",
+        subtitle: "",
         ctaPrimary: "Contact Us",
         ctaSecondary: "Explore Services"
       },
@@ -857,7 +852,7 @@ const translations = {
       leaveReview: "Leave your review",
       partnersTitle: "Trusted Partners and Brands",
       serviceCards: {
-         plrs: { title: "Grid Connection Requests", desc: "We execute your grid connection branch, underground or overhead." },
+         plrs: { title: "Grid Connection Requests", desc: "" },
          infraestruturas: { title: "Electrical Infrastructure", desc: "Execution and maintenance of Low and Medium Voltage electrical networks and Transformer Substations." },
          'postos-transformacao': { title: "Substations", desc: "Assembly, maintenance and assistance for Transformer Substations." },
          iluminacao: { title: "Lighting", desc: "Festive lighting, smart solutions and technical lighting." },
@@ -1080,7 +1075,7 @@ const translations = {
     },
     about: {
       heroTitle: "Our History",
-      heroDesc: "Four decades of developing electrical solutions with rigor, innovation, and commitment. Learn about our history and the journey that has established us as a benchmark in the electricity sector.",
+      heroDesc: "",
       timeline: [
         { year: "1986", title: "Company Foundation", description: "JF begins its activity as a small family business focused on residential electrical installations in the Faro area." },
         { year: "1992", title: "Relocation", description: "Move to the current location." },
@@ -1196,7 +1191,7 @@ const translations = {
     },
     lighting: {
       heroTitle: "Lighting",
-      heroDesc: "Public, decorative and festive lighting solutions. Energy efficiency and specialized technical maintenance.",
+      heroDesc: "We offer complete lighting solutions, from public lighting to decorative projects for festive seasons, always ensuring maintenance services and specialized technical assistance. We develop personalized lighting studies, with a focus on energy efficiency, guaranteeing sustainable, functional solutions adapted to the needs of each project.",
       introTitle: "360º Light Solutions",
       introDesc: "Complete solutions for public, technical and decorative lighting. We perform lighting studies, installation and maintenance of lighting systems with a focus on energy efficiency.",
       stat1: "Festive Projects",
@@ -1206,7 +1201,6 @@ const translations = {
           title: "Public Lighting",
           image: "https://drive.google.com/thumbnail?id=1MFt1qWei6hz80tPGkX91j-g86uHVA7vi&sz=w1000",
           desc: "We ensure the safety and well-being of populations through efficient and reliable public lighting networks. We install and maintain street luminaires, floodlights, and columns, ensuring correct luminosity on roads, streets, and public spaces, always focusing on reducing the ecological footprint and energy costs.",
-          applicationsTitle: "Where applied:",
           applications: ["Road Zones", "Pedestrian Zones", "Urbanizations/ Allotments", "Parking Lots", "Port Areas"],
           gallery: [
             "https://drive.google.com/thumbnail?id=1NUSmNSRlveC_dvohy7p_e_V5OddYROlw&sz=w1000",
@@ -1220,7 +1214,6 @@ const translations = {
           title: "Sports Lighting",
           image: "https://drive.google.com/thumbnail?id=15ZTaJZVipA-lCRWq5r5I0oelf5cJDUTF&sz=w1000",
           desc: "In sports, light is fundamental for athlete performance and spectator experience. We design and install lighting systems that strictly comply with lux levels required by federations and TV transmission standards. We guarantee uniformity on the field, glare control, and instant strike systems for pavilions and stadiums.",
-          applicationsTitle: "Where applied:",
           applications: ["Football Fields and Stadiums", "Sports Pavilions", "Tennis and Padel Courts", "Municipal Pools"],
           gallery: [
             "https://drive.google.com/thumbnail?id=1FMXRXRVynx69PsSvzXJyypB2QAKm1uv_&sz=w1000",
@@ -1234,21 +1227,18 @@ const translations = {
           title: "Smart Lighting",
           image: "https://drive.google.com/thumbnail?id=1KOWLU95F6pomAZjmTO0WUY_UbxGsrw-s&sz=w1000",
           desc: "More than lighting roads, we create smart cities. Our approach to Public Lighting focuses on energy efficiency and safety. We replace conventional luminaires with high-performance LED technology, integrated with telemanagement systems that allow remote control of light intensity, real-time fault detection, and reduction of municipal energy bills by up to 60%. We highlight the installation of smart crosswalks in Portimão, which increase pedestrian safety through active light signaling.",
-          applicationsTitle: "Where applied:",
           applications: ["Road Zones", "Pedestrian Zones", "Parking Lots", "Port Areas"]
         },
         {
           title: "Technical Lighting",
           image: "https://drive.google.com/thumbnail?id=1lwzRh0LtxEQH2ypr8C1FBzYpO-PW82Yr&sz=w1000",
           desc: "Technical Lighting aims to value built heritage at night, respecting its history and original trace. We use precision projectors, LED strips, and RGBW systems to create dynamic or static scenarios that highlight textures and volumes. It is the ideal solution to give new life to iconic buildings, hotels, or monuments, reinforcing the location's visual identity.",
-          applicationsTitle: "Where applied:",
           applications: ["Monuments and Churches", "Hotels and Resorts", "Corporate Buildings", "Bridges and Structures"]
         },
         {
           title: "Festive Lighting",
           image: "https://drive.google.com/thumbnail?id=1Q7Ak5kMhDW4Xxk9VWPrOu5mThEKDGo0x&sz=w1000",
           desc: "Festive Lighting is the art of creating emotions through light. We develop turnkey projects for special occasions, transforming the urban and commercial environment. From creative design of motifs (2D and 3D) to safe installation and dismantling, we guarantee a visual spectacle that attracts visitors, boosts local commerce, and celebrates tradition with low-consumption LED technology.",
-          applicationsTitle: "Where applied:",
           applications: ["Historic Centers and Cities", "Shopping Centers", "Squares and Public Gardens", "Building Facades"],
           gallery: [
             "https://drive.google.com/thumbnail?id=17UsdDWU6F48wh6NYogKYoHpknoLd5_LO&sz=w1000",
@@ -1307,7 +1297,7 @@ const translations = {
         {
           id: 'plrs',
           title: "Grid Connection Requests",
-          description: "JF is a specialist in Grid Connection Requests (PLR) throughout the Algarve and Alentejo regions.",
+          description: "We execute your grid connection, underground or overhead.",
           details: ["Grid Connection Requests", "Execution of Electrical Branches", "Power Increases", "Certification"]
         },
         {
@@ -1356,10 +1346,10 @@ const translations = {
     },
     serviceDetails: {
       plrs: {
-        seoTitle: "PLR - Grid Connections",
+        seoTitle: "PLR|GRID CONNECTIONS",
         title: "Grid Connections",
-        description: "JF is a specialist in Grid Connection Requests (PLR) throughout the Algarve and Alentejo regions.",
-        fullText: "JF is specialized in execution of Grid Connection Requests (PLR) throughout the Algarve and Alentejo. We handle the entire process with E-Redes and execute all the work, so you have electricity in your property as quickly as possible.",
+        description: "We execute your grid connection, underground or overhead.",
+        fullText: "We handle the entire process from the Grid Connection Request to the execution of the work, ensuring a complete, efficient and worry-free solution.",
         features: ["Grid Connection Requests", "Execution of Electrical Branches", "Power Increases", "Certification"],
         keywords: ["PLR", "E-Redes", "Branches", "Connections", "Electricity"],
         benefits: [
@@ -1546,7 +1536,7 @@ const translations = {
     "home": {
       "hero": {
         "title": "JF,|Infraestructuras Eléctricas,|Iluminación, PTs y PLRs",
-        "subtitle": "Cuatro décadas desarrollando soluciones eléctricas con rigor, innovación y compromiso. Conozca nuestra historia y el camino que nos ha consolidado como un referente en el sector eléctrico.",
+        "subtitle": "",
         "ctaPrimary": "Contáctenos",
         "ctaSecondary": "Descubra los servicios"
       },
@@ -1601,7 +1591,7 @@ const translations = {
     "serviceCards": {
       "plrs": {
         "title": "Solicitudes de conexión de red",
-        "desc": "Ejecutamos su ramal de conexión a la red eléctrica, subterráneo o aéreo."
+        "desc": ""
       },
       "infraestruturas": {
         "title": "Infraestructuras Eléctricas",
@@ -1644,7 +1634,7 @@ const translations = {
       {
         "id": "plrs",
         "title": "Solicitudes de conexión de red",
-        "description": "JF es especialista en Solicitudes de Conexión a la Red (PLR) en todo el Algarve y Alentejo.",
+        "description": "Realizamos su acometida a la red eléctrica, subterránea o aérea.",
         "details": ["Solicitudes de conexión a la red eléctrica", "Ejecución de Ramales eléctricos", "Aumentos de Potencia", "Certificación"]
       },
       {
@@ -1713,10 +1703,10 @@ const translations = {
   },
   "serviceDetails": {
     "plrs": {
-      "seoTitle": "Solicitudes de conexión de red",
+      "seoTitle": "SOLICITUDES DE|CONEXIÓN DE RED",
       "title": "Solicitudes de conexión de red",
-      "description": "JF es especialista en Solicitudes de Conexión a la Red (PLR) en todo el Algarve y Alentejo.",
-      "fullText": "JF es especialista en Solicitudes de Conexión a la Red (PLR) en todo el Algarve y Alentejo. Nos encargamos de todo el proceso ante E-Redes y ejecutamos toda la obra, para que tengas electricidad en tu inmueble lo antes posible.",
+      "description": "Realizamos su acometida a la red eléctrica, subterránea o aérea.",
+      "fullText": "Acompañamos todo el proceso desde la Solicitud de Conexión a la Red hasta la ejecución de la obra, garantizando una solución completa, eficiente y sin preocupaciones.",
       "features": ["Solicitudes de conexión a la red eléctrica", "Ejecución de Ramales eléctricos", "Aumentos de Potencia", "Certificación"],
       "keywords": ["PLR", "E-Redes", "Ramales", "Conexiones", "Electricidad"],
       "benefits": [
@@ -1878,7 +1868,7 @@ const translations = {
   },
     "lighting": {
       "heroTitle": "Iluminación",
-      "heroDesc": "Soluciones de iluminación pública, decorativa y festiva. Eficiencia energética y mantenimiento técnico especializado.",
+      "heroDesc": "Ofrecemos soluciones completas de iluminación, desde alumbrado público hasta proyectos decorativos para épocas festivas, asegurando siempre servicios de mantenimiento y asistencia técnica especializada. Desarrollamos estudios luminotécnicos personalizados, con enfoque en la eficiencia energética, garantizando soluciones sostenibles, funcionales y adaptadas a las necesidades de cada proyecto.",
       "introTitle": "Soluciones de iluminación 360º",
       "introDesc": "Soluciones integrales de iluminación pública, técnica y decorativa. Realizamos estudios luminotécnicos, instalación y mantenimiento de sistemas de iluminación con un enfoque en la eficiencia energética.",
     "stat1": "Proyectos festivos",
@@ -1888,7 +1878,6 @@ const translations = {
         "title": "Alumbrado Público",
         "image": "https://drive.google.com/thumbnail?id=1MFt1qWei6hz80tPGkX91j-g86uHVA7vi&sz=w1000",
         "desc": "Garantizamos la seguridad y el bienestar de las poblaciones a través de redes de alumbrado público eficientes y confiables. Instalamos y mantenemos refuerzos viarios, proyectores y columnas, asegurando una correcta iluminación en vías, calles y espacios públicos, siempre enfocados en reducir la huella ecológica y los costos energéticos.",
-        "applicationsTitle": "Donde aplicamos:",
         "applications": ["Zonas Viarias", "Zonas peatonales", "Urbanizaciones/ Loteamientos", "Aparcamientos", "Zonas Portuarias"],
         "gallery": [
           "https://drive.google.com/thumbnail?id=1NUSmNSRlveC_dvohy7p_e_V5OddYROlw&sz=w1000",
@@ -1902,7 +1891,6 @@ const translations = {
         "title": "Iluminación deportiva",
         "image": "https://drive.google.com/thumbnail?id=15ZTaJZVipA-lCRWq5r5I0oelf5cJDUTF&sz=w1000",
         "desc": "En el deporte, la luz es fundamental para el rendimiento de los atletas y la experiencia de los espectadores. Diseñamos e instalamos sistemas de iluminación que cumplen estrictamente con los niveles de lux exigidos por las federaciones y estándares de radiodifusión televisiva. Garantizamos uniformidad en el campo, control de deslumbramiento y sistemas de iluminación instantánea para pabellones y estadios.",
-        "applicationsTitle": "Donde aplicamos:",
         "applications": [
           "Campos y estadios de fútbol",
           "Pabellones deportivos",
@@ -1921,14 +1909,12 @@ const translations = {
         "title": "Iluminación inteligente",
         "image": "https://drive.google.com/thumbnail?id=1KOWLU95F6pomAZjmTO0WUY_UbxGsrw-s&sz=w1000",
         "desc": "Más que iluminar carreteras, creamos ciudades inteligentes. Nuestro enfoque en materia de alumbrado público se centra en la eficiencia energética y la seguridad. Sustituimos las luminarias convencionales por tecnología LED de altas prestaciones, integradas con sistemas de gestión remota que permiten el control remoto de la intensidad lumínica, la detección de averías en tiempo real y la reducción de la factura energética municipal hasta en un 60%. Destacamos la instalación de carriles inteligentes en Portimão, que aumentan la seguridad de los peatones a través de la señalización luminosa activa.",
-        "applicationsTitle": "Donde aplicamos:",
         "applications": ["Zonas Viarias", "Zonas peatonales", "Aparcamientos", "Zonas Portuarias"]
       },
       {
         "title": "Iluminación Técnica",
         "image": "https://drive.google.com/thumbnail?id=1lwzRh0LtxEQH2ypr8C1FBzYpO-PW82Yr&sz=w1000",
         "desc": "La Iluminación Técnica pretende realzar el patrimonio construido por la noche, respetando su historia y diseño original. Utilizamos proyectores de precisión, tiras LED y sistemas RGBW para crear escenas dinámicas o estáticas que realzan texturas y volúmenes. Es la solución ideal para dar nueva vida a edificios, hoteles o monumentos emblemáticos, reforzando la identidad visual del lugar.",
-        "applicationsTitle": "Donde aplicamos:",
         "applications": [
           "Monumentos e Iglesias",
           "Hoteles y Resorts",
@@ -1940,7 +1926,6 @@ const translations = {
         "title": "Iluminación festiva",
         "image": "https://drive.google.com/thumbnail?id=1Q7Ak5kMhDW4Xxk9VWPrOu5mThEKDGo0x&sz=w1000",
         "desc": "La Iluminación Festiva es el arte de crear emociones a través de la luz. Desarrollamos proyectos llave en mano para ocasiones especiales, transformando el entorno urbano y comercial. Desde el diseño creativo de los motivos (2D y 3D) hasta la instalación y desmontaje seguro, garantizamos un espectáculo visual que atrae visitantes, impulsa el comercio local y celebra la tradición con tecnología LED de bajo consumo.",
-        "applicationsTitle": "Donde aplicamos:",
         "applications": [
           "Centros y Ciudades Históricas",
           "Centros Comerciales",
@@ -2329,7 +2314,7 @@ const translations = {
   },
   "about": {
     "heroTitle": "Nuestra Historia",
-    "heroDesc": "Cuatro décadas desarrollando soluciones eléctricas con rigor, innovación y compromiso. Conozca nuestra historia y el camino que nos ha consolidado como un referente en el sector eléctrico.",
+    "heroDesc": "",
     "timeline": [
       {
         "year": "1986",
@@ -2527,7 +2512,7 @@ const translations = {
   "home": {
     "hero": {
       "title": "JF,|Infrastructures Électriques,|Éclairage, PT et PLR",
-      "subtitle": "Quatre décennies de développement de solutions électriques avec rigueur, innovation et engagement. Découvrez notre histoire et le parcours qui nous a consolidés comme une référence dans le secteur de l'électricité.",
+      "subtitle": "",
       "ctaPrimary": "Contactez-nous",
       "ctaSecondary": "Découvrez les prestations"
     },
@@ -2582,7 +2567,7 @@ const translations = {
     "serviceCards": {
       "plrs": {
         "title": "Demandes de connexion réseau",
-        "desc": "Nous réalisons votre branchement au réseau électrique, souterrain ou aérien."
+        "desc": ""
       },
       "infraestruturas": {
         "title": "Infrastructures électriques",
@@ -2625,7 +2610,7 @@ const translations = {
       {
         "id": "plrs",
         "title": "Demandes de connexion réseau",
-        "description": "JF est spécialiste des demandes de raccordement au réseau (PLR) dans tout l'Algarve et l'Alentejo.",
+        "description": "Nous réalisons votre raccordement au réseau électrique, souterrain ou aérien.",
         "details": ["Demandes de raccordement au réseau électrique", "Exécution de branchements électriques", "Augmentations de puissance", "Certification"]
       },
       {
@@ -2699,10 +2684,10 @@ const translations = {
   },
   "serviceDetails": {
     "plrs": {
-      "seoTitle": "Demandes de connexion réseau",
+      "seoTitle": "DEMANDES DE|CONNEXION RÉSEAU",
       "title": "Demandes de connexion réseau",
-      "description": "JF est spécialiste des demandes de raccordement au réseau (PLR) dans tout l'Algarve et l'Alentejo.",
-      "fullText": "JF est spécialiste des demandes de raccordement au réseau (PLR) dans tout l'Algarve et l'Alentejo. Nous gérons l'ensemble du processus auprès d'E-Redes et exécutons tous les travaux, afin que vous ayez de l'électricité dans votre propriété le plus rapidement possible.",
+      "description": "Nous réalisons votre raccordement au réseau électrique, souterrain ou aérien.",
+      "fullText": "Nous vous accompagnons tout au long du processus, de la demande de raccordement au réseau à l'exécution des travaux, vous garantissant une solution complète, efficace et sans souci.",
       "features": ["Demandes de raccordement au réseau électrique", "Exécution de branchements électriques", "Augmentations de puissance", "Certification"],
       "keywords": ["PLR", "E-Redes", "Branchements", "Connexions", "Électricité"],
       "benefits": [
@@ -2873,7 +2858,7 @@ const translations = {
   },
     "lighting": {
       "heroTitle": "Éclairage",
-      "heroDesc": "Solutions d'éclairage public, décoratif et festif. Efficacité énergétique et maintenance technique spécialisée.",
+      "heroDesc": "Nous proposons des solutions d'éclairage complètes, de l'éclairage public aux projets décoratifs pour les périodes de fêtes, en assurant toujours des services de maintenance et d'assistance technique spécialisés. Nous développons des études d'éclairage personnalisées, axées sur l'efficacité énergétique, garantissant des solutions durables, fonctionnelles et adaptées aux besoins de chaque projet.",
       "introTitle": "Solutions d'éclairage à 360º",
       "introDesc": "Nous proposons des solutions d'éclairage complètes, de l'éclairage public aux projets décoratifs pour les périodes de fêtes, en assurant toujours des services de maintenance et d'assistance technique spécialisés. Nous développons des études d'éclairage personnalisées, axées sur l'efficacité énergétique, garantissant des solutions durables, fonctionnelles et adaptées aux besoins de chaque projet.",
     "stat1": "Projets festifs",
@@ -2883,7 +2868,6 @@ const translations = {
         "title": "Éclairage public",
         "image": "https://drive.google.com/thumbnail?id=1MFt1qWei6hz80tPGkX91j-g86uHVA7vi&sz=w1000",
         "desc": "Nous garantissons la sécurité et le bien-être des populations grâce à des réseaux d'éclairage public efficaces et fiables. Nous installons et entretenons des luminaires de rue, des projecteurs et des colonnes, assurant une luminosité correcte sur les routes, les rues et les espaces publics, en nous concentrant toujours sur la réduction de l'empreinte écologique et des coûts énergétiques.",
-        "applicationsTitle": "Où nous appliquons :",
         "applications": ["Zones Routières", "Zones piétonnes", "Urbanisations/ Lotissements", "Parkings", "Zones Portuaires"],
         "gallery": [
           "https://drive.google.com/thumbnail?id=1NUSmNSRlveC_dvohy7p_e_V5OddYROlw&sz=w1000",
@@ -2897,7 +2881,6 @@ const translations = {
         "title": "Éclairage sportif",
         "image": "https://drive.google.com/thumbnail?id=15ZTaJZVipA-lCRWq5r5I0oelf5cJDUTF&sz=w1000",
         "desc": "Dans le sport, la lumière est fondamentale pour la performance des athlètes et l'expérience des spectateurs. Nous concevons et installons des systèmes d'éclairage qui respectent strictement les niveaux de lux requis par les fédérations et les normes de transmission TV. Nous garantissons l'uniformité sur le terrain, le contrôle de l'éblouissement et des systèmes d'allumage instantané pour les gymnases et les stades.",
-        "applicationsTitle": "Où nous appliquons :",
         "applications": [
           "Terrains de football et stades",
           "Gymnases sportifs",
@@ -2916,14 +2899,12 @@ const translations = {
         "title": "Éclairage intelligent",
         "image": "https://drive.google.com/thumbnail?id=1KOWLU95F6pomAZjmTO0WUY_UbxGsrw-s&sz=w1000",
         "desc": "Bien plus que l'éclairage des routes, nous créons des villes intelligentes. Notre approche de l'éclairage public se concentre sur l'efficacité énergétique et la sécurité. Nous remplaçons les luminaires conventionnels par la technologie LED haute performance, intégrée à des systèmes de télégestion permettant le contrôle à distance de l'intensité lumineuse, la détection des pannes en temps réel et la réduction des factures d'énergie municipales jusqu'à 60 %. Nous soulignons l'installation de passages piétons intelligents à Portimão, qui augmentent la sécurité des piétons grâce à une signalisation lumineuse active.",
-        "applicationsTitle": "Où nous appliquons :",
         "applications": ["Zones Routières", "Zones piétonnes", "Parkings", "Zones Portuaires"]
       },
       {
         "title": "Éclairage technique",
         "image": "https://drive.google.com/thumbnail?id=1lwzRh0LtxEQH2ypr8C1FBzYpO-PW82Yr&sz=w1000",
         "desc": "L'éclairage technique vise à mettre en valeur le patrimoine bâti la nuit, tout en respectant son histoire et son tracé original. Nous utilisons des projecteurs de précision, des rubans LED et des systèmes RGBW pour créer des scénarios dynamiques ou statiques qui soulignent les textures et les volumes. C'est la solution idéale pour redonner vie à des bâtiments emblématiques, des hôtels ou des monuments, renforçant ainsi l'identité visuelle du lieu.",
-        "applicationsTitle": "Où nous appliquons :",
         "applications": [
           "Monuments et églises",
           "Hôtels et centres de villégiature",
@@ -2935,7 +2916,6 @@ const translations = {
         "title": "Éclairage festif",
         "image": "https://drive.google.com/thumbnail?id=1Q7Ak5kMhDW4Xxk9VWPrOu5mThEKDGo0x&sz=w1000",
         "desc": "L'éclairage festif est l'art de créer des émotions par la lumière. Nous développons des projets clé en main pour des occasions spéciales, transformant l'environnement urbain et commercial. De la conception créative des motifs (2D et 3D) à l'installation et au démontage sécurisés, nous garantissons un spectacle visuel qui attire les visiteurs, booste le commerce local et célèbre la tradition avec la technologie LED basse consommation.",
-        "applicationsTitle": "Où nous appliquons :",
         "applications": [
           "Centres historiques et villes",
           "Centres commerciaux",
@@ -3324,7 +3304,7 @@ const translations = {
   },
   "about": {
     "heroTitle": "Notre histoire",
-    "heroDesc": "Quatre décennies de développement de solutions électriques avec rigueur, innovation et engagement. Découvrez notre histoire et le parcours qui nous a consolidés comme une référence dans le secteur de l'électricité.",
+    "heroDesc": "",
     "timeline": [
       {
         "year": "1986",

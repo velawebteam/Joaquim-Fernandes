@@ -32,9 +32,11 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, icon, del
         </div>
       </div>
       <h3 className="text-xl font-bold mb-3 font-heading text-corporate">{title}</h3>
-      <p className="text-gray-600 mb-6 font-body text-sm leading-relaxed flex-grow">
-        {description}
-      </p>
+      {description && (
+        <p className="text-gray-600 mb-6 font-body text-sm leading-relaxed flex-grow">
+          {description}
+        </p>
+      )}
       <Link to={link || "/services"} className="inline-flex items-center text-accent font-bold uppercase text-xs tracking-wider group-hover:underline">
         {t.common.learnMore} <ArrowRight size={14} className="ml-2 group-hover:translate-x-1 transition-transform" />
       </Link>
