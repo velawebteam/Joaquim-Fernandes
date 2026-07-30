@@ -14,6 +14,29 @@ const Careers: React.FC = () => {
   const [scrollLeftState, setScrollLeftState] = useState(0);
   const jobsContainerRef = useRef<HTMLDivElement>(null);
 
+  React.useEffect(() => {
+    const container = jobsContainerRef.current;
+    if (!container) return;
+
+    const options = {
+      root: container,
+      threshold: 0.6,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const index = Array.from(container.children).indexOf(entry.target);
+          setActiveJobIndex(index);
+        }
+      });
+    }, options);
+
+    Array.from(container.children).forEach((child) => observer.observe(child));
+
+    return () => observer.disconnect();
+  }, [t.careers.jobs.length]);
+
   if (!t || !t.careers) return null;
 
   const handleMouseDown = (e: React.MouseEvent) => {
@@ -42,35 +65,6 @@ const Careers: React.FC = () => {
     // Re-enable snap and smooth behavior
     jobsContainerRef.current.style.scrollSnapType = 'x mandatory';
     jobsContainerRef.current.style.scrollBehavior = 'smooth';
-    
-    // Trigger scroll check to update active index
-    handleScroll();
-  };
-
-  const handleScroll = () => {
-    if (jobsContainerRef.current) {
-      const container = jobsContainerRef.current;
-      const containerRect = container.getBoundingClientRect();
-      const containerCenter = containerRect.left + containerRect.width / 2;
-      const children = Array.from(container.children);
-      
-      let closestIndex = 0;
-      let minDistance = Infinity;
-      
-      children.forEach((child, index) => {
-        const childRect = child.getBoundingClientRect();
-        const childCenter = childRect.left + childRect.width / 2;
-        const distance = Math.abs(containerCenter - childCenter);
-        if (distance < minDistance) {
-          minDistance = distance;
-          closestIndex = index;
-        }
-      });
-      
-      if (closestIndex !== activeJobIndex) {
-        setActiveJobIndex(closestIndex);
-      }
-    }
   };
 
   const scrollToJob = (index: number) => {
@@ -80,11 +74,20 @@ const Careers: React.FC = () => {
       const targetChild = children[index] as HTMLElement;
       
       if (targetChild) {
-        targetChild.scrollIntoView({ 
-          behavior: 'smooth', 
-          block: 'nearest', 
-          inline: 'center' 
+        const containerWidth = container.offsetWidth;
+        const targetWidth = targetChild.offsetWidth;
+        const targetLeft = targetChild.offsetLeft;
+        
+        // Calculate the scroll position that centers the target child
+        const scrollToX = targetLeft - (containerWidth / 2) + (targetWidth / 2);
+        
+        container.scrollTo({
+          left: scrollToX,
+          behavior: 'smooth'
         });
+        
+        // Force update index for immediate feedback
+        setActiveJobIndex(index);
       }
     }
   };
@@ -161,18 +164,18 @@ const Careers: React.FC = () => {
           <div className="relative group/carousel">
             {/* Navigation Arrows (PC only) */}
             <button 
-              onClick={() => scrollToJob(Math.max(0, activeJobIndex - 1))}
+              onClick={(e) => { e.preventDefault(); scrollToJob(Math.max(0, activeJobIndex - 1)); }}
               disabled={activeJobIndex === 0}
-              className="absolute -left-4 md:-left-12 top-1/2 -translate-y-1/2 z-20 p-2 md:p-4 bg-white shadow-xl rounded-full border border-gray-100 text-corporate hover:bg-brand-light hover:text-white transition-all duration-300 disabled:opacity-0 disabled:pointer-events-none hidden md:flex items-center justify-center group/btn"
+              className="absolute -left-4 md:-left-12 top-1/2 -translate-y-1/2 z-20 p-2 md:p-4 bg-white shadow-xl rounded-full border border-gray-100 text-corporate hover:bg-brand-light hover:text-white transition-colors duration-300 disabled:opacity-0 disabled:pointer-events-none hidden md:flex items-center justify-center group/btn"
               aria-label="Previous job"
             >
               <ChevronLeft size={28} className="group-hover/btn:-translate-x-1 transition-transform" />
             </button>
             
             <button 
-              onClick={() => scrollToJob(Math.min(t.careers.jobs.length - 1, activeJobIndex + 1))}
+              onClick={(e) => { e.preventDefault(); scrollToJob(Math.min(t.careers.jobs.length - 1, activeJobIndex + 1)); }}
               disabled={activeJobIndex === t.careers.jobs.length - 1}
-              className="absolute -right-4 md:-right-12 top-1/2 -translate-y-1/2 z-20 p-2 md:p-4 bg-white shadow-xl rounded-full border border-gray-100 text-corporate hover:bg-brand-light hover:text-white transition-all duration-300 disabled:opacity-0 disabled:pointer-events-none hidden md:flex items-center justify-center group/btn"
+              className="absolute -right-4 md:-right-12 top-1/2 -translate-y-1/2 z-20 p-2 md:p-4 bg-white shadow-xl rounded-full border border-gray-100 text-corporate hover:bg-brand-light hover:text-white transition-colors duration-300 disabled:opacity-0 disabled:pointer-events-none hidden md:flex items-center justify-center group/btn"
               aria-label="Next job"
             >
               <ChevronRight size={28} className="group-hover/btn:translate-x-1 transition-transform" />
@@ -180,7 +183,6 @@ const Careers: React.FC = () => {
 
             <div 
               ref={jobsContainerRef}
-              onScroll={handleScroll}
               onMouseDown={handleMouseDown}
               onMouseMove={handleMouseMove}
               onMouseUp={handleMouseUp}
@@ -198,7 +200,7 @@ const Careers: React.FC = () => {
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
                   className="
-                    min-w-[85vw] sm:min-w-[400px] md:min-w-[450px] lg:min-w-[450px] snap-center
+                    min-w-[85vw] sm:min-w-[400px] md:min-w-[450px] lg:min-w-[450px] snap-center snap-always
                     bg-white border border-gray-100 rounded-lg p-8 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col group
                   "
                 >
@@ -247,7 +249,7 @@ const Careers: React.FC = () => {
                 <button
                     key={index}
                     onClick={() => scrollToJob(index)}
-                    className={`h-2 rounded-full transition-all duration-300 ${
+                    className={`h-2 rounded-full transition-all duration-300 cursor-pointer ${
                         activeJobIndex === index ? 'w-8 bg-corporate' : 'w-2 bg-gray-300 hover:bg-gray-400'
                     }`}
                     aria-label={`Go to job ${index + 1}`}

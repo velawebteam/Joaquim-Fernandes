@@ -103,8 +103,8 @@ const translations = {
         { id: 4, text: "Foco no Sul do País" }
       ],
       lightUp: {
-        title: "Tem um projeto em Faro, Portimão ou Beja?",
-        desc: "A nossa luz está pronta para guiar a sua visão. Especialistas em instalações complexas e ligação à rede pública.",
+        title: "Tem um projeto no Algarve ou no Alentejo?",
+        desc: "Fale com os nossos especialistas para que possam apresentar-lhe o melhor orçamento para as suas necessidades!",
         cta: "Peça um Orçamento Gratuito"
       },
       testimonialsTitle: "O que dizem os nossos clientes",
@@ -827,8 +827,8 @@ const translations = {
         { id: 4, text: "Focus on the South" }
       ],
       lightUp: {
-        title: "Have a project in Faro, Portimão or Beja?",
-        desc: "Our light is ready to guide your vision. Specialists in complex installations and public grid connections.",
+        title: "Have a project in the Algarve or Alentejo?",
+        desc: "Talk to our specialists so they can provide you with the best quote for your needs!",
         cta: "Request Free Quote"
       },
       testimonialsTitle: "What our clients say",
@@ -1564,8 +1564,8 @@ const translations = {
       }
     ],
     "lightUp": {
-      "title": "¿Tienes un proyecto en Faro, Portimão o Beja?",
-      "desc": "Nuestra luz está lista para guiar tu visión. Especialistas en instalaciones complejas y conexión a la red pública.",
+      "title": "¿Tiene un proyecto en el Algarve o el Alentejo?",
+      "desc": "¡Hable con nuestros especialistas para que puedan presentarle el mejor presupuesto para sus necesidades!",
       "cta": "Solicite una cotización gratuita"
     },
     "testimonialsTitle": "Lo que dicen nuestros clientes",
@@ -2540,8 +2540,8 @@ const translations = {
       }
     ],
     "lightUp": {
-      "title": "Vous avez un projet à Faro, Portimão ou Beja ?",
-      "desc": "Notre lumière est prête à guider votre vision. Spécialistes des installations complexes et du raccordement au réseau public.",
+      "title": "Vous avez un projet en Algarve ou en Alentejo ?",
+      "desc": "Parlez à nos spécialistes pour qu'ils puissent vous présenter le meilleur devis pour vos besoins !",
       "cta": "Demander un devis gratuit"
     },
     "testimonialsTitle": "Ce que disent nos clients",
