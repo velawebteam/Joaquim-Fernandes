@@ -291,13 +291,13 @@ const Home: React.FC = () => {
               className="w-full lg:w-3/4 max-w-4xl"
             >
               <motion.div 
-                className="flex items-center gap-2 md:gap-6 mb-6 md:mb-8 overflow-hidden"
+                className="flex items-center gap-2 md:gap-6 mb-6 md:mb-8"
                 initial="hidden"
                 animate="visible"
               >
                 {/* Left Line */}
                 <motion.span 
-                  className="h-1 bg-brand-light block w-8 md:w-12"
+                  className="h-1 bg-brand-light block w-4 sm:w-8 md:w-12 shrink-0"
                   style={{ transformOrigin: "left" }} 
                   variants={{
                     hidden: { scaleX: 0 },
@@ -310,19 +310,19 @@ const Home: React.FC = () => {
                 
                 {/* Text with Typing Effect */}
                 <motion.span 
-                  className="text-brand-light font-bold uppercase tracking-[0.1em] md:tracking-[0.15em] text-base sm:text-2xl md:text-[32px] font-sans shadow-black drop-shadow-lg whitespace-nowrap overflow-hidden block"
+                  className="text-brand-light font-bold uppercase tracking-[0.05em] sm:tracking-[0.1em] md:tracking-[0.15em] text-sm sm:text-2xl md:text-[32px] font-sans shadow-black drop-shadow-lg overflow-hidden block"
                   variants={{
                     hidden: { opacity: 1 },
                     visible: { opacity: 1 }
                   }}
                 >
                   {hasAnimatedSlogan ? (
-                    <span className="text-[27px]">{t.home.slogan}</span>
+                    <span className="text-[20px] sm:text-[27px]">{t.home.slogan}</span>
                   ) : (
                     t.home.slogan.split('').map((char, index) => (
                       <motion.span
                         key={index}
-                        className="text-[27px]"
+                        className="text-[20px] sm:text-[27px]"
                         variants={{
                           hidden: { opacity: 0 },
                           visible: { 
@@ -347,7 +347,7 @@ const Home: React.FC = () => {
 
                 {/* Right Line */}
                 <motion.span 
-                  className="h-1 bg-brand-light block w-8 md:w-12"
+                  className="h-1 bg-brand-light block w-4 sm:w-8 md:w-12 shrink-0"
                   style={{ transformOrigin: "left" }}
                   variants={{
                     hidden: { scaleX: 0 },
