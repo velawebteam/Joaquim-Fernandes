@@ -128,9 +128,9 @@ const translations = {
       leaveReview: "Deixe a sua avaliação",
       partnersTitle: "Parceiros e Marcas de Confiança",
       serviceCards: {
-         plrs: { title: "Ramais de Ligação à Rede Elétrica", desc: "" },
-         infraestruturas: { title: "Infraestruturas Elétricas", desc: "Redes de Baixa e Média Tensão e Postos de Transformação." },
-         'postos-transformacao': { title: "PT’s", desc: "Fornecimento, limpeza, manutenção e assistência a postos de transformação." },
+         plrs: { title: "Ramais de Ligação à Rede Elétrica", desc: "Gerimos todo o processo desde o Pedido de Ligação à rede até à execução da obra, garantindo uma solução completa, eficiente e sem preocupações." },
+         infraestruturas: { title: "Infraestruturas Elétricas", desc: "Redes de Baixa e Média Tensão." },
+         'postos-transformacao': { title: "Postos de Transformação e Seccionamento", desc: "Fornecimento, limpeza, manutenção e assistência a postos de transformação." },
          iluminacao: { title: "Iluminação", desc: "Iluminação festiva, soluções inteligentes e iluminação técnica." },
          instalacoes: { title: "Instalações Elétricas", desc: "Quadros elétricos, iluminação interior e exterior e sistemas de segurança." },
          projetos: { title: "Projetos e Certificações", desc: "Desenvolvimento de projetos elétricos e de licenciamento para Baixa e Média Tensão." },
@@ -155,8 +155,8 @@ const translations = {
         {
           id: 'infraestruturas',
           title: "INFRAESTRUTURAS ELÉTRICAS",
-          description: "Execução e manutenção de redes elétricas: Baixa Tensão, Média Tensão e Postos de Transformação.",
-          details: ["Baixa Tensão", "Média Tensão", "Postos de Transformação", "Manutenção de Redes", "Ensaios Técnicos"]
+          description: "Execução e manutenção de redes elétricas: Baixa Tensão e Média Tensão.",
+          details: ["Baixa Tensão", "Média Tensão", "Manutenção de Redes", "Ensaios Técnicos"]
         },
         {
           id: 'postos-transformacao',
@@ -201,7 +201,7 @@ const translations = {
         seoTitle: "RAMAIS DE LIGAÇÃO|À REDE ELÉTRICA",
         title: "Ramais de Ligação à Rede Elétrica",
         description: "Executamos o seu ramal de ligação à rede elétrica, subterrâneo ou aéreo.",
-        fullText: "Acompanhamos todo o processo desde o Pedido de Ligação à rede até à execução da obra, garantindo uma solução completa, eficiente e sem preocupações.",
+        fullText: "Gerimos todo o processo desde o Pedido de Ligação à rede até à execução da obra, garantindo uma solução completa, eficiente e sem preocupações.",
         features: ["Pedidos de Ligação à rede elétrica", "Execução de Ramais elétricos", "Aumentos de Potência", "Certificação"],
         keywords: ["PLR", "E-Redes", "Ramais", "Baixadas", "Eletricidade"],
         benefits: [
@@ -211,9 +211,9 @@ const translations = {
       infraestruturas: {
         seoTitle: "INFRAESTRUTURAS ELÉTRICAS - BAIXA E MÉDIA TENSÃO",
         title: "INFRAESTRUTURAS ELÉTRICAS",
-        description: "Execução e manutenção de redes elétricas: Baixa Tensão, Média Tensão e Postos de Transformação.",
-        fullText: "Executamos e garantimos a manutenção de infraestruturas elétricas de Baixa e Média Tensão, incluindo Postos de Transformação, com soluções para o serviço público e privado.",
-        features: ["Baixa Tensão", "Média Tensão", "Postos de Transformação", "Redes de Iluminação Pública", "Ensaios e Certificações"],
+        description: "Execução e manutenção de redes elétricas: Baixa Tensão e Média Tensão.",
+        fullText: "Executamos infraestruturas elétricas para os setores público e privado, desenvolvendo soluções à medida para urbanização, loteamentos, arruamentos, condomínios, parques empresariais, entre outros…",
+        features: ["Baixa Tensão", "Média Tensão", "Redes de Iluminação Pública", "Ensaios e Certificações"],
         keywords: ["Instalações Industriais", "Baixa Tensão", "Quadros Elétricos", "Segurança Elétrica"],
         benefits: [
           { title: "Segurança", desc: "Cumprimento rigoroso das normas técnicas." },
@@ -235,7 +235,7 @@ const translations = {
         seoTitle: "PT'S - POSTOS DE TRANSFORMAÇÃO",
         title: "POSTOS DE TRANSFORMAÇÃO",
         description: "Fornecimento e montagem de Postos de Transformação para indústrias e grandes superfícies.",
-        fullText: "Para indústrias, hotéis, explorações agrícolas ou grandes superfícies comerciais, a ligação em Baixa Tensão pode não ser suficiente. A JF especializa-se na fornecimento e montagem de Postos de Transformação (PTs). Oferecemos manutenção e assistência garantindo uma maior longevidade dos equipamentos e a segurança das instalações.",
+        fullText: "A JF especializa-se na fornecimento e montagem de Postos de Transformação (PTs), garantindo soluções adaptadas tanto para integração na rede de distribuição como para a exploração do próprio cliente, industrias, horeis, explorações agrícolas, temos soluções para todos os negocio.",
         features: ["Fornecimento e Instalação de PT’s", "Manutenção Preventiva e Corretiva", "Assistência a avarias", "Análise de Óleo Dielétrico"],
         keywords: ["PT", "Média Tensão", "Transformadores", "Manutenção"],
         benefits: [
@@ -852,8 +852,8 @@ const translations = {
       leaveReview: "Leave your review",
       partnersTitle: "Trusted Partners and Brands",
       serviceCards: {
-         plrs: { title: "Grid Connection Requests", desc: "" },
-         infraestruturas: { title: "Electrical Infrastructure", desc: "Execution and maintenance of Low and Medium Voltage electrical networks and Transformer Substations." },
+         plrs: { title: "Grid Connection Requests", desc: "We manage the entire process from the Grid Connection Request to the execution of the work, ensuring a complete, efficient and worry-free solution." },
+         infraestruturas: { title: "Electrical Infrastructure", desc: "Execution and maintenance of Low and Medium Voltage electrical networks." },
          'postos-transformacao': { title: "Substations", desc: "Assembly, maintenance and assistance for Transformer Substations." },
          iluminacao: { title: "Lighting", desc: "Festive lighting, smart solutions and technical lighting." },
          instalacoes: { title: "Electrical Installations", desc: "Low voltage electrical installations for housing, commerce, and industry." },
@@ -1591,11 +1591,11 @@ const translations = {
     "serviceCards": {
       "plrs": {
         "title": "Solicitudes de conexión de red",
-        "desc": ""
+        "desc": "Gestionamos todo el proceso desde la Solicitud de Conexión a la Red hasta la ejecución de la obra, garantizando una solución completa, eficiente y sin preocupaciones."
       },
       "infraestruturas": {
         "title": "Infraestructuras Eléctricas",
-        "desc": "Ejecución y mantenimiento de redes eléctricas de Baja y Media Tensión y Centros de Transformación."
+        "desc": "Ejecución y mantenimiento de redes eléctricas de Baja y Media Tensión."
       },
       "postos-transformacao": {
         "title": "Estaciones de Transformación",
@@ -1716,9 +1716,9 @@ const translations = {
     "infraestruturas": {
       "seoTitle": "Infraestructuras Eléctricas - Baja y Media Tensión",
       "title": "Infraestructuras eléctricas",
-      "description": "Ejecución y mantenimiento de redes eléctricas de Baja y Media Tensión y Centros de Transformación.",
-      "fullText": "JF es especialista en la ejecución y mantenimiento de infraestructuras eléctricas de servicio público o privado. Realizamos todo tipo de instalaciones eléctricas de Baja y Media Tensión y Centros de Transformación, garantizando el estricto cumplimiento de todas las normas técnicas and de seguridad.",
-      "features": ["Baja Tensión", "Media Tensión", "Centros de Transformación", "Redes de Alumbrado Público", "Pruebas y Certificaciones"],
+      "description": "Ejecución y mantenimiento de redes eléctricas de Baja y Media Tensión.",
+      "fullText": "JF es especialista en la ejecución y mantenimiento de infraestructuras eléctricas de servicio público o privado. Realizamos todo tipo de instalaciones eléctricas de Baja y Media Tensión, garantizando el estricto cumplimiento de todas las normas técnicas y de seguridad.",
+      "features": ["Baja Tensión", "Media Tensión", "Redes de Alumbrado Público", "Pruebas y Certificaciones"],
       "keywords": ["Instalaciones Industriales", "Baja Tensión", "Cuadros Eléctricos", "Seguridad Eléctrica"],
       "benefits": [
         { "title": "Seguridad", "desc": "Cumplimiento riguroso de las normas técnicas." },
@@ -2567,11 +2567,11 @@ const translations = {
     "serviceCards": {
       "plrs": {
         "title": "Demandes de connexion réseau",
-        "desc": ""
+        "desc": "Nous gérons l'ensemble du processus, de la demande de raccordement au réseau à l'exécution des travaux, garantissant une solution complète, efficace et sans souci."
       },
       "infraestruturas": {
         "title": "Infrastructures électriques",
-        "desc": "Exécution et maintenance des réseaux électriques Basse et Moyenne Tension et Postes de Transformation."
+        "desc": "Exécution et maintenance des réseaux électriques Basse et Moyenne Tension."
       },
       "postos-transformacao": {
         "title": "Postes de transformation",
@@ -2697,9 +2697,9 @@ const translations = {
     "infraestruturas": {
       "seoTitle": "Infrastructures Électriques - Basse et Moyenne Tension",
       "title": "Infrastructures électriques",
-      "description": "Exécution et maintenance des réseaux électriques Basse et Moyenne Tension et Postes de Transformation.",
-      "fullText": "JF est spécialiste dans l'exécution et la maintenance d'infrastructures électriques de service public ou privé. Nous réalisons tous types d'installations électriques Basse et Moyenne Tension et Postes de Transformation, garantissant le respect rigoureux de toutes les normes techniques et de sécurité.",
-      "features": ["Basse Tension", "Moyenne Tension", "Postes de Transformation", "Réseaux d'Éclairage Public", "Essais et Certifications"],
+      "description": "Exécution et maintenance des réseaux électriques Basse et Moyenne Tension.",
+      "fullText": "JF est spécialiste dans l'exécution et la maintenance d'infrastructures électriques de service public ou privé. Nous réalisons tous types d'installations électriques Basse et Moyenne Tension, garantissant le respect rigoureux de toutes les normes techniques et de sécurité.",
+      "features": ["Basse Tension", "Moyenne Tension", "Réseaux d'Éclairage Public", "Essais et Certifications"],
       "keywords": ["Installations Industrielles", "Basse Tension", "Tableaux Électriques", "Sécurité Électrique"],
       "benefits": [
         { "title": "Sécurité", "desc": "Respect rigoureux des normes techniques." },

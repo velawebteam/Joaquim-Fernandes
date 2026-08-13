@@ -52,7 +52,6 @@ const ServiceDetail: React.FC = () => {
         return [
            "https://drive.google.com/thumbnail?id=1kNQX2zzIbh4SXP66__t4nRBLULjryBiY&sz=w1000",
            "https://drive.google.com/thumbnail?id=12VNxerQUOpcAAqu3Q5Zo09XxiRHAcSUk&sz=w1000",
-           "https://drive.google.com/thumbnail?id=17stwA_y-kuEybGTqiyT0T2sLoKf8PUKI&sz=w1000",
            "https://drive.google.com/thumbnail?id=1aO8Fz5mHCGNCzvOYG709XORsodUGheQJ&sz=w1000",
         ];
      }
