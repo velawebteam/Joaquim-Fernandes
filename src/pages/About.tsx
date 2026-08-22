@@ -58,9 +58,9 @@ const About: React.FC = () => {
 
   // Define static data for the 3 requested cards (PME Líder/Excelência)
   const pmeBadges = [
-    { type: 'lider', year: '2025', label: 'PME Líder' },
-    { type: 'excelencia', year: '2024', label: 'PME Excelência' },
-    { type: 'lider', year: '2023', label: 'PME Líder' },
+    { type: 'lider', label: 'PME Líder' },
+    { type: 'excelencia', label: 'PME Excelência' },
+    { type: 'lider', label: 'PME Líder' },
   ];
 
   const technicalCerts = t.about.awards.list.slice(2);
@@ -108,8 +108,8 @@ const About: React.FC = () => {
                <div className="w-16 h-1 bg-brand-light mx-auto"></div>
             </div>
             
-            {/* FEATURED: 3 PME CARDS (Year Only, Bottom Interrupted Line) */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto mb-24">
+            {/* FEATURED: 3 PME CARDS (Without Year) */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto mb-16">
                 {pmeBadges.map((badge, index) => (
                     <motion.div 
                         key={index}
@@ -117,27 +117,32 @@ const About: React.FC = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ delay: index * 0.2 }}
                         viewport={{ once: true }}
-                        className="relative bg-white border border-gray-300 rounded-sm hover:border-brand-light transition-colors duration-300 group min-h-[160px] flex items-center justify-center"
+                        className="relative bg-white border border-gray-300 rounded-sm hover:border-brand-light transition-colors duration-300 group min-h-[160px] flex items-center justify-center shadow-sm"
                     >
                         {/* Award Image */}
-                        <div className="flex items-center justify-center p-4 pb-8">
+                        <div className="flex items-center justify-center p-4">
                            <img 
                              src="https://drive.google.com/thumbnail?id=1qD8Or_lSCFWQCETFNj8Fpb5lQn08_FhE&sz=w1000" 
                              alt={badge.label}
-                             className="h-24 md:h-32 w-auto object-contain transition-all duration-300"
+                             className="h-24 md:h-32 w-auto object-contain transition-all duration-300 group-hover:scale-105"
                              referrerPolicy="no-referrer"
                            />
-                        </div>
-
-                        {/* Year placed at the bottom, interrupting the border */}
-                        <div className="absolute -bottom-5 left-1/2 -translate-x-1/2 bg-white px-6 transition-transform duration-300 group-hover:scale-110">
-                           <span className="text-4xl md:text-5xl font-bold text-corporate tracking-tighter group-hover:text-brand-light transition-colors">
-                             {badge.year}
-                           </span>
                         </div>
                     </motion.div>
                 ))}
             </div>
+
+            {/* PME DESCRIPTION */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="max-w-4xl mx-auto text-center mb-24"
+            >
+              <p className="text-gray-600 leading-relaxed font-body text-base md:text-lg italic px-4">
+                {t.about.awards.pmeDescription}
+              </p>
+            </motion.div>
 
             {/* SECONDARY: TECHNICAL CERTIFICATIONS (Clean Grid) */}
             <div className="border-t border-gray-100 pt-16">

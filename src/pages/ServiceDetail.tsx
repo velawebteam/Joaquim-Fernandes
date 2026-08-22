@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Check, ArrowLeft, Tag, ShieldCheck, ImageIcon } from 'lucide-react';
+import { Check, ArrowLeft, Tag, ShieldCheck, ImageIcon, ChevronDown, ChevronUp } from 'lucide-react';
 import SEO from '@/components/SEO';
 import CTAButton from '@/components/CTAButton';
 import { useLanguage } from '@/context/LanguageContext';
@@ -9,6 +9,14 @@ import { useLanguage } from '@/context/LanguageContext';
 const ServiceDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const { t } = useLanguage();
+  const [openFeatures, setOpenFeatures] = React.useState<Record<number, boolean>>({});
+
+  const toggleFeature = (index: number) => {
+    setOpenFeatures(prev => ({
+      ...prev,
+      [index]: !prev[index]
+    }));
+  };
 
   if (!t) return null;
 
@@ -187,6 +195,7 @@ const ServiceDetail: React.FC = () => {
                   const title = isObject ? feature.title : feature;
                   const description = isObject ? feature.description : null;
                   const bullets = isObject ? feature.bullets : null;
+                  const featureHowItWorks = isObject ? feature.howItWorks : null;
 
                   return (
                     <motion.div 
@@ -197,9 +206,9 @@ const ServiceDetail: React.FC = () => {
                       transition={{ delay: index * 0.05 }}
                       className={`bg-[#f8f8f8] p-5 md:p-6 rounded-sm ${isObject ? 'md:col-span-2' : ''} flex flex-col`}
                     >
-                      <div className={`flex ${isObject && bullets ? 'items-start' : 'items-center'} gap-4`}>
+                      <div className={`flex ${isObject && (bullets || featureHowItWorks) ? 'items-start' : 'items-center'} gap-4`}>
                         <Check size={20} className="text-accent shrink-0" />
-                        <div className="flex flex-col">
+                        <div className="flex flex-col flex-1">
                           <span className="text-corporate font-bold text-sm md:text-base uppercase tracking-tight">{title}</span>
                           {description && (
                             <p className="text-gray-500 text-xs md:text-sm mt-1 leading-relaxed">
@@ -217,6 +226,42 @@ const ServiceDetail: React.FC = () => {
                               {bullet}
                             </div>
                           ))}
+                        </div>
+                      )}
+
+                      {featureHowItWorks && (
+                        <div className="mt-4 border-t border-gray-200 pt-4">
+                          <button 
+                            onClick={() => toggleFeature(index)}
+                            className="flex items-center gap-2 text-accent font-bold text-xs uppercase tracking-wider hover:text-corporate transition-colors"
+                          >
+                            {featureHowItWorks.title}
+                            {openFeatures[index] ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
+                          </button>
+                          
+                          <motion.div
+                            initial={false}
+                            animate={{ height: openFeatures[index] ? "auto" : 0 }}
+                            transition={{ duration: 0.3, ease: "easeInOut" }}
+                            className="overflow-hidden"
+                          >
+                            <div className="pt-4">
+                               <div className="prose prose-sm text-gray-600 font-body leading-relaxed whitespace-pre-wrap text-justify text-xs md:text-sm">
+                                 {featureHowItWorks.content}
+                               </div>
+                               
+                               {featureHowItWorks.buttonLabel && (
+                                 <div className="mt-6 flex justify-center md:justify-start">
+                                   <Link 
+                                     to={`/contacto?subject=outros&message=${encodeURIComponent(featureHowItWorks.contactMessage || "")}`}
+                                     className="inline-flex items-center gap-2 bg-accent hover:bg-corporate text-white font-bold py-3 px-6 rounded text-xs md:text-sm uppercase tracking-widest transition-all duration-300 shadow-md hover:shadow-lg"
+                                   >
+                                     {featureHowItWorks.buttonLabel}
+                                   </Link>
+                                 </div>
+                               )}
+                            </div>
+                          </motion.div>
                         </div>
                       )}
                     </motion.div>

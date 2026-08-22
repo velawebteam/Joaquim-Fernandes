@@ -37,11 +37,13 @@ const Contact: React.FC = () => {
     const subjectParam = params.get('subject');
     const interestParam = params.get('interest');
     const jobParam = params.get('job');
+    const messageParam = params.get('message');
 
-    if (subjectParam || interestParam || jobParam) {
+    if (subjectParam || interestParam || jobParam || messageParam) {
       setFormData(prev => ({
         ...prev,
         subject: subjectParam || (jobParam ? 'recrutamento' : prev.subject),
+        message: messageParam || prev.message,
         interest: interestParam && !prev.interest.includes(interestParam) 
           ? [...prev.interest, interestParam] 
           : prev.interest,

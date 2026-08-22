@@ -236,7 +236,7 @@ const Careers: React.FC = () => {
                 <CTAButton 
                   to={`/contact?subject=recrutamento&job=${encodeURIComponent(job.title)}`}
                   text={t.careers.applyBtn}
-                  variant="outline"
+                  variant="primary"
                   className="mt-auto w-full"
                 />
               </motion.div>

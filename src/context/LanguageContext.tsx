@@ -174,7 +174,7 @@ const translations = {
           id: 'instalacoes',
           title: "INSTALAÇÕES ELÉTRICAS",
           description: "Realizamos todo o tipo de instalações elétricas de baixa tensão, com foco industrial.",
-          details: ["Quadros Elétricos", "Iluminação interior e exterior", "Rigor técnico"]
+          details: ["Instalações Elétricas", "Quadros Elétricos", "Iluminação interior e exterior", "Manutenção e Assistência"]
         },
         {
           id: 'projetos',
@@ -224,7 +224,7 @@ const translations = {
         seoTitle: "TELECOMUNICAÇÕES ITED E ITUR",
         title: "TELECOMUNICAÇÕES",
         description: "Projeção e instalação de infraestruturas de telecomunicações (ITED e ITUR) em conformidade com as normas regulamentares.",
-        fullText: "",
+        fullText: "A JF projeta e instala infraestruturas de telecomunicações em edifícios (ITED) e em loteamentos, urbanizações e conjuntos de edifícios (ITUR).",
         features: ["Projetos ITED/ITUR", "Instalações de rede", "Instalações de fibra", "Instalações de CCTV"],
         keywords: ["ITED", "ITUR", "Fibra Ótica", "CCTV", "Telecom"],
         benefits: [
@@ -236,7 +236,20 @@ const translations = {
         title: "POSTOS DE TRANSFORMAÇÃO",
         description: "Fornecimento e montagem de Postos de Transformação para indústrias e grandes superfícies.",
         fullText: "A JF especializa-se na fornecimento e montagem de Postos de Transformação (PTs), garantindo soluções adaptadas tanto para integração na rede de distribuição como para a exploração do próprio cliente, industrias, horeis, explorações agrícolas, temos soluções para todos os negocio.",
-        features: ["Fornecimento e Instalação de PT’s", "Manutenção Preventiva e Corretiva", "Assistência a avarias", "Análise de Óleo Dielétrico"],
+        features: [
+          "Fornecimento e Instalação de PT’s", 
+          "Assistência a avarias", 
+          "Análise de Óleo Dielétrico",
+          { 
+            title: "Manutenção Preventiva e Corretiva",
+            howItWorks: {
+              title: "Como Funciona",
+              content: "Manutenção de Postos de Transformação (PT’s)\n\nSomos especialistas na manutenção de Postos de Transformação (PT), assegurando a fiabilidade, a segurança e o desempenho das infraestruturas elétricas.\n\nOs Postos de Transformação desempenham um papel essencial na distribuição de energia elétrica, efetuando a transformação da energia de média tensão para baixa tensão e garantindo o abastecimento da rede de distribuição e das instalações dos clientes.\n\nOs nossos serviços de manutenção preventiva e corretiva têm como objetivo maximizar a utilidade dos equipamentos, prevenir avarias, prolongar a sua vida útil e otimizar a eficiência energética das instalações, contribuindo para a redução de perdas e para a continuidade do fornecimento de energia.\n\nTodas as intervenções são realizadas por técnicos qualificados e especializados, em conformidade com as recomendações dos fabricantes, as normas técnicas aplicáveis e a regulamentação em vigor, garantindo elevados padrões de qualidade e segurança.\n\nPara assegurar o correto funcionamento dos equipamentos e a sua fiabilidade operacional, recomenda-se a realização de uma manutenção preventiva com periodicidade anual.",
+              buttonLabel: "Solicitar Manutenção",
+              contactMessage: "Quero Solicitar Manutenção Preventiva de PT's"
+            }
+          }
+        ],
         keywords: ["PT", "Média Tensão", "Transformadores", "Manutenção"],
         benefits: [
           { title: "Fiabilidade", desc: "Parceiros dos Principais Fabricantes" },
@@ -259,7 +272,7 @@ const translations = {
         title: "INSTALAÇÕES ELÉTRICAS",
         description: "Soluções elétricas completas para edifícios e manutenção preventiva.",
         fullText: "Realizamos todo o tipo de instalações elétricas de baixa tensão. Com foco em instalações industriais, preparadas e pensadas, especificamente para a sua empresa! A nossa equipa garante o cumprimento rigoroso das normas de segurança.",
-        features: ["Quadros Elétricos", "Iluminação interior e exterior", "Rigor técnico"],
+        features: ["Instalações Elétricas", "Quadros Elétricos", "Iluminação interior e exterior", "Manutenção e Assistência"],
         keywords: ["Instalações", "Quadros Elétricos", "Iluminação", "Manutenção"],
         benefits: [
           { title: "Segurança", desc: "Garantimos o cumprimento rigoroso das normas." },
@@ -270,7 +283,7 @@ const translations = {
         seoTitle: "PROJETOS E CERTIFICAÇÕES",
         title: "PROJETOS E CERTIFICAÇÕES",
         description: "Execução de projetos elétricos de licenciamento e execução para Baixa e Média Tensão.",
-        fullText: "A JF realiza todo o tipo de projeto elétrico que precisar.",
+        fullText: "A JF desenvolve projetos para empresas, indústria, comércio e infraestruturas, disponibilizando soluções técnicas à medida das necessidades de cada cliente.",
         features: ["Projetos de Média Tensão", "Projetos de Baixa Tensão", "Projetos de Instalações Elétricas", "Projetos Luminotécnicos"],
         keywords: ["Projetos", "Certificações", "Engenharia", "DGEG"],
         benefits: [
@@ -380,11 +393,11 @@ const translations = {
     partners: {
       heroTitle: "Parceiros de Confiança",
       heroDesc: "A excelência da JF constrói-se com relações sólidas com líderes globais da indústria e parcerias estratégicas exclusivas.",
-      suppliersTitle: "Fornecedores e Marcas Certificadas",
+      suppliersTitle: "Parceiros de Negócios",
       suppliersDesc: "Trabalhamos apenas com materiais homologados e equipamentos de topo para garantir a máxima segurança e durabilidade das nossas instalações elétricas.",
       eredesHighlight: {
         title: "INTERLIGAÇÃO COM A REDE DE DISTRIBUIÇÃO",
-        desc: "A JF é parceira certificada e empreiteira qualificada da E-Redes.",
+        desc: "Somos empreiteiro da E-Redes, dispondo das competências técnicas, dos recursos e das certificações necessárias para a execução de obras na rede de distribuição elétrica",
         badge: "Normas Técnicas Cumpridas",
         licenseLinkText: "Consulte todas as nossas classes aqui"
       },
@@ -681,7 +694,7 @@ const translations = {
       heroTitle: "A Nossa História",
       heroDesc: "",
       timeline: [
-        { year: "1986", title: "Fundação da Empresa", description: "JF inicia a sua atividade como uma pequena empresa familiar focada em instalações elétricas residenciais na zona de Faro." },
+        { year: "1986", title: "Fundação da Empresa", description: "JF inicia a sua atividade como uma pequena empresa familiar focada em instalações elétricas na zona de Olhão." },
         { year: "1992", title: "Mudança de Instalações", description: "Mudança para a localização atual." },
         { year: "1998", title: "Criamos o 1º Site", description: "Lançamento da nossa primeira presença digital, acompanhando a evolução tecnológica." },
         { year: "2000", title: "Líder do Consórcio", description: "Reconhecidos como Líder do Consórcio no Algarve para a EDP (atual E-REDES)." },
@@ -697,6 +710,7 @@ const translations = {
       awards: {
         title: "Reconhecimento, Certificações e Prémios",
         subtitle: "A distinção pública da nossa robustez financeira e competência técnica no setor.",
+        pmeDescription: "A JF tem sido distinguida consecutivamente com o estatuto de PME Líder e, nos anos mais recentes, também com o reconhecimento PME Excelência, distinções que refletem a solidez, a qualidade e o compromisso contínuo com a excelência, a inovação.",
         list: [
           { name: "PME Líder", desc: "Estatuto de referência que distingue o mérito e o perfil de risco das PME nacionais. Distinguida 3 vezes (last in 2025)." },
           { name: "PME Excelência", desc: "Selo de reputação que premeia os melhores desempenhos económico-financeiros. Distinguida 3 vezes (last in 2025)." },
@@ -720,11 +734,11 @@ const translations = {
           { id: "2299", name: "Mário Martins", role: "Gerência", image: "https://drive.google.com/thumbnail?id=1G_pNFv9yzmRi5tMykO8dQ9imPQzO1A68&sz=w1000" },
           { id: "2316", name: "David Sousa", role: "Qualidade, Ambiente e Segurança", image: "https://drive.google.com/thumbnail?id=1kvf1Tsh-AKu--sa_FfmQ2k3uolESBHt-&sz=w1000" },
           { id: "2616", name: "Eng.º Cláudio Condinho", role: "Departamento Energia", image: "https://drive.google.com/thumbnail?id=1aDPu8t2iJroaUtuGY4lMe9h_k06pCICS&sz=w1000" },
-          { id: "7462", name: "Eng.º Afonso Reis", role: "Departamento Energia", image: "https://drive.google.com/thumbnail?id=13jbcDgWQecxCZzxBVmYbMds3uk7soB-5&sz=w1000" },
-          { id: "2328", name: "Eng.º Luis Iria", role: "Departamento Energia", image: "https://drive.google.com/thumbnail?id=1DQ62imXT4_o7rXHmXDnWV4D8wsoOkmBm&sz=w1000" },
-          { id: "2336", name: "Eng.º Tiago Pancinha", role: "Departamento Orçamentação", image: "https://drive.google.com/thumbnail?id=1KCFO90oQ4prOA5ftEnJiKOfrzXNhQCSj&sz=w1000" },
           { id: "2576", name: "Eng.º Alexandre Cruz", role: "Departamento Energia", image: "https://drive.google.com/thumbnail?id=1Vt0RAGtkA3ce0B90zVOMZyjWOePvW_tC&sz=w1000" },
+          { id: "2328", name: "Eng.º Luis Iria", role: "Departamento Energia", image: "https://drive.google.com/thumbnail?id=1DQ62imXT4_o7rXHmXDnWV4D8wsoOkmBm&sz=w1000" },
           { id: "2626", name: "Eng.º Diogo Nunes", role: "Apoio ao Cliente", image: "https://drive.google.com/thumbnail?id=11nC7yA_xv9pzRSuQmTfVkwE89S3eW93j&sz=w1000" },
+          { id: "2336", name: "Eng.º Tiago Pancinha", role: "Departamento Orçamentação", image: "https://drive.google.com/thumbnail?id=1KCFO90oQ4prOA5ftEnJiKOfrzXNhQCSj&sz=w1000" },
+          { id: "7462", name: "Eng.º Afonso Reis", role: "Departamento Energia", image: "https://drive.google.com/thumbnail?id=13jbcDgWQecxCZzxBVmYbMds3uk7soB-5&sz=w1000" },
           { id: "", name: "Eng.º João Trigueiros", role: "Departamento Energia", image: null }
         ]
       },
@@ -1077,7 +1091,7 @@ const translations = {
       heroTitle: "Our History",
       heroDesc: "",
       timeline: [
-        { year: "1986", title: "Company Foundation", description: "JF begins its activity as a small family business focused on residential electrical installations in the Faro area." },
+        { year: "1986", title: "Company Foundation", description: "JF begins its activity as a small family business focused on electrical installations in the Olhão area." },
         { year: "1992", title: "Relocation", description: "Move to the current location." },
         { year: "1998", title: "1st Website", description: "Launch of our first digital presence, following technological evolution." },
         { year: "2000", title: "Consortium Leader", description: "Recognized as Consortium Leader in Algarve for EDP (now E-REDES)." },
@@ -1093,6 +1107,7 @@ const translations = {
       awards: {
         title: "Recognition, Certifications and Awards",
         subtitle: "Public distinction of our financial robustness and technical competence in the sector.",
+        pmeDescription: "JF has been consecutively distinguished with the PME Leader status and, in recent years, also with the PME Excellence recognition, distinctions that reflect the solidity, quality and continuous commitment to excellence and innovation.",
         list: [
           { name: "PME Leader", desc: "Reference status distinguishing the merit and risk profile of national SMEs. Distinguished 3 times (last in 2025)." },
           { name: "PME Excellence", desc: "Reputation seal awarding best economic-financial performances. Distinguished 3 times (last in 2025)." },
@@ -1116,11 +1131,11 @@ const translations = {
           { id: "2299", name: "Mário Martins", role: "Management", image: "https://drive.google.com/thumbnail?id=1G_pNFv9yzmRi5tMykO8dQ9imPQzO1A68&sz=w1000" },
           { id: "2316", name: "David Sousa", role: "Quality, Environment and Safety", image: "https://drive.google.com/thumbnail?id=1kvf1Tsh-AKu--sa_FfmQ2k3uolESBHt-&sz=w1000" },
           { id: "2616", name: "Eng.º Cláudio Condinho", role: "Energy Department", image: "https://drive.google.com/thumbnail?id=1aDPu8t2iJroaUtuGY4lMe9h_k06pCICS&sz=w1000" },
-          { id: "7462", name: "Eng.º Afonso Reis", role: "Energy Department", image: "https://drive.google.com/thumbnail?id=13jbcDgWQecxCZzxBVmYbMds3uk7soB-5&sz=w1000" },
-          { id: "2328", name: "Eng.º Luis Iria", role: "Energy Department", image: "https://drive.google.com/thumbnail?id=1DQ62imXT4_o7rXHmXDnWV4D8wsoOkmBm&sz=w1000" },
-          { id: "2336", name: "Eng.º Tiago Pancinha", role: "Budgeting Department", image: "https://drive.google.com/thumbnail?id=1KCFO90oQ4prOA5ftEnJiKOfrzXNhQCSj&sz=w1000" },
           { id: "2576", name: "Eng.º Alexandre Cruz", role: "Energy Department", image: "https://drive.google.com/thumbnail?id=1Vt0RAGtkA3ce0B90zVOMZyjWOePvW_tC&sz=w1000" },
+          { id: "2328", name: "Eng.º Luis Iria", role: "Energy Department", image: "https://drive.google.com/thumbnail?id=1DQ62imXT4_o7rXHmXDnWV4D8wsoOkmBm&sz=w1000" },
           { id: "2626", name: "Eng.º Diogo Nunes", role: "Customer Support", image: "https://drive.google.com/thumbnail?id=11nC7yA_xv9pzRSuQmTfVkwE89S3eW93j&sz=w1000" },
+          { id: "2336", name: "Eng.º Tiago Pancinha", role: "Budgeting Department", image: "https://drive.google.com/thumbnail?id=1KCFO90oQ4prOA5ftEnJiKOfrzXNhQCSj&sz=w1000" },
+          { id: "7462", name: "Eng.º Afonso Reis", role: "Energy Department", image: "https://drive.google.com/thumbnail?id=13jbcDgWQecxCZzxBVmYbMds3uk7soB-5&sz=w1000" },
           { id: "", name: "Eng.º João Trigueiros", role: "Energy Department", image: null }
         ]
       },
@@ -1260,11 +1275,11 @@ const translations = {
     partners: {
       heroTitle: "Trusted Partners",
       heroDesc: "JF excellence is built on solid relationships with global industry leaders and exclusive strategic partnerships.",
-      suppliersTitle: "Suppliers and Certified Brands",
+      suppliersTitle: "Business Partners",
       suppliersDesc: "We work only with approved materials and top equipment to ensure maximum safety and durability of our electrical installations.",
       eredesHighlight: {
         title: "INTERCONNECTION WITH DISTRIBUTION GRID",
-        desc: "JF is a certified partner and qualified contractor of E-Redes.",
+        desc: "We are an E-Redes contractor, having the technical skills, resources and certifications necessary for the execution of works on the electrical distribution grid",
         badge: "Technical Standards Complied",
         licenseLinkText: "Consult all our classes here"
       },
@@ -1384,7 +1399,20 @@ const translations = {
         title: "Substations",
         description: "Supply and assembly of Transformer Substations for industries and large areas.",
         fullText: "For industries, hotels, agricultural operations, or large commercial areas, a Low Voltage connection may not be sufficient. JF specializes in the supply and assembly of Transformer Substations (PTs). We offer maintenance and assistance, ensuring greater equipment longevity and facility safety.",
-        features: ["Supply and Installation of PT's", "Preventive and Corrective Maintenance", "Breakdown Assistance", "Dielectric Oil Analysis"],
+        features: [
+          "Supply and Installation of PT's", 
+          "Breakdown Assistance", 
+          "Dielectric Oil Analysis",
+          {
+            title: "Preventive and Corrective Maintenance",
+            howItWorks: {
+              title: "How it Works",
+              content: "Transformer Substations Maintenance (PT's)\n\nWe are specialists in the maintenance of Transformer Substations (PT), ensuring the reliability, safety and performance of electrical infrastructures.\n\nTransformer Substations play an essential role in the distribution of electrical energy, performing the transformation of medium voltage energy to low voltage and ensuring the supply of the distribution network and customer installations.\n\nOur preventive and corrective maintenance services aim to maximize equipment utility, prevent breakdowns, prolong their useful life and optimize the energy efficiency of the facilities, contributing to the reduction of losses and the continuity of energy supply.\n\nAll interventions are carried out by qualified and specialized technicians, in compliance with manufacturer recommendations, applicable technical standards and regulations in force, ensuring high standards of quality and safety.\n\nTo ensure the correct operation of the equipment and its operational reliability, it is recommended to perform preventive maintenance on an annual basis.",
+              buttonLabel: "Request Maintenance",
+              contactMessage: "I would like to request Preventive Maintenance for Substations (PT's)"
+            }
+          }
+        ],
         keywords: ["Substation", "Medium Voltage", "Transformers", "Maintenance"],
         benefits: [
           { title: "Reliability", desc: "Partners with Leading Manufacturers" },
@@ -1407,7 +1435,7 @@ const translations = {
         title: "Electrical Installations",
         description: "Complete electrical solutions for buildings and preventive maintenance.",
         fullText: "We perform all types of low voltage electrical installations. With a focus on industrial installations, prepared and designed specifically for your company! Our team guarantees rigorous compliance with safety standards.",
-        features: ["Electrical Panels", "Indoor and Outdoor Lighting", "Technical Rigor"],
+        features: ["Electrical Installations", "Electrical Panels", "Indoor and Outdoor Lighting", "Maintenance and Assistance"],
         keywords: ["Installations", "Electrical Panels", "Lighting", "Maintenance"],
         benefits: [
           { title: "Safety", desc: "We guarantee strict compliance with standards." },
@@ -1731,9 +1759,10 @@ const translations = {
       "description": "Soluciones eléctricas seguras y certificadas para cualquier tipo de edificación.",
       "fullText": "Realizamos todo tipo de instalaciones eléctricas de baja tensión. ¡Con un enfoque en instalaciones industriales, preparadas y diseñadas específicamente para su empresa! Nuestro equipo garantiza el estricto cumplimiento de los estándares de seguridad.",
       "features": [
+        "Instalaciones eléctricas",
         "Cuadros eléctricos",
         "Iluminación interior y exterior",
-        "Rigor técnico"
+        "Mantenimiento y Asistencia"
       ],
       "keywords": [
         "Electricista",
@@ -1771,9 +1800,17 @@ const translations = {
       "fullText": "Para industrias, hoteles, explotaciones agrícolas o grandes superficies comerciales, la conexión en Baja Tensión puede no ser suficiente. JF se especializa en el suministro y montaje de Centros de Transformación (PT). Ofrecemos mantenimiento y asistencia, garantizando una mayor longevidad de los equipos y la seguridad de las instalaciones.",
       "features": [
         "Suministro e Instalación de PT",
-        "Mantenimiento Preventivo y Correctivo",
         "Asistencia en averías",
-        "Análisis de Aceite Dieléctrico"
+        "Análisis de Aceite Dieléctrico",
+        {
+          "title": "Mantenimiento Preventivo y Correctivo",
+          "howItWorks": {
+            "title": "Cómo Funciona",
+            "content": "Mantenimiento de Centros de Transformación (PT)\n\nSomos especialistas en el mantenimiento de Centros de Transformación (PT), garantizando la fiabilidad, seguridad y rendimiento de las infraestructuras eléctricas.\n\nLos Centros de Transformación desempeñan un papel fundamental en la distribución de energía eléctrica, realizando la transformación de la energía de media tensión a baja tensión y garantizando el suministro a la red de distribución y a las instalaciones de los clientes.\n\nNuestros servicios de mantenimiento preventivo y correctivo tienen como objetivo maximizar la utilidad de los equipos, prevenir averías, prolongar su vida útil y optimizar la eficiencia energética de las instalaciones, contribuyendo a la reducción de pérdidas y a la continuidad del suministro eléctrico.\n\nTodas las intervenciones son realizadas por técnicos cualificados y especializados, de acuerdo con las recomendaciones de los fabricantes, las normas técnicas aplicables y la normativa vigente, garantizando altos niveles de calidad y seguridad.\n\nPara asegurar el correcto funcionamiento de los equipos y su fiabilidad operativa, se recomienda realizar un mantenimiento preventivo con carácter anual.",
+            "buttonLabel": "Solicitar Mantenimiento",
+            "contactMessage": "Quiero Solicitar el Mantenimiento Preventivo de PT's"
+          }
+        }
       ],
       "keywords": [
         "Estación de Transformación",
@@ -1952,11 +1989,11 @@ const translations = {
     "partners": {
       "heroTitle": "Socios de confianza",
       "heroDesc": "La excelencia de JF se basa en relaciones sólidas con líderes globales de la industria y asociaciones estratégicas exclusivas.",
-    "suppliersTitle": "Proveedores y marcas certificados",
+    "suppliersTitle": "Socios de negocios",
     "suppliersDesc": "Sólo trabajamos con materiales homologados y equipos de primera línea para garantizar la máxima seguridad y durabilidad de nuestras instalaciones eléctricas.",
     "eredesHighlight": {
       "title": "INTERCONEXIÓN CON LA RED DE DISTRIBUCIÓN",
-      "desc": "JF es socio certificado y contratista calificado de E-Redes.",
+      "desc": "Somos contratista de E-Redes, disponiendo de las competencias técnicas, los recursos y las certificaciones necesarias para la ejecución de obras en la red de distribución eléctrica",
       "badge": "Normas técnicas cumplidas",
       "licenseLinkText": "Consulte todas nuestras clases aquí"
     },
@@ -2319,7 +2356,7 @@ const translations = {
       {
         "year": "1986",
         "title": "Fundación de la Empresa",
-        "description": "JF inicia su actividad como una pequeña empresa familiar centrada en las instalaciones eléctricas residenciales en la zona de Faro."
+        "description": "JF inicia su actividad como una pequeña empresa familiar centrada en las instalaciones eléctricas en la zona de Olhão."
       },
       {
         "year": "1992",
@@ -2380,6 +2417,7 @@ const translations = {
     "awards": {
       "title": "Reconocimientos, Certificaciones y Premios",
       "subtitle": "La distinción pública de nuestra solidez financiera y competencia técnica en el sector.",
+      "pmeDescription": "JF ha sido distinguida consecutivamente con el estatus de PME Líder y, en los últimos años, también con el reconocimiento PME Excelencia, distinciones que reflejan la solidez, la calidad y el compromiso continuo con la excelencia y la innovación.",
       "list": [
         {
           "name": "PME Líder",
@@ -2421,11 +2459,11 @@ const translations = {
         { "id": "2299", "name": "Mário Martins", "role": "Gerencia", "image": "https://drive.google.com/thumbnail?id=1G_pNFv9yzmRi5tMykO8dQ9imPQzO1A68&sz=w1000" },
         { "id": "2316", "name": "David Sousa", "role": "Calidad, Ambiente y Seguridad", "image": "https://drive.google.com/thumbnail?id=1kvf1Tsh-AKu--sa_FfmQ2k3uolESBHt-&sz=w1000" },
         { "id": "2616", "name": "Eng.º Cláudio Condinho", "role": "Departamento Energía", "image": "https://drive.google.com/thumbnail?id=1aDPu8t2iJroaUtuGY4lMe9h_k06pCICS&sz=w1000" },
-        { "id": "7462", "name": "Eng.º Afonso Reis", "role": "Departamento Energía", "image": "https://drive.google.com/thumbnail?id=13jbcDgWQecxCZzxBVmYbMds3uk7soB-5&sz=w1000" },
-        { "id": "2328", "name": "Eng.º Luis Iria", "role": "Departamento Energía", "image": "https://drive.google.com/thumbnail?id=1DQ62imXT4_o7rXHmXDnWV4D8wsoOkmBm&sz=w1000" },
-        { "id": "2336", "name": "Eng.º Tiago Pancinha", "role": "Departamento de Presupuestación", "image": "https://drive.google.com/thumbnail?id=1KCFO90oQ4prOA5ftEnJiKOfrzXNhQCSj&sz=w1000" },
         { "id": "2576", "name": "Eng.º Alexandre Cruz", "role": "Departamento Energía", "image": "https://drive.google.com/thumbnail?id=1Vt0RAGtkA3ce0B90zVOMZyjWOePvW_tC&sz=w1000" },
+        { "id": "2328", "name": "Eng.º Luis Iria", "role": "Departamento Energía", "image": "https://drive.google.com/thumbnail?id=1DQ62imXT4_o7rXHmXDnWV4D8wsoOkmBm&sz=w1000" },
         { "id": "2626", "name": "Eng.º Diogo Nunes", "role": "Atención al Cliente", "image": "https://drive.google.com/thumbnail?id=11nC7yA_xv9pzRSuQmTfVkwE89S3eW93j&sz=w1000" },
+        { "id": "2336", "name": "Eng.º Tiago Pancinha", "role": "Departamento de Presupuestación", "image": "https://drive.google.com/thumbnail?id=1KCFO90oQ4prOA5ftEnJiKOfrzXNhQCSj&sz=w1000" },
+        { "id": "7462", "name": "Eng.º Afonso Reis", "role": "Departamento Energía", "image": "https://drive.google.com/thumbnail?id=13jbcDgWQecxCZzxBVmYbMds3uk7soB-5&sz=w1000" },
         { "id": "", "name": "Eng.º João Trigueiros", "role": "Departamento Energía", "image": null }
       ]
     },
@@ -2723,9 +2761,10 @@ const translations = {
       "description": "Solutions électriques complètes pour les bâtiments et maintenance préventive.",
       "fullText": "Nous réalisons tous types d'installations électriques basse tension. Avec un accent sur les installations industrielles, préparées et conçues spécifiquement pour votre entreprise ! Notre équipe garantit le respect rigoureux des normes de sécurité.",
       "features": [
+        "Installations électriques",
         "Tableaux électriques",
         "Éclairage intérieur et extérieur",
-        "Rigueur technique"
+        "Maintenance et Assistance"
       ],
       "keywords": [
         "Installations",
@@ -2762,9 +2801,17 @@ const translations = {
       "fullText": "Pour les industries, les hôtels, les exploitations agricoles ou les grandes surfaces commerciales, le raccordement en Basse Tension peut ne pas suffire. JF est spécialisée dans la fourniture et le montage de Postes de Transformation (PT). Nous proposons la maintenance et l'assistance, garantissant une plus grande longévité des équipements et la sécurité des installations.",
       "features": [
         "Fourniture et Installation de PT",
-        "Maintenance Préventive et Corrective",
         "Assistance aux pannes",
-        "Analyse de l'Huile Diélectrique"
+        "Analyse de l'Huile Diélectrique",
+        {
+          "title": "Maintenance Préventive et Corrective",
+          "howItWorks": {
+            "title": "Comment ça marche",
+            "content": "Maintenance des Postes de Transformation (PT)\n\nNous sommes spécialistes de la maintenance des Postes de Transformation (PT), assurant la fiabilité, la sécurité et la performance des infrastructures électriques.\n\nLes Postes de Transformation jouent un rôle essentiel dans la distribution de l'énergie électrique, en effectuant la transformation de l'énergie moyenne tension en basse tension et en assurant l'alimentation du réseau de distribution et des installations des clients.\n\nNos services de maintenance préventive et corrective visent à maximiser l'utilité des équipements, prévenir les pannes, prolonger leur durée de vie et optimiser l'efficacité énergétique des installations, contribuant à la réduction des pertes et à la continuité de l'alimentation électrique.\n\nToutes les interventions sont réalisées par des techniciens qualifiés et spécialisés, conformément aux recommandations des fabricants, aux normes techniques applicables et à la réglementation en vigueur, garantissant des standards élevés de qualité et de sécurité.\n\nPour assurer le bon fonctionnement des équipements et leur fiabilité opérationnelle, il est recommandé d'effectuer une maintenance préventive annuelle.",
+            "buttonLabel": "Demander la maintenance",
+            "contactMessage": "Je souhaite demander la maintenance préventive des PT"
+          }
+        }
       ],
       "keywords": [
         "Poste de transformation",
@@ -2942,11 +2989,11 @@ const translations = {
   "partners": {
     "heroTitle": "Partenaires de confiance",
     "heroDesc": "L'excellence de JF repose sur des relations solides avec des leaders mondiaux de l'industrie et des partenariats stratégiques exclusifs.",
-    "suppliersTitle": "Fournisseurs et marques certifiées",
+    "suppliersTitle": "Partenaires commerciaux",
     "suppliersDesc": "Nous travaillons uniquement avec des matériaux approuvés et des équipements haut de gamme pour garantir une sécurité et une durabilité maximales de nos installations électriques.",
     "eredesHighlight": {
       "title": "INTERCONNEXION AVEC LE RÉSEAU DE DISTRIBUTION",
-      "desc": "JF est un partenaire certifié et un entrepreneur qualifié d'E-Redes.",
+      "desc": "Nous sommes un entrepreneur E-Redes, disposant des compétences techniques, des ressources et des certifications nécessaires à l'exécution de travaux sur le réseau de distribution électrique",
       "badge": "Normes techniques respectées",
       "licenseLinkText": "Consultez toutes nos classes ici"
     },
@@ -3309,7 +3356,7 @@ const translations = {
       {
         "year": "1986",
         "title": "Fondation de l'Entreprise",
-        "description": "JF démarre son activité en tant que petite entreprise familiale axée sur les installations électriques résidentielles dans la région de Faro."
+        "description": "JF démarre son activité en tant que petite entreprise familiale axée sur les installations électriques dans la région de Olhão."
       },
       {
         "year": "1992",
@@ -3370,6 +3417,7 @@ const translations = {
     "awards": {
       "title": "Reconnaissance, certifications et récompenses",
       "subtitle": "La distinction publique de notre solidité financière et de notre compétence technique dans le secteur.",
+      "pmeDescription": "JF a été distinguée consécutivement avec le statut de PME Líder et, ces dernières années, également avec la reconnaissance PME Excellence, des distinctions qui reflètent la solidité, la qualité et l'engagement continu envers l'excellence et l'innovation.",
       "list": [
         {
           "name": "Leader PME",
@@ -3411,11 +3459,11 @@ const translations = {
         { "id": "2299", "name": "Mário Martins", "role": "Gérance", "image": "https://drive.google.com/thumbnail?id=1G_pNFv9yzmRi5tMykO8dQ9imPQzO1A68&sz=w1000" },
         { "id": "2316", "name": "David Sousa", "role": "Qualité, Environnement et Sécurité", "image": "https://drive.google.com/thumbnail?id=1kvf1Tsh-AKu--sa_FfmQ2k3uolESBHt-&sz=w1000" },
         { "id": "2616", "name": "Eng.º Cláudio Condinho", "role": "Département Énergie", "image": "https://drive.google.com/thumbnail?id=1aDPu8t2iJroaUtuGY4lMe9h_k06pCICS&sz=w1000" },
-        { "id": "7462", "name": "Eng.º Afonso Reis", "role": "Département Énergie", "image": "https://drive.google.com/thumbnail?id=13jbcDgWQecxCZzxBVmYbMds3uk7soB-5&sz=w1000" },
-        { "id": "2328", "name": "Eng.º Luis Iria", "role": "Département Énergie", "image": "https://drive.google.com/thumbnail?id=1DQ62imXT4_o7rXHmXDnWV4D8wsoOkmBm&sz=w1000" },
-        { "id": "2336", "name": "Eng.º Tiago Pancinha", "role": "Département Budgétisation", "image": "https://drive.google.com/thumbnail?id=1KCFO90oQ4prOA5ftEnJiKOfrzXNhQCSj&sz=w1000" },
         { "id": "2576", "name": "Eng.º Alexandre Cruz", "role": "Département Énergie", "image": "https://drive.google.com/thumbnail?id=1Vt0RAGtkA3ce0B90zVOMZyjWOePvW_tC&sz=w1000" },
+        { "id": "2328", "name": "Eng.º Luis Iria", "role": "Département Énergie", "image": "https://drive.google.com/thumbnail?id=1DQ62imXT4_o7rXHmXDnWV4D8wsoOkmBm&sz=w1000" },
         { "id": "2626", "name": "Eng.º Diogo Nunes", "role": "Service Client", "image": "https://drive.google.com/thumbnail?id=11nC7yA_xv9pzRSuQmTfVkwE89S3eW93j&sz=w1000" },
+        { "id": "2336", "name": "Eng.º Tiago Pancinha", "role": "Département Budgétisation", "image": "https://drive.google.com/thumbnail?id=1KCFO90oQ4prOA5ftEnJiKOfrzXNhQCSj&sz=w1000" },
+        { "id": "7462", "name": "Eng.º Afonso Reis", "role": "Département Énergie", "image": "https://drive.google.com/thumbnail?id=13jbcDgWQecxCZzxBVmYbMds3uk7soB-5&sz=w1000" },
         { "id": "", "name": "Eng.º João Trigueiros", "role": "Département Énergie", "image": null }
       ]
     },

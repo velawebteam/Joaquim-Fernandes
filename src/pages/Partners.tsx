@@ -70,54 +70,6 @@ const Partners: React.FC = () => {
 
       <div className="container mx-auto px-6 md:px-12 py-16 md:py-24">
         
-        {/* 2. E-REDES: Layout Corporativo (Lado a Lado) */}
-        <section className="mb-24 flex justify-center">
-           <motion.div 
-             initial={{ opacity: 0, y: 20 }}
-             whileInView={{ opacity: 1, y: 0 }}
-             viewport={{ once: true }}
-             className="flex flex-col items-center text-center gap-8 max-w-3xl w-full"
-           >
-              {/* Logo e Identificação */}
-              <div className="flex flex-col items-center gap-2">
-                 <div className="w-48 md:w-64">
-                     <img 
-                        src="https://drive.google.com/thumbnail?id=1UTAnm_KyFRSMMJbhwzrlkhB9kGsphfO6&sz=w1000" 
-                        alt="E-REDES" 
-                        className="w-full h-auto object-contain" 
-                        referrerPolicy="no-referrer"
-                     />
-                 </div>
-                 
-                 <div className="flex justify-between w-48 md:w-64 text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-gray-400">
-                    <span>Empreiteiro</span>
-                    <span>Qualificado</span>
-                 </div>
-              </div>
-
-              {/* Conteúdo Técnico */}
-              <div className="flex flex-col items-center">
-                 <h3 className="text-xl md:text-2xl font-bold text-corporate mb-4 uppercase tracking-wide">
-                    {t.partners.eredesHighlight.title}
-                 </h3>
-                 {t.partners.eredesHighlight.desc && (
-                   <p className="text-gray-600 leading-relaxed text-lg mb-6 max-w-2xl">
-                     {t.partners.eredesHighlight.desc}
-                   </p>
-                 )}
-                 <a 
-                   href="https://www.e-redes.pt/pt-pt" 
-                   target="_blank" 
-                   rel="noopener noreferrer"
-                   className="inline-flex items-center gap-2 text-brand-light font-bold text-sm uppercase tracking-widest hover:text-corporate transition-colors border-b-2 border-brand-light pb-1"
-                 >
-                   {t.partners.eredesHighlight.licenseLinkText}
-                   <Zap size={14} fill="currentColor" />
-                 </a>
-              </div>
-           </motion.div>
-        </section>
-
         {/* 3. FORNECEDORES: 6 Cartões Brancos (Layout Grid) */}
         <section className="mb-24">
           <div className="mb-12 border-b border-gray-200 pb-4 flex flex-col md:flex-row justify-between items-end">
