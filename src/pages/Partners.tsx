@@ -34,7 +34,7 @@ const Partners: React.FC = () => {
     { type: "Soluções de Engenharia e Equipamentos", image: "https://drive.google.com/thumbnail?id=1BhUoqK2Fo09IMiF4Kkd5_JNoNmXF36TW&sz=w1000", url: "https://www.profor.pt/", scaleClass: "scale-[2.25]" },
     { type: "Transformadores e Energia", image: "https://drive.google.com/thumbnail?id=1vQR3zIybcQ9W9nxDdAFeSfNt72mO9oeu&sz=w1000", url: "https://transfopor.pt/", scaleClass: "scale-[2.25]" },
     { type: "Aparelhagem de Média Tensão", image: "https://drive.google.com/thumbnail?id=1L9IVWS1eLHFYdXRDkSAQ9FSYZvBZ7dwI&sz=w1000", url: "https://www.ormazabal.com/pt-pt/", scaleClass: "scale-75" },
-    { type: "Consultoria e Sustentabilidade", image: "", url: "https://www.greenlab.pt/", scaleClass: "scale-75" },
+    { type: "Consultoria e Sustentabilidade", image: "https://drive.google.com/thumbnail?id=1wMx-VtldvKATgFknfHhqZx0gLAFgXbV7&sz=w1000", url: "https://www.greenlab.pt/", scaleClass: "scale-125" },
     { type: "Distribuição de Material Elétrico", image: "https://drive.google.com/thumbnail?id=1qxKuRhXLlWgKShq2uZO72AJQSJLn2D-t&sz=w1000", url: "https://www.sonepar.pt/", scaleClass: "scale-75" },
     { type: "Ferramentas e Fixação", image: "https://drive.google.com/thumbnail?id=1Tz6jc7fKDdGmD3Jvk2Wv8Hp2jt6e1xBg&sz=w1000", url: "https://eshop.wurth.pt/pt/PT/EUR/", scaleClass: "scale-[2.25]" },
     { type: "Proteção e Ligas Elétricas", image: "https://drive.google.com/thumbnail?id=119FF0aBhjvbInRS9O3W_yp8f9xEJVVVN&sz=w1000", url: "https://jobasi-sa.com/", scaleClass: "scale-150" },
