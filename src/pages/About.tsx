@@ -56,14 +56,19 @@ const About: React.FC = () => {
     return null;
   }
 
-  // Define static data for the 3 requested cards (PME Líder/Excelência)
-  const pmeBadges = [
-    { type: 'lider', label: 'PME Líder' },
-    { type: 'excelencia', label: 'PME Excelência' },
-    { type: 'lider', label: 'PME Líder' },
-  ];
-
   const technicalCerts = t.about.awards.list.slice(2);
+
+  // Custom vertical framing for team member photos so heads are never cut off
+  const memberImagePositions: Record<string, string> = {
+    "2299": "center 12%", // Mário Martins
+    "2316": "center 18%", // David Sousa
+    "2616": "center 12%", // Eng.º Cláudio Condinho
+    "2576": "center 10%", // Eng.º Alexandre Cruz
+    "2328": "center 15%", // Eng.º Luis Iria
+    "2626": "center 12%", // Eng.º Diogo Nunes
+    "2336": "center 12%", // Eng.º Tiago Pancinha
+    "7462": "center 15%", // Eng.º Afonso Reis
+  };
 
   const getTimelineIcon = (index: number) => {
     switch(index) {
@@ -108,28 +113,25 @@ const About: React.FC = () => {
                <div className="w-16 h-1 bg-brand-light mx-auto"></div>
             </div>
             
-            {/* FEATURED: 3 PME CARDS (Without Year) */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto mb-16">
-                {pmeBadges.map((badge, index) => (
-                    <motion.div 
-                        key={index}
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ delay: index * 0.2 }}
-                        viewport={{ once: true }}
-                        className="relative bg-white border border-gray-300 rounded-sm hover:border-brand-light transition-colors duration-300 group min-h-[160px] flex items-center justify-center shadow-sm"
-                    >
-                        {/* Award Image */}
-                        <div className="flex items-center justify-center p-4">
-                           <img 
-                             src="https://drive.google.com/thumbnail?id=1qD8Or_lSCFWQCETFNj8Fpb5lQn08_FhE&sz=w1000" 
-                             alt={badge.label}
-                             className="h-24 md:h-32 w-auto object-contain transition-all duration-300 group-hover:scale-105"
-                             referrerPolicy="no-referrer"
-                           />
-                        </div>
-                    </motion.div>
-                ))}
+            {/* FEATURED: PME AWARD CARD (Single Card) */}
+            <div className="max-w-md mx-auto mb-16">
+                <motion.div 
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4 }}
+                    viewport={{ once: true }}
+                    className="relative bg-white border border-gray-300 rounded-sm hover:border-brand-light transition-colors duration-300 group min-h-[160px] flex items-center justify-center shadow-sm"
+                >
+                    {/* Award Image */}
+                    <div className="flex items-center justify-center p-4">
+                       <img 
+                         src="https://drive.google.com/thumbnail?id=1qD8Or_lSCFWQCETFNj8Fpb5lQn08_FhE&sz=w1000" 
+                         alt="PME Líder & PME Excelência"
+                         className="h-28 md:h-36 w-auto object-contain transition-all duration-300 group-hover:scale-105"
+                         referrerPolicy="no-referrer"
+                       />
+                    </div>
+                </motion.div>
             </div>
 
             {/* PME DESCRIPTION */}
@@ -432,7 +434,13 @@ const About: React.FC = () => {
                         className="bg-white p-3 md:p-4 rounded-sm shadow-sm border border-gray-100 flex flex-col items-center text-center"
                       >
                         <div className="w-20 h-20 md:w-32 md:h-32 rounded-full overflow-hidden mb-3 md:mb-4 border-2 border-brand-light/30">
-                          <img src={member.image} alt={member.name} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                          <img 
+                            src={member.image} 
+                            alt={member.name} 
+                            className="w-full h-full object-cover" 
+                            style={{ objectPosition: memberImagePositions[member.id] || member.imagePosition || '50% 15%' }}
+                            referrerPolicy="no-referrer" 
+                          />
                         </div>
                         <h5 className="font-bold text-corporate text-xs md:text-sm mb-1">{member.name}</h5>
                         <p className="text-[10px] md:text-xs text-gray-500 mb-2 leading-tight">{member.role}</p>
@@ -450,7 +458,13 @@ const About: React.FC = () => {
                         className="bg-white p-3 md:p-4 rounded-sm shadow-sm border border-gray-100 flex flex-col items-center text-center"
                       >
                         <div className="w-20 h-20 md:w-32 md:h-32 rounded-full overflow-hidden mb-3 md:mb-4 border-2 border-brand-light/30">
-                          <img src={member.image} alt={member.name} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                          <img 
+                            src={member.image} 
+                            alt={member.name} 
+                            className="w-full h-full object-cover" 
+                            style={{ objectPosition: memberImagePositions[member.id] || member.imagePosition || '50% 15%' }}
+                            referrerPolicy="no-referrer" 
+                          />
                         </div>
                         <h5 className="font-bold text-corporate text-xs md:text-sm mb-1">{member.name}</h5>
                         <p className="text-[10px] md:text-xs text-gray-500 mb-2 leading-tight">{member.role}</p>
