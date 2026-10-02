@@ -70,7 +70,11 @@ const About: React.FC = () => {
     "7462": "center 15%", // Eng.º Afonso Reis
   };
 
-  const getTimelineIcon = (index: number) => {
+  const getTimelineIcon = (event: any, index: number) => {
+    const titleLower = event?.title?.toLowerCase() || '';
+    if (titleLower.includes('medalha') || titleLower.includes('medal') || titleLower.includes('médaille') || titleLower.includes('medalla') || titleLower.includes('certifica') || titleLower.includes('pme')) {
+      return <Award size={20} className="text-white" />;
+    }
     switch(index) {
         case 0: return <Calendar size={20} className="text-white" />;
         case 1: return <Briefcase size={20} className="text-white" />;
@@ -523,7 +527,7 @@ const About: React.FC = () => {
                   
                   {/* The Dot / Node */}
                   <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 flex items-center justify-center w-10 h-10 md:w-12 md:h-12 bg-accent rounded-full border-4 border-white shadow-lg transition-transform duration-300 group-hover:scale-110">
-                    {getTimelineIcon(index)}
+                    {getTimelineIcon(event, index)}
                   </div>
 
                   {/* Content Card - Alternating Top/Bottom */}

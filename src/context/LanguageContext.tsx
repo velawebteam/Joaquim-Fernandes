@@ -699,6 +699,7 @@ const translations = {
         { year: "1998", title: "Criamos o 1º Site", description: "Lançamento da nossa primeira presença digital, acompanhando a evolução tecnológica." },
         { year: "2000", title: "Líder do Consórcio", description: "Reconhecidos como Líder do Consórcio no Algarve para a EDP (atual E-REDES)." },
         { year: "2001", title: "Certificação de Qualidade", description: "Reconhecidos com a Certificação de Qualidade, reforçando o nosso compromisso com o rigor." },
+        { year: "2001", title: "Medalha de Dedicação", description: "Medalha de dedicação – Grau Ouro pelo Município de Olhão." },
         { year: "2005", title: "Construção de Escritórios", description: "Construção dos escritórios atuais." },
         { year: "2008", title: "1º PME Líder", description: "Distinção pública da nossa solidez financeira e desempenho económico." },
         { year: "2011", title: "Nova Gerência", description: "Início de um novo ciclo estratégico com a entrada de uma nova liderança." },
@@ -1096,6 +1097,7 @@ const translations = {
         { year: "1998", title: "1st Website", description: "Launch of our first digital presence, following technological evolution." },
         { year: "2000", title: "Consortium Leader", description: "Recognized as Consortium Leader in Algarve for EDP (now E-REDES)." },
         { year: "2001", title: "Quality Certification", description: "Recognized with Quality Certification, reinforcing our commitment to precision." },
+        { year: "2001", title: "Medal of Dedication", description: "Gold Grade Medal of Dedication awarded by the Municipality of Olhão." },
         { year: "2005", title: "Office Construction", description: "Construction of the current offices." },
         { year: "2008", title: "1st PME Leader", description: "Public distinction of our financial soundness and economic performance." },
         { year: "2011", title: "New Management", description: "Start of a new strategic cycle with the entry of new leadership." },
@@ -2379,6 +2381,11 @@ const translations = {
         "description": "Reconocidos con la Certificación de Calidad, reforzando nuestro compromiso con el rigor."
       },
       {
+        "year": "2001",
+        "title": "Medalla de Dedicación",
+        "description": "Medalla de dedicación – Grado Oro otorgada por el Municipio de Olhão."
+      },
+      {
         "year": "2005",
         "title": "Construcción de Oficinas",
         "description": "Construcción de las oficinas actuales."
@@ -3377,6 +3384,11 @@ const translations = {
         "year": "2001",
         "title": "Certification de Qualité",
         "description": "Reconnu avec la Certification de Qualité, renforçant notre engagement envers la rigueur."
+      },
+      {
+        "year": "2001",
+        "title": "Médaille de Dévouement",
+        "description": "Médaille de dévouement – Grade Or décernée par la Municipalité de Olhão."
       },
       {
         "year": "2005",
