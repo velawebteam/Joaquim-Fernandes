@@ -472,7 +472,7 @@ const Home: React.FC = () => {
         <div className="container mx-auto px-4 md:px-12 flex flex-col lg:flex-row items-center gap-12">
           <div className="w-full lg:w-1/2">
             <img 
-              src="https://drive.google.com/thumbnail?id=15Ea3VeSlil56AL3L2fgEkW0foozhg1LC&sz=w1000" 
+              src="https://drive.google.com/thumbnail?id=1ZJ9Zw2aPAVwqAXWsJDB8dA9R3GYMehoN&sz=w1000" 
               alt="Equipa JF" 
               className="rounded-lg shadow-2xl w-full h-auto object-cover" 
               referrerPolicy="no-referrer"

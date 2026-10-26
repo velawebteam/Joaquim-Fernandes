@@ -17,11 +17,11 @@ const Services: React.FC = () => {
   // Mapping images (could be in translation file or static, keeping static here but mapped by ID)
   const getImage = (id: string) => {
     switch(id) {
-        case 'plrs': return "https://drive.google.com/thumbnail?id=17b8XQuPW9kxcqPYowVSXeqIIUG6CMtWj&sz=w1000";
+        case 'plrs': return "https://drive.google.com/thumbnail?id=15RwlluF0aJqfLajdU5JzujLwtTAOmRAV&sz=w1000";
         case 'infraestruturas': return "https://drive.google.com/thumbnail?id=1kgeaUZc389LWYR_zGlPRgMmmkA3V2cHV&sz=w1000";
         case 'telecomunicacoes': return "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=2070&auto=format&fit=crop";
         case 'postos-transformacao': return "https://drive.google.com/thumbnail?id=1u7DLNgNbHwWHuej4Omw7iR6YJ054n1UA&sz=w1000";
-        case 'instalacoes': return "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=2069&auto=format&fit=crop";
+        case 'instalacoes': return "https://drive.google.com/thumbnail?id=1AvAAAR1nYfK0HAecVa4ugFNbZTlWz5_8&sz=w1000";
         case 'projetos': return "https://drive.google.com/thumbnail?id=1XcIH3U-OGPbbRxaJZGRkjg3zOUH02I13&sz=w1000";
         case 'outros': return "https://drive.google.com/thumbnail?id=1uPRfbqyXmDv7lH31jgfDEi587Ct7AJZ6&sz=w1000";
         case 'iluminacao': return "https://drive.google.com/thumbnail?id=1Q7Ak5kMhDW4Xxk9VWPrOu5mThEKDGo0x&sz=w1000";

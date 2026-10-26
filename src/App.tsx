@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import CookieBanner from '@/components/CookieBanner';
 import Home from '@/pages/Home';
 import Services from '@/pages/Services';
 import Contact from '@/pages/Contact';
@@ -71,6 +72,7 @@ const App: React.FC = () => {
             </Routes>
           </main>
           <Footer />
+          <CookieBanner />
         </div>
       </BrowserRouter>
     </LanguageProvider>
