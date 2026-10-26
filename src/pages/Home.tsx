@@ -28,7 +28,7 @@ const partners = [
   { name: "Soluções de Engenharia e Equipamentos", image: "https://drive.google.com/thumbnail?id=1BhUoqK2Fo09IMiF4Kkd5_JNoNmXF36TW&sz=w1000", url: "https://www.profor.pt/", scaleClass: "scale-[2.25]" },
   { name: "Transformadores e Energia", image: "https://drive.google.com/thumbnail?id=1vQR3zIybcQ9W9nxDdAFeSfNt72mO9oeu&sz=w1000", url: "https://transfopor.pt/", scaleClass: "scale-[2.25]" },
   { name: "Aparelhagem de Média Tensão", image: "https://drive.google.com/thumbnail?id=1L9IVWS1eLHFYdXRDkSAQ9FSYZvBZ7dwI&sz=w1000", url: "https://www.ormazabal.com/pt-pt/", scaleClass: "scale-75" },
-  { name: "Consultoria e Sustentabilidade", image: "https://drive.google.com/thumbnail?id=1wMx-VtldvKATgFknfHhqZx0gLAFgXbV7&sz=w1000", url: "https://www.greenlab.pt/", scaleClass: "scale-125 mix-blend-multiply" },
+  { name: "Consultoria e Sustentabilidade", image: "https://drive.google.com/thumbnail?id=1wMx-VtldvKATgFknfHhqZx0gLAFgXbV7&sz=w1000", url: "https://www.greenlab.pt/", scaleClass: "scale-150 mix-blend-multiply" },
   { name: "Distribuição de Material Elétrico", image: "https://drive.google.com/thumbnail?id=1qxKuRhXLlWgKShq2uZO72AJQSJLn2D-t&sz=w1000", url: "https://www.sonepar.pt/", scaleClass: "scale-75" },
   { name: "Ferramentas e Fixação", image: "https://drive.google.com/thumbnail?id=1Tz6jc7fKDdGmD3Jvk2Wv8Hp2jt6e1xBg&sz=w1000", url: "https://eshop.wurth.pt/pt/PT/EUR/", scaleClass: "scale-[2.25]" },
   { name: "Proteção e Ligas Elétricas", image: "https://drive.google.com/thumbnail?id=119FF0aBhjvbInRS9O3W_yp8f9xEJVVVN&sz=w1000", url: "https://jobasi-sa.com/", scaleClass: "scale-150" },
@@ -117,7 +117,7 @@ const ComplexLightningBolt = ({ isMainStrike }: { isMainStrike: boolean }) => (
 );
 
 const heroImages = [
-  "https://drive.google.com/thumbnail?id=1NSWL_bq-WRZ4mMsEM1ff057AjCKRbTY7&sz=w1920"
+  "https://drive.google.com/thumbnail?id=1-1Usfavo3RTjTIsAW5psm2reCNzq6Hs3&sz=w1920"
 ];
 
 const Home: React.FC = () => {
@@ -398,6 +398,14 @@ const Home: React.FC = () => {
                 }}
                 className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto items-center"
               >
+                <button
+                  onClick={() => {
+                    document.getElementById('areas-de-atuacao')?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  className="py-3 px-8 rounded-sm font-bold uppercase tracking-widest text-sm transition-all duration-300 transform hover:-translate-y-1 inline-block text-center bg-transparent border-2 border-white text-white hover:bg-white hover:text-corporate shadow-lg w-full sm:w-auto cursor-pointer"
+                >
+                  O que fazemos
+                </button>
                 {/* RESTORED: Standard button sizing */}
                 <CTAButton 
                   to="/contacto" 
@@ -413,7 +421,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* 2. SERVICES */}
-      <section className="py-12 md:py-20 bg-white relative z-20">
+      <section id="areas-de-atuacao" className="py-12 md:py-20 bg-white relative z-20">
         <div className="container mx-auto px-4 md:px-12">
           <div className="text-center mb-10 md:mb-16">
             <h2 className="text-2xl md:text-3xl font-bold uppercase text-corporate mb-4">{t.home.servicesTitle}</h2>
@@ -464,8 +472,8 @@ const Home: React.FC = () => {
         <div className="container mx-auto px-4 md:px-12 flex flex-col lg:flex-row items-center gap-12">
           <div className="w-full lg:w-1/2">
             <img 
-              src="https://drive.google.com/thumbnail?id=16SefoRSV3dPLvfVbIJHTmXMmKMi9JSNg&sz=w1000" 
-              alt="Engenheiro" 
+              src="https://drive.google.com/thumbnail?id=15Ea3VeSlil56AL3L2fgEkW0foozhg1LC&sz=w1000" 
+              alt="Equipa JF" 
               className="rounded-lg shadow-2xl w-full h-auto object-cover" 
               referrerPolicy="no-referrer"
             />

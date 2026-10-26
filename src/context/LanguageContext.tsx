@@ -59,7 +59,7 @@ const translations = {
       toggle: 'EN'
     },
     footer: {
-      desc: 'Soluções integradas de eletricidade, construção e mobilidade elétrica. Impulsionamos o seu projeto no Algarve e Alentejo com qualidade e segurança desde 1986.',
+      desc: 'Joaquim Fernandes. Soluções integradas de eletricidade, construção e mobilidade elétrica. Impulsionamos o seu projeto no Algarve e Alentejo com qualidade e segurança desde 1986.',
       navTitle: 'Navegação',
       contactTitle: 'Contactos',
       newsletterTitle: 'Newsletter',
@@ -126,7 +126,7 @@ const translations = {
         }
       ],
       leaveReview: "Deixe a sua avaliação",
-      partnersTitle: "Parceiros e Marcas de Confiança",
+      partnersTitle: "Parceiros da JF",
       serviceCards: {
          plrs: { title: "Ramais de Ligação à Rede Elétrica", desc: "Gerimos todo o processo desde o Pedido de Ligação à rede até à execução da obra, garantindo uma solução completa, eficiente e sem preocupações." },
          infraestruturas: { title: "Infraestruturas Elétricas", desc: "Redes de Baixa e Média Tensão." },
@@ -391,7 +391,7 @@ const translations = {
       ctaButton: "Pedir Proposta de Iluminação"
     },
     partners: {
-      heroTitle: "Parceiros de Confiança",
+      heroTitle: "Parceiros da JF",
       heroDesc: "A excelência da JF constrói-se com relações sólidas com líderes globais da indústria e parcerias estratégicas exclusivas.",
       suppliersTitle: "Parceiros de Negócios",
       suppliersDesc: "Trabalhamos apenas com materiais homologados e equipamentos de topo para garantir a máxima segurança e durabilidade das nossas instalações elétricas.",
@@ -691,7 +691,7 @@ const translations = {
       ]
     },
     about: {
-      heroTitle: "A Nossa História",
+      heroTitle: "A História da Joaquim & Fernandes",
       heroDesc: "",
       timeline: [
         { year: "1986", title: "Fundação da Empresa", description: "JF inicia a sua atividade como uma pequena empresa familiar focada em instalações elétricas na zona de Olhão." },

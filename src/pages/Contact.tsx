@@ -888,16 +888,16 @@ const Contact: React.FC = () => {
           <h2 className="text-2xl font-bold uppercase text-corporate mb-8">{t.contact.locationTitle}</h2>
           <div className="w-full h-80 md:h-96 bg-gray-200 rounded-lg overflow-hidden relative shadow-inner">
              {/* Iframe for Google Maps visualization (Pointing to Moncarapacho/Olhão) */}
-             <iframe 
-                src="https://maps.google.com/maps?q=Estrada+Nacional+125+Bias+Norte+Moncarapacho,+8700-066+Olhão&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4503.303223328251!2d-7.7861785688120095!3d37.049946272320135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd100015fa93cb27%3A0x9f2e8973008bd28a!2sJoaquim%20%26%20Fernandes-electricidade%20E%20Telecomunica%C3%A7%C3%B5es%20Lda!5e0!3m2!1spt-PT!2spt!4v1793016969170!5m2!1spt-PT!2spt" 
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 
                 allowFullScreen={true} 
                 loading="lazy" 
-                referrerPolicy="no-referrer-when-downgrade"
+                referrerPolicy="strict-origin-when-cross-origin"
                 title="Mapa de Localização"
-             ></iframe>
+              ></iframe>
              {/* Overlay to ensure scrolling page works unless interacting directly */}
              <div className="absolute inset-0 pointer-events-none border-4 border-white/50"></div>
           </div>

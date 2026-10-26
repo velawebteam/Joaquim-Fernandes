@@ -24,13 +24,13 @@ const ServiceDetail: React.FC = () => {
   const getImage = (serviceId: string) => {
     switch(serviceId) {
         case 'projetos': return "https://drive.google.com/thumbnail?id=1XcIH3U-OGPbbRxaJZGRkjg3zOUH02I13&sz=w1000";
-        case 'plrs': return "https://drive.google.com/thumbnail?id=1aO8Fz5mHCGNCzvOYG709XORsodUGheQJ&sz=w1000";
+        case 'plrs': return "https://drive.google.com/thumbnail?id=17b8XQuPW9kxcqPYowVSXeqIIUG6CMtWj&sz=w1000";
         case 'infraestruturas': return "https://drive.google.com/thumbnail?id=1kgeaUZc389LWYR_zGlPRgMmmkA3V2cHV&sz=w1000";
         case 'instalacoes': return "https://drive.google.com/thumbnail?id=1vFfKmmmxVzPktDOZ4YNYDGFVjO-oTpWy&sz=w1000";
         case 'postos-transformacao': return "https://drive.google.com/thumbnail?id=1u7DLNgNbHwWHuej4Omw7iR6YJ054n1UA&sz=w1000";
         case 'ev_charging': return "https://picsum.photos/seed/evcharging/1920/1080";
         case 'telecomunicacoes': return "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=2070&auto=format&fit=crop";
-        case 'outros': return "https://drive.google.com/thumbnail?id=16EZQLSNq5Mu1vrMN4bX7AzQGVm2Q5Nq5&sz=w1000";
+        case 'outros': return "https://drive.google.com/thumbnail?id=1uPRfbqyXmDv7lH31jgfDEi587Ct7AJZ6&sz=w1000";
         case 'iluminacao': return "https://drive.google.com/thumbnail?id=1Q7Ak5kMhDW4Xxk9VWPrOu5mThEKDGo0x&sz=w1000";
         default: return "https://picsum.photos/seed/electricity/1920/1080";
     }
@@ -40,15 +40,14 @@ const ServiceDetail: React.FC = () => {
   const getGalleryImages = (serviceId: string) => {
      if (serviceId === 'instalacoes') {
         return [
-           "https://drive.google.com/thumbnail?id=18H9oeluLrp2JTrcPU-HvdltEGU2dco0M&sz=w1000",
-           "https://drive.google.com/thumbnail?id=1bivaf-8uCZMYJdYoFjOpcL1LORdMEYaQ&sz=w1000",
-           "https://drive.google.com/thumbnail?id=1Uov_V6c6-7YOooxPbtmgeiGilbOd8la0&sz=w1000",
+           "https://drive.google.com/thumbnail?id=1-Wd0M0PiQjFr35jl_u99YIXyVlqz32gg&sz=w1000",
+           "https://drive.google.com/thumbnail?id=1PsJq0GzYZ_I8yJ9HvroBAWzcKZ6C7qG-&sz=w1000",
+           "https://drive.google.com/thumbnail?id=1l-BCVt2cjZWIlXM0jZAgERBJt3Sq6lf5&sz=w1000",
         ];
      }
      if (serviceId === 'outros') {
         return [
            "https://drive.google.com/thumbnail?id=1uPRfbqyXmDv7lH31jgfDEi587Ct7AJZ6&sz=w1000",
-           "https://drive.google.com/thumbnail?id=16EZQLSNq5Mu1vrMN4bX7AzQGVm2Q5Nq5&sz=w1000",
            "https://drive.google.com/thumbnail?id=1w2hNFrkGTVNxI0H2Brl3KBE13aX_0SEY&sz=w1000",
            "https://drive.google.com/thumbnail?id=1adtAn85YzIk-VygRQnSokR46zimX1cwd&sz=w1000",
            "https://drive.google.com/thumbnail?id=1hnViOlbPqzatOL9DxAPv5Cojdmf-Sqjs&sz=w1000",
@@ -60,7 +59,7 @@ const ServiceDetail: React.FC = () => {
         return [
            "https://drive.google.com/thumbnail?id=1kNQX2zzIbh4SXP66__t4nRBLULjryBiY&sz=w1000",
            "https://drive.google.com/thumbnail?id=12VNxerQUOpcAAqu3Q5Zo09XxiRHAcSUk&sz=w1000",
-           "https://drive.google.com/thumbnail?id=1aO8Fz5mHCGNCzvOYG709XORsodUGheQJ&sz=w1000",
+           "https://drive.google.com/thumbnail?id=17b8XQuPW9kxcqPYowVSXeqIIUG6CMtWj&sz=w1000",
         ];
      }
      if (serviceId === 'telecomunicacoes') {
@@ -86,7 +85,7 @@ const ServiceDetail: React.FC = () => {
      }
      if (serviceId === 'infraestruturas') {
         return [
-           "https://drive.google.com/thumbnail?id=1bG7V0Qp7dWD2oC3zXP1Bgm0UpJdJxDGw&sz=w1000",
+           "https://drive.google.com/thumbnail?id=1-1Usfavo3RTjTIsAW5psm2reCNzq6Hs3&sz=w1000",
            "https://drive.google.com/thumbnail?id=1322b6omK4CcuAeWKzN8lHzKJEC5kBho0&sz=w1000",
            "https://drive.google.com/thumbnail?id=1L_NPl3ANcvtx03wm5-RKvP_81HSBN_oy&sz=w1000",
         ];
@@ -320,7 +319,7 @@ const ServiceDetail: React.FC = () => {
                   Fale com a nossa equipa técnica especializada para obter um orçamento personalizado para o seu projeto.
                 </p>
                 <CTAButton 
-                  to={`/contact?subject=orcamento&interest=${id}`}
+                  to={`/contacto?subject=orcamento&interest=${id === 'telecomunicacoes' ? 'telecommunications' : id === 'postos-transformacao' ? 'substations' : id === 'instalacoes' ? 'installations' : id === 'projetos' ? 'projects' : id === 'iluminacao' ? 'lighting' : id === 'outros' ? 'others' : id}`}
                   text={t.nav.quote}
                   variant="white"
                   className="w-full text-corporate hover:text-white"

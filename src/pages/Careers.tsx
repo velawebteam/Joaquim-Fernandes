@@ -188,7 +188,7 @@ const Careers: React.FC = () => {
               onMouseUp={handleMouseUp}
               onMouseLeave={handleMouseUp}
               className={`
-                flex items-stretch overflow-x-auto snap-x snap-mandatory gap-6 pb-8 -mx-6 px-6 scrollbar-hide
+                relative flex items-stretch overflow-x-auto snap-x snap-mandatory gap-6 pb-8 -mx-6 px-6 scrollbar-hide
                 md:mx-auto md:px-0 cursor-grab ${isMouseDown ? 'cursor-grabbing select-none' : ''}
               `}
             >
@@ -234,7 +234,7 @@ const Careers: React.FC = () => {
                 </div>
 
                 <CTAButton 
-                  to={`/contact?subject=recrutamento&job=${encodeURIComponent(job.title)}`}
+                  to={`/contacto?subject=recrutamento&job=${encodeURIComponent(job.title)}`}
                   text={t.careers.applyBtn}
                   variant="primary"
                   className="mt-auto w-full"
@@ -243,19 +243,7 @@ const Careers: React.FC = () => {
             ))}
           </div>
           
-          {/* Navigation Dots */}
-          <div className="flex justify-center gap-2 mt-4">
-            {t.careers.jobs.map((_: any, index: number) => (
-                <button
-                    key={index}
-                    onClick={() => scrollToJob(index)}
-                    className={`h-2 rounded-full transition-all duration-300 cursor-pointer ${
-                        activeJobIndex === index ? 'w-8 bg-corporate' : 'w-2 bg-gray-300 hover:bg-gray-400'
-                    }`}
-                    aria-label={`Go to job ${index + 1}`}
-                />
-            ))}
-          </div>
+          
         </div>
       </div>
     </div>
@@ -275,7 +263,7 @@ const Careers: React.FC = () => {
            </p>
            
            <CTAButton 
-             to="mailto:mail@joaquimfernandes.pt?subject=Candidatura%20Espont%C3%A2nea"
+             to="/contacto?subject=recrutamento"
              text={t.careers.spontaneousBtn}
              variant="white"
            />
