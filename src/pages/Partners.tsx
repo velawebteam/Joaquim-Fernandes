@@ -46,6 +46,7 @@ const Partners: React.FC = () => {
     { type: "Circutor", image: "https://drive.google.com/thumbnail?id=18cwmEaBjEXKvGWvQApxWFkJF1nr8DWsk&sz=w1000", url: "https://circutor.com/pt/", scaleClass: "scale-75" },
     { type: "Eaton", image: "https://drive.google.com/thumbnail?id=1T5J8NNzPwoZNYw9Av19o2buGsNTTZM__&sz=w1000", url: "https://www.eaton.com/pt/pt-pt.html", scaleClass: "scale-75" },
     { type: "JSL", image: "https://drive.google.com/thumbnail?id=1JMw3WQBSWaBGzsQXZGyYtxX3FB8cmYye&sz=w1000", url: "https://jsl-online.com/", scaleClass: "scale-150" },
+    { type: "APIEE", image: "https://drive.google.com/thumbnail?id=1XGxbXGdhJzVgExYNXXoWWTUqkc7p7uHP&sz=w1000", url: "https://apiee.pt/", scaleClass: "scale-[1.75]" },
   ];
 
   return (
@@ -87,7 +88,7 @@ const Partners: React.FC = () => {
              </div>
           </div>
 
-          <div className="flex overflow-x-auto pb-10 gap-6 snap-x snap-mandatory -mx-6 px-6 md:mx-0 md:px-0 md:pb-0 md:grid md:grid-cols-3 md:gap-8 scrollbar-hide">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-8">
              {partnerSlots.map((slot, index) => {
                const CardContent = (
                  <>
@@ -123,7 +124,7 @@ const Partners: React.FC = () => {
                    whileInView={{ opacity: 1, y: 0 }}
                    transition={{ duration: 0.3 }}
                    viewport={{ once: true }}
-                   className="h-48 md:h-56 min-w-[280px] md:min-w-0 snap-center flex-shrink-0"
+                   className="h-48 md:h-56"
                  >
                    {slot.url ? (
                      <a 

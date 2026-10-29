@@ -24,9 +24,9 @@ const ServiceDetail: React.FC = () => {
   const getImage = (serviceId: string) => {
     switch(serviceId) {
         case 'projetos': return "https://drive.google.com/thumbnail?id=1XcIH3U-OGPbbRxaJZGRkjg3zOUH02I13&sz=w1000";
-        case 'plrs': return "https://drive.google.com/thumbnail?id=17b8XQuPW9kxcqPYowVSXeqIIUG6CMtWj&sz=w1000";
+        case 'plrs': return "https://drive.google.com/thumbnail?id=15RwlluF0aJqfLajdU5JzujLwtTAOmRAV&sz=w1000";
         case 'infraestruturas': return "https://drive.google.com/thumbnail?id=1kgeaUZc389LWYR_zGlPRgMmmkA3V2cHV&sz=w1000";
-        case 'instalacoes': return "https://drive.google.com/thumbnail?id=1vFfKmmmxVzPktDOZ4YNYDGFVjO-oTpWy&sz=w1000";
+        case 'instalacoes': return "https://drive.google.com/thumbnail?id=1AvAAAR1nYfK0HAecVa4ugFNbZTlWz5_8&sz=w1000";
         case 'postos-transformacao': return "https://drive.google.com/thumbnail?id=1u7DLNgNbHwWHuej4Omw7iR6YJ054n1UA&sz=w1000";
         case 'ev_charging': return "https://picsum.photos/seed/evcharging/1920/1080";
         case 'telecomunicacoes': return "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=2070&auto=format&fit=crop";
@@ -59,7 +59,7 @@ const ServiceDetail: React.FC = () => {
         return [
            "https://drive.google.com/thumbnail?id=1kNQX2zzIbh4SXP66__t4nRBLULjryBiY&sz=w1000",
            "https://drive.google.com/thumbnail?id=12VNxerQUOpcAAqu3Q5Zo09XxiRHAcSUk&sz=w1000",
-           "https://drive.google.com/thumbnail?id=17b8XQuPW9kxcqPYowVSXeqIIUG6CMtWj&sz=w1000",
+           "https://drive.google.com/thumbnail?id=15RwlluF0aJqfLajdU5JzujLwtTAOmRAV&sz=w1000",
         ];
      }
      if (serviceId === 'telecomunicacoes') {

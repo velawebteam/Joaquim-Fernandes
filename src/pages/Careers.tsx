@@ -164,18 +164,16 @@ const Careers: React.FC = () => {
           <div className="relative group/carousel">
             {/* Navigation Arrows (PC only) */}
             <button 
-              onClick={(e) => { e.preventDefault(); scrollToJob(Math.max(0, activeJobIndex - 1)); }}
-              disabled={activeJobIndex === 0}
-              className="absolute -left-4 md:-left-12 top-1/2 -translate-y-1/2 z-20 p-2 md:p-4 bg-white shadow-xl rounded-full border border-gray-100 text-corporate hover:bg-brand-light hover:text-white transition-colors duration-300 disabled:opacity-0 disabled:pointer-events-none hidden md:flex items-center justify-center group/btn"
+              onClick={(e) => { e.preventDefault(); if (jobsContainerRef.current) jobsContainerRef.current.scrollTo({ left: 0, behavior: 'smooth' }); }}
+              className={`absolute -left-4 md:-left-12 top-1/2 -translate-y-1/2 z-20 p-2 md:p-4 bg-white shadow-xl rounded-full border border-gray-100 text-corporate hover:bg-brand-light hover:text-white transition-all duration-300 flex items-center justify-center group/btn ${(jobsContainerRef.current?.scrollLeft || 0) === 0 ? 'hidden' : ''}`}
               aria-label="Previous job"
             >
               <ChevronLeft size={28} className="group-hover/btn:-translate-x-1 transition-transform" />
             </button>
             
             <button 
-              onClick={(e) => { e.preventDefault(); scrollToJob(Math.min(t.careers.jobs.length - 1, activeJobIndex + 1)); }}
-              disabled={activeJobIndex === t.careers.jobs.length - 1}
-              className="absolute -right-4 md:-right-12 top-1/2 -translate-y-1/2 z-20 p-2 md:p-4 bg-white shadow-xl rounded-full border border-gray-100 text-corporate hover:bg-brand-light hover:text-white transition-colors duration-300 disabled:opacity-0 disabled:pointer-events-none hidden md:flex items-center justify-center group/btn"
+              onClick={(e) => { e.preventDefault(); if (jobsContainerRef.current) jobsContainerRef.current.scrollTo({ left: jobsContainerRef.current.scrollWidth, behavior: 'smooth' }); }}
+              className={`absolute -right-4 md:-right-12 top-1/2 -translate-y-1/2 z-20 p-2 md:p-4 bg-white shadow-xl rounded-full border border-gray-100 text-corporate hover:bg-brand-light hover:text-white transition-all duration-300 flex items-center justify-center group/btn ${activeJobIndex === t.careers.jobs.length - 1 ? 'hidden' : ''}`}
               aria-label="Next job"
             >
               <ChevronRight size={28} className="group-hover/btn:translate-x-1 transition-transform" />
