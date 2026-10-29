@@ -97,7 +97,7 @@ const translations = {
       whyUsDesc: "Somos a escolha certa para quem procura assistência permanente no Algarve e Alentejo. Combinamos décadas de experiência em Postos de Transformação e Telecomunicações com as tecnologias mais recentes.",
       ctaButton: "Conheça os nossos serviços",
       benefits: [
-        { id: 1, text: "PluraLuz" },
+        { id: 1, text: "Experiência desde 1986" },
         { id: 2, text: "Assistência Permanente" },
         { id: 3, text: "Soluções Chave-na-mão" },
         { id: 4, text: "Foco no Sul do País" }
