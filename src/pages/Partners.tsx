@@ -46,7 +46,6 @@ const Partners: React.FC = () => {
     { type: "Circutor", image: "https://drive.google.com/thumbnail?id=18cwmEaBjEXKvGWvQApxWFkJF1nr8DWsk&sz=w1000", url: "https://circutor.com/pt/", scaleClass: "scale-75" },
     { type: "Eaton", image: "https://drive.google.com/thumbnail?id=1T5J8NNzPwoZNYw9Av19o2buGsNTTZM__&sz=w1000", url: "https://www.eaton.com/pt/pt-pt.html", scaleClass: "scale-75" },
     { type: "JSL", image: "https://drive.google.com/thumbnail?id=1JMw3WQBSWaBGzsQXZGyYtxX3FB8cmYye&sz=w1000", url: "https://jsl-online.com/", scaleClass: "scale-150" },
-    { type: "APIEE", image: "https://drive.google.com/thumbnail?id=1XGxbXGdhJzVgExYNXXoWWTUqkc7p7uHP&sz=w1000", url: "https://apiee.pt/", scaleClass: "scale-[1.75]" },
   ];
 
   return (
@@ -159,7 +158,7 @@ const Partners: React.FC = () => {
               </p>
            </div>
            
-           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 max-w-4xl mx-auto relative z-10">
+           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 max-w-6xl mx-auto relative z-10">
               {t.partners.exclusivePartners?.map((partner: any, idx: number) => (
                  <motion.a 
                    key={idx}

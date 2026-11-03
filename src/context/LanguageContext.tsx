@@ -334,27 +334,13 @@ const translations = {
           title: "Iluminação Pública",
           image: "https://drive.google.com/thumbnail?id=1MFt1qWei6hz80tPGkX91j-g86uHVA7vi&sz=w1000",
           desc: "Garantimos a segurança e o bem-estar das populações através de redes de iluminação pública eficientes e fiáveis. Realizamos a instalação e manutenção de armaduras viárias, projetores e colunas, assegurando a correta luminosidade em estradas, ruas e espaços públicos, sempre com foco na redução da pegada ecológica e custos energéticos.",
-          applications: ["Zonas Viárias", "Zonas pedonais", "Urbanizações/ Loteamentos", "Parques de Estacionamento", "Zonas Portuárias"],
-          gallery: [
-            "https://drive.google.com/thumbnail?id=1NUSmNSRlveC_dvohy7p_e_V5OddYROlw&sz=w1000",
-            "https://drive.google.com/thumbnail?id=1oIb-4UKGjTM0gjrDmQ_70TLDfriV0CWt&sz=w1000",
-            "https://drive.google.com/thumbnail?id=1QbTNDz4x7rzjY2qwaBNYs_DLwoOR1RBR&sz=w1000",
-            "https://drive.google.com/thumbnail?id=1juY37c98sdlno0eTg4uwb8ko7ajh1HbS&sz=w1000",
-            "https://drive.google.com/thumbnail?id=1SglyL6elHYo8R7RSEVBf6zE_er0fGQm8&sz=w1000"
-          ]
+          applications: ["Zonas Viárias", "Zonas pedonais", "Urbanizações/ Loteamentos", "Parques de Estacionamento", "Zonas Portuárias"]
         },
         {
           title: "Iluminação Desportiva",
           image: "https://drive.google.com/thumbnail?id=15ZTaJZVipA-lCRWq5r5I0oelf5cJDUTF&sz=w1000",
           desc: "No desporto, a luz é fundamental para o desempenho dos atletas e experiência dos espectadores. Projetamos e instalamos sistemas de iluminação que cumprem rigorosamente os níveis de lux exigidos pelas federations e normas de transmissão televisiva. Garantimos uniformidade no campo, controlo de encadeamento e sistemas de acendimento instantâneo para pavilhões e estádios.",
-          applications: ["Campos de Futebol e Estádios", "Pavilhões Desportivos", "Campos de Ténis e Padel", "Piscinas Municipais"],
-          gallery: [
-            "https://drive.google.com/thumbnail?id=1FMXRXRVynx69PsSvzXJyypB2QAKm1uv_&sz=w1000",
-            "https://drive.google.com/thumbnail?id=1zri54HC34keEPySSfeVAxGfrrw3dulJm&sz=w1000",
-            "https://drive.google.com/thumbnail?id=1k7um6AYzBfn4-poB595CUcqtqzEKkc9i&sz=w1000",
-            "https://drive.google.com/thumbnail?id=1cNwkL6l_mw1seGTvfVbSdidy2g4-ibM-&sz=w1000",
-            "https://drive.google.com/thumbnail?id=1ecZo9WtYyPpvbllZ_oYG7DNtiS89QJvp&sz=w1000"
-          ]
+          applications: ["Campos de Futebol e Estádios", "Pavilhões Desportivos", "Campos de Ténis e Padel", "Piscinas Municipais"]
         },
         {
           title: "Iluminação Inteligente",
@@ -412,7 +398,8 @@ const translations = {
       exclusiveDesc: "Instituições e associações que partilham o nosso compromisso com o rigor e a excelência no setor.",
       exclusivePartners: [
         { name: "AICCOPN", type: "Associação", desc: "Associação dos Industriais da Construção Civil e Obras Públicas.", logo: "https://drive.google.com/thumbnail?id=1fcRxUxNvCwhcZrv1MisspEy97X3sNpi4&sz=w1000", link: "https://www.aiccopn.pt/" },
-        { name: "NERA", type: "Associação", desc: "Associação Empresarial da Região do Algarve.", logo: "https://drive.google.com/thumbnail?id=1X6U5Eqg1pQCsDUTGVdZFo5EhYKLZ4BWO&sz=w1000", link: "https://nera.pt/" }
+        { name: "NERA", type: "Associação", desc: "Associação Empresarial da Região do Algarve.", logo: "https://drive.google.com/thumbnail?id=1X6U5Eqg1pQCsDUTGVdZFo5EhYKLZ4BWO&sz=w1000", link: "https://nera.pt/" },
+        { name: "APIEE", type: "Associação", desc: "Associação Portuguesa de Iluminação e Energia Elétrica", logo: "https://drive.google.com/thumbnail?id=1XGxbXGdhJzVgExYNXXoWWTUqkc7p7uHP&sz=w1000", link: "https://apiee.pt/" }
       ],
       ctaTitle: "Torne-se um Parceiro",
       ctaDesc: "Procuramos constantemente expandir a nossa rede com empresas que partilhem os nossos valores de rigor e qualidade.",
@@ -1297,7 +1284,8 @@ const translations = {
       exclusivePartners: [
         { name: "Olhão Municipality", type: "Municipality", desc: "Execution of electrical infrastructures in new allotments and industrial zones." },
         { name: "Faro Municipality", type: "Municipality", desc: "Maintenance of Public Lighting and municipal buildings in the municipality." },
-        { name: "Loulé Municipality", type: "Municipality", desc: "Development and maintenance of electrical networks and public lighting." }
+        { name: "Loulé Municipality", type: "Municipality", desc: "Development and maintenance of electrical networks and public lighting." },
+        { name: "APIEE", type: "Association", desc: "Portuguese Association of Lighting and Electrical Energy", logo: "https://drive.google.com/thumbnail?id=1XGxbXGdhJzVgExYNXXoWWTUqkc7p7uHP&sz=w1000", link: "https://apiee.pt/" }
       ],
       ctaTitle: "Become a Partner",
       ctaDesc: "We are constantly looking to expand our network with companies that share our values of rigor and quality.",

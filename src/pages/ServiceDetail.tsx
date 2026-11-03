@@ -286,7 +286,7 @@ const ServiceDetail: React.FC = () => {
               )}
 
               {/* GALLERY SECTION - NEW */}
-              {id !== 'projetos' && (
+              {false && (
                 <div className="mb-12">
                    <h3 className="text-lg md:text-xl font-bold text-corporate mb-6 uppercase tracking-wider flex items-center gap-2">
                       <ImageIcon className="text-brand-light" /> Galeria
