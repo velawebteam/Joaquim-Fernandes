@@ -148,8 +148,8 @@ const Careers: React.FC = () => {
               <img 
                 src="https://drive.google.com/thumbnail?id=1r7unzphEyKVA-a-_zE-tlyM63TTGRdsA&sz=w1000" 
                 alt="Equipa a trabalhar" 
-                className="rounded-lg shadow-xl object-cover object-[50%_25%]"
-                style={{ width: '700px', height: '900px' }}
+                className="rounded-lg shadow-xl w-full h-auto object-cover"
+                style={{}}
                 referrerPolicy="no-referrer"
               />
             </div>

@@ -164,7 +164,7 @@ const About: React.FC = () => {
                             className="flex flex-col items-center text-center p-6 bg-detail rounded-sm hover:bg-white hover:shadow-md transition-all duration-300 border border-transparent hover:border-gray-200 w-full"
                         >
                             <h4 className="font-bold text-corporate text-sm md:text-base mb-2 leading-tight">{cert.name}</h4>
-                            <p className="text-xs text-gray-500 hidden md:block max-w-[200px]">
+                            <p className="text-xs text-gray-500  max-w-[200px]">
                                 {cert.desc}
                             </p>
                         </motion.div>
@@ -350,7 +350,7 @@ const About: React.FC = () => {
                     referrerPolicy="no-referrer"
                   />
                   {/* Floating Badge */}
-                  <div className="absolute -bottom-6 -right-6 bg-accent text-white p-4 md:p-6 rounded-sm shadow-lg z-20 hidden md:block">
+                  <div className="absolute -bottom-6 -right-6 bg-accent text-white p-4 md:p-6 rounded-sm shadow-lg z-20 ">
                      <span className="block text-3xl md:text-4xl font-bold font-heading">40+</span>
                      <span className="text-xs uppercase tracking-widest font-semibold">Anos de Experiência</span>
                   </div>
