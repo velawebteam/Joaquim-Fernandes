@@ -478,7 +478,7 @@ const Home: React.FC = () => {
             <img 
               src="https://drive.google.com/thumbnail?id=1ZJ9Zw2aPAVwqAXWsJDB8dA9R3GYMehoN&sz=w1000" 
               alt="Equipa JF" 
-              className="rounded-lg shadow-2xl w-full h-auto object-cover" 
+              className="rounded-lg shadow-2xl w-full h-[300px] md:h-[500px] object-cover object-center" 
               referrerPolicy="no-referrer"
             />
           </div>

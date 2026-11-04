@@ -350,7 +350,7 @@ const About: React.FC = () => {
                     referrerPolicy="no-referrer"
                   />
                   {/* Floating Badge */}
-                  <div className="absolute -bottom-6 -right-6 bg-accent text-white p-4 md:p-6 rounded-sm shadow-lg z-20 ">
+                  <div className="absolute -bottom-12 md:-bottom-6 -right-2 md:-right-6 bg-accent text-white p-4 md:p-6 rounded-sm shadow-lg z-20 ">
                      <span className="block text-3xl md:text-4xl font-bold font-heading">40+</span>
                      <span className="text-xs uppercase tracking-widest font-semibold">Anos de Experiência</span>
                   </div>
