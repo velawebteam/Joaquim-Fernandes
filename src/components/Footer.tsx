@@ -116,6 +116,14 @@ const Footer: React.FC = () => {
                <Link to="/privacidade" className="hover:text-white transition-colors">{t.footer.privacy}</Link>
                <Link to="/termos" className="hover:text-white transition-colors">{t.footer.terms}</Link>
                <a 
+                 href="https://www.consumoalgarve.pt/index.php/pt" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 className="hover:text-white transition-colors"
+               >
+                 {t.footer.arbitrationCenters}
+               </a>
+               <a 
                  href="https://www.livroreclamacoes.pt/Inicio/" 
                  target="_blank" 
                  rel="noopener noreferrer" 

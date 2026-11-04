@@ -71,6 +71,7 @@ const translations = {
       privacy: 'Política de Privacidade',
       terms: 'Termos e Condições',
       quality: 'Política de Qualidade',
+      arbitrationCenters: 'Centros de Arbitragem',
       complaintsBook: 'Livro de Reclamações',
       faqTitle: 'Dúvidas Frequentes',
       faqDesc: 'Consulte a nossa área de apoio para esclarecer questões técnicas.',
