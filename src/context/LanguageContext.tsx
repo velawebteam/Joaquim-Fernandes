@@ -1283,9 +1283,8 @@ const translations = {
       exclusiveTitle: "Partner Public Entities",
       exclusiveDesc: "Municipalities and state organizations that trust JF for public lighting and critical infrastructures.",
       exclusivePartners: [
-        { name: "Olhão Municipality", type: "Municipality", desc: "Execution of electrical infrastructures in new allotments and industrial zones." },
-        { name: "Faro Municipality", type: "Municipality", desc: "Maintenance of Public Lighting and municipal buildings in the municipality." },
-        { name: "Loulé Municipality", type: "Municipality", desc: "Development and maintenance of electrical networks and public lighting." },
+        { name: "AICCOPN", type: "Association", desc: "Association of Civil Construction and Public Works Industries.", logo: "https://drive.google.com/thumbnail?id=1fcRxUxNvCwhcZrv1MisspEy97X3sNpi4&sz=w1000", link: "https://www.aiccopn.pt/" },
+        { name: "NERA", type: "Association", desc: "Business Association of the Algarve Region.", logo: "https://drive.google.com/thumbnail?id=1X6U5Eqg1pQCsDUTGVdZFo5EhYKLZ4BWO&sz=w1000", link: "https://nera.pt/" },
         { name: "APIEE", type: "Association", desc: "Portuguese Association of Lighting and Electrical Energy", logo: "https://drive.google.com/thumbnail?id=1XGxbXGdhJzVgExYNXXoWWTUqkc7p7uHP&sz=w1000", link: "https://apiee.pt/" }
       ],
       ctaTitle: "Become a Partner",
@@ -2013,22 +2012,10 @@ const translations = {
       "exclusiveTitle": "Entidades Públicas Socias",
       "exclusiveDesc": "Municipios y organismos estatales que confían en JF para alumbrado público e infraestructura crítica.",
     "exclusivePartners": [
-      {
-        "name": "Municipio de Olhao",
-        "type": "autoridad local",
-        "desc": "Ejecución de infraestructuras eléctricas en nuevos fraccionamientos y zonas industriales."
-      },
-      {
-        "name": "Municipio de Faro",
-        "type": "autoridad local",
-        "desc": "Mantenimiento del alumbrado público y edificios municipales del municipio."
-      },
-      {
-        "name": "Municipio de Loulé",
-        "type": "autoridad local",
-        "desc": "Desarrollo y mantenimiento de redes eléctricas y alumbrado público."
-      }
-    ],
+        { "name": "AICCOPN", "type": "Asociación", "desc": "Asociación de Industrias de la Construcción Civil y Obras Públicas.", "logo": "https://drive.google.com/thumbnail?id=1fcRxUxNvCwhcZrv1MisspEy97X3sNpi4&sz=w1000", "link": "https://www.aiccopn.pt/" },
+        { "name": "NERA", "type": "Asociación", "desc": "Asociación Empresarial de la Región del Algarve.", "logo": "https://drive.google.com/thumbnail?id=1X6U5Eqg1pQCsDUTGVdZFo5EhYKLZ4BWO&sz=w1000", "link": "https://nera.pt/" },
+        { "name": "APIEE", "type": "Asociación", "desc": "Asociación Portuguesa de Iluminación y Energía Eléctrica", "logo": "https://drive.google.com/thumbnail?id=1XGxbXGdhJzVgExYNXXoWWTUqkc7p7uHP&sz=w1000", "link": "https://apiee.pt/" }
+      ],
     "ctaTitle": "Conviértete en socio",
     "ctaDesc": "Buscamos constantemente ampliar nuestra red con empresas que compartan nuestros valores de rigor y calidad.",
     "ctaButton": "Proponer asociación"
@@ -3018,22 +3005,10 @@ const translations = {
     "exclusiveTitle": "Entités publiques partenaires",
     "exclusiveDesc": "Municipalités et organismes étatiques qui font confiance à JF pour l'éclairage public et les infrastructures critiques.",
     "exclusivePartners": [
-      {
-        "name": "Municipalité d'Olhão",
-        "type": "Autorité locale",
-        "desc": "Réalisation d'infrastructures électriques dans de nouveaux lotissements et zones industrielles."
-      },
-      {
-        "name": "Municipalité de Faro",
-        "type": "Autorité locale",
-        "desc": "Entretien de l'éclairage public et des bâtiments municipaux de la commune."
-      },
-      {
-        "name": "Commune de Loulé",
-        "type": "Autorité locale",
-        "desc": "Aménagement et maintenance des réseaux électriques et de l'éclairage public."
-      }
-    ],
+        { "name": "AICCOPN", "type": "Association", "desc": "Association des industries de la construction civile et des travaux publics.", "logo": "https://drive.google.com/thumbnail?id=1fcRxUxNvCwhcZrv1MisspEy97X3sNpi4&sz=w1000", "link": "https://www.aiccopn.pt/" },
+        { "name": "NERA", "type": "Association", "desc": "Association d'entreprises de la région de l'Algarve.", "logo": "https://drive.google.com/thumbnail?id=1X6U5Eqg1pQCsDUTGVdZFo5EhYKLZ4BWO&sz=w1000", "link": "https://nera.pt/" },
+        { "name": "APIEE", "type": "Association", "desc": "Association portugaise de l'éclairage et de l'énergie électrique", "logo": "https://drive.google.com/thumbnail?id=1XGxbXGdhJzVgExYNXXoWWTUqkc7p7uHP&sz=w1000", "link": "https://apiee.pt/" }
+      ],
     "ctaTitle": "Devenez partenaire",
     "ctaDesc": "Nous cherchons constamment à élargir notre réseau avec des entreprises qui partagent nos valeurs de rigueur et de qualité.",
     "ctaButton": "Proposer un partenariat"
