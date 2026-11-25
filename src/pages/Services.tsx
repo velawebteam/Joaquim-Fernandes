@@ -76,7 +76,11 @@ const Services: React.FC = () => {
                 whileInView={{ scale: [0.95, 1] }}
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
-                className="relative z-10 w-full rounded-sm shadow-lg md:grayscale md:group-hover:grayscale-0 transition-all duration-500 object-cover h-[220px] md:h-[400px]"
+                className={`relative z-10 w-full rounded-sm shadow-lg md:grayscale md:group-hover:grayscale-0 transition-all duration-500 block ${
+                  service.id === 'instalacoes'
+                    ? 'h-auto'
+                    : 'object-cover h-[220px] md:h-[400px]'
+                }`}
                 referrerPolicy="no-referrer"
               />
             </div>
