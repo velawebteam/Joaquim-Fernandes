@@ -146,7 +146,7 @@ const Navbar: React.FC = () => {
         showSolidNav ? 'py-2 md:py-3' : 'py-4 md:py-6'
       }`}>
         {/* Logo - Always aligned left in the container */}
-        <Logo showSolidNav={showSolidNav} />
+        <Logo showSolidNav={showSolidNav} isOpen={isOpen} />
 
         {/* Navigation Group - Aligned right */}
         <div className="flex items-center gap-6 xl:gap-8 relative z-50">

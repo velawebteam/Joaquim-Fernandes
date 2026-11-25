@@ -325,19 +325,19 @@ const Home: React.FC = () => {
                 
                 {/* Text with Typing Effect */}
                 <motion.span 
-                  className="text-brand-light font-bold uppercase tracking-[0.05em] sm:tracking-[0.1em] md:tracking-[0.15em] text-sm sm:text-2xl md:text-[32px] font-sans shadow-black drop-shadow-lg overflow-hidden block"
+                  className="text-brand-light font-bold uppercase tracking-[0.03em] sm:tracking-[0.1em] md:tracking-[0.15em] text-sm sm:text-2xl md:text-[32px] font-sans shadow-black drop-shadow-lg overflow-hidden block"
                   variants={{
                     hidden: { opacity: 1 },
                     visible: { opacity: 1 }
                   }}
                 >
                   {hasAnimatedSlogan ? (
-                    <span className="text-[20px] sm:text-[27px]">{t.home.slogan}</span>
+                    <span className="text-[clamp(14px,3.9vw,18px)] sm:text-[27px]">{t.home.slogan}</span>
                   ) : (
                     t.home.slogan.split('').map((char, index) => (
                       <motion.span
                         key={index}
-                        className="text-[20px] sm:text-[27px]"
+                        className="text-[clamp(14px,3.9vw,18px)] sm:text-[27px]"
                         variants={{
                           hidden: { opacity: 0 },
                           visible: { 
@@ -358,11 +358,26 @@ const Home: React.FC = () => {
                       </motion.span>
                     ))
                   )}
+                  <motion.span
+                    className="inline-block align-middle ml-2 h-1 bg-brand-light w-4 -translate-y-[1px] sm:hidden"
+                    style={{ transformOrigin: "left" }}
+                    variants={{
+                      hidden: { scaleX: 0 },
+                      visible: {
+                        scaleX: 1,
+                        transition: {
+                          delay: 2.0,
+                          duration: 0.5,
+                          ease: "easeOut"
+                        }
+                      }
+                    }}
+                  ></motion.span>
                 </motion.span>
 
-                {/* Right Line */}
+                {/* Right Line (Tablet/Desktop) */}
                 <motion.span 
-                  className="h-1 bg-brand-light block w-4 sm:w-8 md:w-12 shrink-0"
+                  className="hidden sm:block h-1 bg-brand-light w-4 sm:w-8 md:w-12 shrink-0"
                   style={{ transformOrigin: "left" }}
                   variants={{
                     hidden: { scaleX: 0 },
