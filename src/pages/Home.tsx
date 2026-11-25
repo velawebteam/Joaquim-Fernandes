@@ -258,21 +258,17 @@ const Home: React.FC = () => {
       <section className="relative min-h-[90vh] md:min-h-0 md:h-[60vh] lg:h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <AnimatePresence mode="popLayout" initial={false}>
-            <div className="absolute inset-0 w-full h-full aspect-[9/16] md:aspect-auto">
-              <motion.iframe
-                key={currentHeroImage}
-                src="https://www.youtube.com/embed/Eby7D28MtjA?autoplay=1&loop=1&mute=1&playlist=Eby7D28MtjA&controls=0&showinfo=0&rel=0"
-                title="Hero Background"
-                className="w-full h-full object-cover"
-                style={{ pointerEvents: 'none' }}
-                initial={{ opacity: 0, scale: 1.1 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 1.5, ease: "easeInOut" }}
-                frameBorder="0"
-                allow="autoplay; encrypted-media"
-              />
-            </div>
+            <motion.img
+              key={currentHeroImage}
+              src={heroImages[currentHeroImage]}
+              alt="Hero Background"
+              className="absolute inset-0 w-full h-full object-cover"
+              referrerPolicy="no-referrer"
+              initial={{ opacity: 0, scale: 1.1 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1.5, ease: "easeInOut" }}
+            />
           </AnimatePresence>
           <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-black/30 z-10"></div>
         </div>
