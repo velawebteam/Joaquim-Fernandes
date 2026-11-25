@@ -1,6 +1,40 @@
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import React, { createContext, useContext, useState, useEffect, useCallback, ReactNode } from 'react';
 
 export type Language = 'pt' | 'en' | 'es' | 'fr';
+
+export const SUPPORTED_LANGUAGES: Language[] = ['pt', 'en', 'es', 'fr'];
+
+export const HTML_LANG_MAP: Record<Language, string> = {
+  pt: 'pt-PT',
+  en: 'en',
+  es: 'es',
+  fr: 'fr',
+};
+
+export const OG_LOCALE_MAP: Record<Language, string> = {
+  pt: 'pt_PT',
+  en: 'en_GB',
+  es: 'es_ES',
+  fr: 'fr_FR',
+};
+
+export function getLanguageFromPath(pathname: string): Language {
+  const match = pathname.match(/^\/(en|es|fr)(?:\/|$)/);
+  return match ? (match[1] as Language) : 'pt';
+}
+
+export function stripLanguagePrefix(pathname: string): string {
+  const stripped = pathname.replace(/^\/(en|es|fr)(?=\/|$)/, '');
+  return stripped.startsWith('/') ? stripped : `/${stripped}`;
+}
+
+export function buildLocalizedPath(lang: Language, path: string): string {
+  const cleanPath = stripLanguagePrefix(path || '/');
+  if (lang === 'pt') {
+    return cleanPath === '' ? '/' : cleanPath;
+  }
+  return cleanPath === '/' ? `/${lang}` : `/${lang}${cleanPath}`;
+}
 
 interface LanguageContextType {
   language: Language;
@@ -3454,7 +3488,40 @@ const translations = {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>('pt');
+  const [language, setLanguageState] = useState<Language>(() => {
+    if (typeof window !== 'undefined') {
+      return getLanguageFromPath(window.location.pathname);
+    }
+    return 'pt';
+  });
+
+  useEffect(() => {
+    if (typeof document !== 'undefined') {
+      document.documentElement.lang = HTML_LANG_MAP[language] || 'pt-PT';
+    }
+  }, [language]);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const handlePopState = () => {
+      const pathLang = getLanguageFromPath(window.location.pathname);
+      setLanguageState(pathLang);
+    };
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
+
+  const setLanguage = useCallback((newLang: Language) => {
+    if (typeof window !== 'undefined') {
+      const basePath = stripLanguagePrefix(window.location.pathname);
+      const nextPath = buildLocalizedPath(newLang, basePath);
+      const nextUrl = `${nextPath}${window.location.search}${window.location.hash}`;
+      if (window.location.pathname !== nextPath) {
+        window.history.pushState({}, '', nextUrl);
+      }
+    }
+    setLanguageState(newLang);
+  }, []);
 
   // Fix: Fallback to 'pt' if selected language translations (e.g. 'en') are missing
   const t = translations[language] || translations['pt'];

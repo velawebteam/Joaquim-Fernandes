@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://joaquim-fernandes.pt/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://joaquim-fernandes.pt/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://joaquim-fernandes.pt/en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://joaquim-fernandes.pt/es" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://joaquim-fernandes.pt/fr" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://joaquim-fernandes.pt/" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://joaquim-fernandes.pt/en</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://joaquim-fernandes.pt/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://joaquim-fernandes.pt/en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://joaquim-fernandes.pt/es" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://joaquim-fernandes.pt/fr" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://joaquim-fernandes.pt/" />
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://joaquim-fernandes.pt/es</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://joaquim-fernandes.pt/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://joaquim-fernandes.pt/en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://joaquim-fernandes.pt/es" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://joaquim-fernandes.pt/fr" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://joaquim-fernandes.pt/" />
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://joaquim-fernandes.pt/fr</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://joaquim-fernandes.pt/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://joaquim-fernandes.pt/en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://joaquim-fernandes.pt/es" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://joaquim-fernandes.pt/fr" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://joaquim-fernandes.pt/" />
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://joaquim-fernandes.pt/sobre</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://joaquim-fernandes.pt/sobre" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://joaquim-fernandes.pt/en/sobre" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://joaquim-fernandes.pt/es/sobre" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://joaquim-fernandes.pt/fr/sobre" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://joaquim-fernandes.pt/sobre" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://joaquim-fernandes.pt/en/sobre</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://joaquim-fernandes.pt/sobre" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://joaquim-fernandes.pt/en/sobre" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://joaquim-fernandes.pt/es/sobre" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://joaquim-fernandes.pt/fr/sobre" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://joaquim-fernandes.pt/sobre" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://joaquim-fernandes.pt/es/sobre</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://joaquim-fernandes.pt/sobre" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://joaquim-fernandes.pt/en/sobre" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://joaquim-fernandes.pt/es/sobre" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://joaquim-fernandes.pt/fr/sobre" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://joaquim-fernandes.pt/sobre" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://joaquim-fernandes.pt/fr/sobre</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://joaquim-fernandes.pt/sobre" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://joaquim-fernandes.pt/en/sobre" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://joaquim-fernandes.pt/es/sobre" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://joaquim-fernandes.pt/fr/sobre" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://joaquim-fernandes.pt/sobre" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://joaquim-fernandes.pt/servicos</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://joaquim-fernandes.pt/servicos" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://joaquim-fernandes.pt/en/servicos" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://joaquim-fernandes.pt/es/servicos" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://joaquim-fernandes.pt/fr/servicos" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://joaquim-fernandes.pt/servicos" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://joaquim-fernandes.pt/en/servicos</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://joaquim-fernandes.pt/servicos" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://joaquim-fernandes.pt/en/servicos" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://joaquim-fernandes.pt/es/servicos" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://joaquim-fernandes.pt/fr/servicos" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://joaquim-fernandes.pt/servicos" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://joaquim-fernandes.pt/es/servicos</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://joaquim-fernandes.pt/servicos" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://joaquim-fernandes.pt/en/servicos" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://joaquim-fernandes.pt/es/servicos" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://joaquim-fernandes.pt/fr/servicos" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://joaquim-fernandes.pt/servicos" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://joaquim-fernandes.pt/fr/servicos</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://joaquim-fernandes.pt/servicos" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://joaquim-fernandes.pt/en/servicos" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://joaquim-fernandes.pt/es/servicos" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://joaquim-fernandes.pt/fr/servicos" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://joaquim-fernandes.pt/servicos" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://joaquim-fernandes.pt/plrs</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://joaquim-fernandes.pt/plrs" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://joaquim-fernandes.pt/en/plrs" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://joaquim-fernandes.pt/es/plrs" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://joaquim-fernandes.pt/fr/plrs" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://joaquim-fernandes.pt/plrs" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://joaquim-fernandes.pt/infraestruturas</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://joaquim-fernandes.pt/infraestruturas" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://joaquim-fernandes.pt/en/infraestruturas" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://joaquim-fernandes.pt/es/infraestruturas" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://joaquim-fernandes.pt/fr/infraestruturas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://joaquim-fernandes.pt/infraestruturas" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://joaquim-fernandes.pt/postos-transformacao</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://joaquim-fernandes.pt/postos-transformacao" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://joaquim-fernandes.pt/en/postos-transformacao" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://joaquim-fernandes.pt/es/postos-transformacao" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://joaquim-fernandes.pt/fr/postos-transformacao" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://joaquim-fernandes.pt/postos-transformacao" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://joaquim-fernandes.pt/iluminacao</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://joaquim-fernandes.pt/iluminacao" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://joaquim-fernandes.pt/en/iluminacao" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://joaquim-fernandes.pt/es/iluminacao" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://joaquim-fernandes.pt/fr/iluminacao" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://joaquim-fernandes.pt/iluminacao" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://joaquim-fernandes.pt/instalacoes</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://joaquim-fernandes.pt/instalacoes" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://joaquim-fernandes.pt/en/instalacoes" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://joaquim-fernandes.pt/es/instalacoes" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://joaquim-fernandes.pt/fr/instalacoes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://joaquim-fernandes.pt/instalacoes" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://joaquim-fernandes.pt/projetos</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://joaquim-fernandes.pt/projetos" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://joaquim-fernandes.pt/en/projetos" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://joaquim-fernandes.pt/es/projetos" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://joaquim-fernandes.pt/fr/projetos" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://joaquim-fernandes.pt/projetos" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://joaquim-fernandes.pt/telecomunicacoes</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://joaquim-fernandes.pt/telecomunicacoes" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://joaquim-fernandes.pt/en/telecomunicacoes" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://joaquim-fernandes.pt/es/telecomunicacoes" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://joaquim-fernandes.pt/fr/telecomunicacoes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://joaquim-fernandes.pt/telecomunicacoes" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://joaquim-fernandes.pt/outros</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://joaquim-fernandes.pt/outros" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://joaquim-fernandes.pt/en/outros" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://joaquim-fernandes.pt/es/outros" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://joaquim-fernandes.pt/fr/outros" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://joaquim-fernandes.pt/outros" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://joaquim-fernandes.pt/parceiros</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://joaquim-fernandes.pt/parceiros" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://joaquim-fernandes.pt/en/parceiros" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://joaquim-fernandes.pt/es/parceiros" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://joaquim-fernandes.pt/fr/parceiros" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://joaquim-fernandes.pt/parceiros" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://joaquim-fernandes.pt/recrutamento</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://joaquim-fernandes.pt/recrutamento" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://joaquim-fernandes.pt/en/recrutamento" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://joaquim-fernandes.pt/es/recrutamento" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://joaquim-fernandes.pt/fr/recrutamento" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://joaquim-fernandes.pt/recrutamento" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://joaquim-fernandes.pt/contacto</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://joaquim-fernandes.pt/contacto" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://joaquim-fernandes.pt/en/contacto" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://joaquim-fernandes.pt/es/contacto" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://joaquim-fernandes.pt/fr/contacto" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://joaquim-fernandes.pt/contacto" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://joaquim-fernandes.pt/perguntas-frequentes</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://joaquim-fernandes.pt/perguntas-frequentes" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://joaquim-fernandes.pt/en/perguntas-frequentes" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://joaquim-fernandes.pt/es/perguntas-frequentes" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://joaquim-fernandes.pt/fr/perguntas-frequentes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://joaquim-fernandes.pt/perguntas-frequentes" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://joaquim-fernandes.pt/politica-qualidade</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://joaquim-fernandes.pt/politica-qualidade" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://joaquim-fernandes.pt/en/politica-qualidade" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://joaquim-fernandes.pt/es/politica-qualidade" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://joaquim-fernandes.pt/fr/politica-qualidade" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://joaquim-fernandes.pt/politica-qualidade" />
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://joaquim-fernandes.pt/privacidade</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://joaquim-fernandes.pt/privacidade" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://joaquim-fernandes.pt/en/privacidade" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://joaquim-fernandes.pt/es/privacidade" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://joaquim-fernandes.pt/fr/privacidade" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://joaquim-fernandes.pt/privacidade" />
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://joaquim-fernandes.pt/termos</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://joaquim-fernandes.pt/termos" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://joaquim-fernandes.pt/en/termos" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://joaquim-fernandes.pt/es/termos" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://joaquim-fernandes.pt/fr/termos" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://joaquim-fernandes.pt/termos" />
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+</urlset>

@@ -120,7 +120,18 @@ const ServiceDetail: React.FC = () => {
       <SEO 
         title={`${serviceData.seoTitle} | JF`} 
         description={serviceData.seoDescription || serviceData.description} 
+        keywords={(serviceData.keywords || []).join(', ')}
         url={`/${id}`}
+        serviceData={{
+          name: serviceData.title,
+          description: serviceData.seoDescription || serviceData.description,
+          url: `/${id}`,
+        }}
+        breadcrumbs={[
+          { name: t.nav.home, url: '/' },
+          { name: t.nav.services, url: '/servicos' },
+          { name: serviceData.title, url: `/${id}` },
+        ]}
       />
 
       {/* 1. SEO HERO SECTION */}

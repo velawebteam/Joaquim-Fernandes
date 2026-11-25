@@ -224,7 +224,16 @@ const Home: React.FC = () => {
 
   return (
     <div ref={containerRef} className="flex flex-col w-full relative">
-      <SEO title={t.seo.home.title} description={t.seo.home.description} url="/" />
+      <SEO
+        title={t.seo.home.title}
+        description={t.seo.home.description}
+        url="/"
+        servicesList={services.map((s) => ({
+          name: s.title,
+          description: s.desc,
+          url: s.link,
+        }))}
+      />
       
       {/* === FLOATING BOLT === */}
       <AnimatePresence>
@@ -256,19 +265,25 @@ const Home: React.FC = () => {
           - Content sizing restored to larger values below.
       */}
       <section className="relative min-h-[90vh] md:min-h-0 md:h-[60vh] lg:h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0 overflow-hidden [container-type:size]">
           <AnimatePresence mode="popLayout" initial={false}>
-            <motion.img
-              key={currentHeroImage}
-              src={heroImages[currentHeroImage]}
-              alt="Hero Background"
-              className="absolute inset-0 w-full h-full object-cover"
-              referrerPolicy="no-referrer"
-              initial={{ opacity: 0, scale: 1.1 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 1.5, ease: "easeInOut" }}
-            />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[max(100cqw,177.78cqh)] h-[max(100cqh,56.25cqw)] min-w-full min-h-full">
+              <motion.iframe
+                key={currentHeroImage}
+                src="https://www.youtube.com/embed/Eby7D28MtjA?si=VTZ6uAxjDp93OaHZ&autoplay=1&loop=1&mute=1&playlist=Eby7D28MtjA&controls=0&showinfo=0&rel=0&playsinline=1"
+                title="YouTube video player"
+                className="w-full h-full"
+                style={{ pointerEvents: 'none' }}
+                initial={{ opacity: 0, scale: 1.12 }}
+                animate={{ opacity: 1, scale: 1.05 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 1.5, ease: "easeInOut" }}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              />
+            </div>
           </AnimatePresence>
           <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-black/30 z-10"></div>
         </div>
@@ -424,7 +439,7 @@ const Home: React.FC = () => {
       <section id="areas-de-atuacao" className="py-12 md:py-20 bg-white relative z-20">
         <div className="container mx-auto px-4 md:px-12">
           <div className="text-center mb-10 md:mb-16">
-            <h2 className="text-2xl md:text-3xl font-bold uppercase text-corporate mb-4">{t.home.servicesTitle}</h2>
+            <h1 className="text-2xl md:text-3xl font-bold uppercase text-corporate mb-4">{t.home.servicesTitle}</h1>
             <div className="w-16 md:w-20 h-1 bg-brand-light mx-auto"></div>
           </div>
           
@@ -479,7 +494,7 @@ const Home: React.FC = () => {
             />
           </div>
           <div className="w-full lg:w-1/2">
-            <h2 className="text-2xl md:text-3xl font-bold uppercase text-corporate mb-6">{t.home.whyUsTitle}</h2>
+            <h3 className="text-2xl md:text-3xl font-bold uppercase text-corporate mb-6">{t.home.whyUsTitle}</h3>
             <p className="text-gray-600 mb-8 font-body leading-relaxed">{t.home.whyUsDesc}</p>
             {/* UPDATED GRID: Forced 2 columns on all screens including mobile (removed grid-cols-1, added grid-cols-2) */}
             <div className="grid grid-cols-2 gap-3 md:gap-6">
@@ -551,9 +566,9 @@ const Home: React.FC = () => {
              transition={{ duration: 0.5, ease: "easeOut" }}
           >
             <div className="relative inline-block max-w-full">
-               <h2 className={`text-2xl sm:text-3xl md:text-5xl font-bold uppercase mb-6 text-white drop-shadow-lg ${animStep === 3 ? 'text-shadow-glow' : ''}`}>
+               <h3 className={`text-2xl sm:text-3xl md:text-5xl font-bold uppercase mb-6 text-white drop-shadow-lg ${animStep === 3 ? 'text-shadow-glow' : ''}`}>
                  {t.home.lightUp.title}
-               </h2>
+               </h3>
             </div>
             
             <p className="text-base md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto font-light drop-shadow-md px-2">
@@ -579,7 +594,7 @@ const Home: React.FC = () => {
       <section className="py-12 md:py-20 bg-white relative z-20">
         <div className="container mx-auto px-4 md:px-12">
           <div className="text-center mb-10 md:mb-16">
-            <h2 className="text-2xl md:text-3xl font-bold uppercase text-corporate mb-4">{t.home.testimonialsTitle}</h2>
+            <h3 className="text-2xl md:text-3xl font-bold uppercase text-corporate mb-4">{t.home.testimonialsTitle}</h3>
             <div className="w-16 md:w-20 h-1 bg-brand-light mx-auto"></div>
           </div>
           
@@ -662,7 +677,7 @@ const Home: React.FC = () => {
       {/* 6. PARTNERS */}
       <section className="py-12 md:py-16 bg-gray-50 border-t border-gray-200 overflow-hidden relative z-20">
         <div className="container mx-auto px-4 md:px-12 mb-10 md:mb-16 text-center">
-             <h2 className="text-2xl md:text-3xl font-bold uppercase text-corporate mb-4">{t.home.partnersTitle}</h2>
+             <h3 className="text-2xl md:text-3xl font-bold uppercase text-corporate mb-4">{t.home.partnersTitle}</h3>
              <div className="w-16 md:w-20 h-1 bg-brand-light mx-auto"></div>
         </div>
         <div className="w-full relative overflow-hidden">

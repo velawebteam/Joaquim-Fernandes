@@ -47,6 +47,16 @@ const Lighting: React.FC = () => {
         title={t.seo.lighting?.title || "Iluminação | JF"} 
         description={t.seo.lighting?.description || "Soluções de Iluminação Festiva, Pública e Arquitetural."} 
         url="/iluminacao"
+        serviceData={{
+          name: t.lighting.heroTitle,
+          description: t.seo.lighting?.description || t.lighting.introDesc,
+          url: '/iluminacao',
+        }}
+        breadcrumbs={[
+          { name: t.nav.home, url: '/' },
+          { name: t.nav.services, url: '/servicos' },
+          { name: t.lighting.heroTitle, url: '/iluminacao' },
+        ]}
       />
 
       {/* 1. HEADER / HERO (Standardized with Background Image) */}

@@ -51,6 +51,11 @@ const FAQ: React.FC = () => {
         title={t.seo.faqs.title} 
         description={t.seo.faqs.description} 
         url="/perguntas-frequentes"
+        faqItems={t.faqs.list}
+        breadcrumbs={[
+          { name: t.nav.home, url: '/' },
+          { name: t.faqs.sectionTitle || 'FAQs', url: '/perguntas-frequentes' },
+        ]}
       />
 
       {/* 1. HERO SECTION (Standardized) */}

@@ -35,6 +35,15 @@ const Services: React.FC = () => {
         title={t.seo.services.title} 
         description={t.seo.services.description} 
         url="/servicos"
+        servicesList={(t.services.categories || []).map((cat: any) => ({
+          name: cat.title,
+          description: cat.description,
+          url: `/${cat.id}`,
+        }))}
+        breadcrumbs={[
+          { name: t.nav.home, url: '/' },
+          { name: t.services.heroTitle, url: '/servicos' },
+        ]}
       />
       <div className="bg-corporate py-16 mb-16 text-center text-white">
         <div className="container mx-auto px-4 md:px-12">
