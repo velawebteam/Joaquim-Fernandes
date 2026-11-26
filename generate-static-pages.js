@@ -563,6 +563,7 @@ function renderStaticHtml(lang, routePath) {
     .replace(/<html lang="[^"]*">/, `<html lang="${htmlLang}">`)
     .replace(/<title>[\s\S]*?<\/title>/, `<title>${escapeHtml(title)}</title>`)
     .replace(/<!-- SEO:START -->[\s\S]*?<!-- SEO:END -->/, seoBlock)
+    .replace(/<div id="root"><!-- PRERENDER:START -->[\s\S]*?<!-- PRERENDER:END --><\/div>/, `<div id="root"></div>\n    <noscript>${prerenderBlock}</noscript>`)
     .replace(/<!-- PRERENDER:START -->[\s\S]*?<!-- PRERENDER:END -->/, prerenderBlock);
 }
 
