@@ -13,6 +13,7 @@ import Partners from '@/pages/Partners';
 import ServiceDetail from '@/pages/ServiceDetail';
 import QualityPolicy from '@/pages/QualityPolicy';
 import PrivacyPolicy from '@/pages/PrivacyPolicy';
+import CookiePolicy from '@/pages/CookiePolicy';
 import TermsConditions from '@/pages/TermsConditions';
 import FAQ from '@/pages/FAQ';
 import { LanguageProvider, useLanguage } from '@/context/LanguageContext';
@@ -53,6 +54,7 @@ const AppContent: React.FC = () => {
               <Route path="/contacto" element={<Contact />} />
               <Route path="/politica-qualidade" element={<QualityPolicy />} />
               <Route path="/privacidade" element={<PrivacyPolicy />} />
+              <Route path="/politica-cookies" element={<CookiePolicy />} />
               <Route path="/termos" element={<TermsConditions />} />
               <Route path="/perguntas-frequentes" element={<FAQ />} />
               <Route path="/:id" element={<ServiceDetail />} />

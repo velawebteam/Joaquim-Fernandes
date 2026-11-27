@@ -101,15 +101,23 @@ const translations = {
       placeholder: 'O seu email',
       subscribe: 'Subscrever',
       rights: 'Todos os direitos reservados.',
+      legalIdentification: 'Joaquim & Fernandes - Electricidade e Telecomunicações, Lda | NIF: PT 501717307 | Alvará IMPIC N.º 8887',
       designedBy: 'Website desenvolvido por',
       privacy: 'Política de Privacidade',
+      cookies: 'Política de Cookies',
       terms: 'Termos e Condições',
       quality: 'Política de Qualidade',
-      arbitrationCenters: 'Centros de Arbitragem',
+      arbitrationCenters: 'Centros de Arbitragem (RAL)',
       complaintsBook: 'Livro de Reclamações',
       faqTitle: 'Dúvidas Frequentes',
       faqDesc: 'Consulte a nossa área de apoio para esclarecer questões técnicas.',
       faqButton: 'Ver FAQs'
+    },
+    cookieBanner: {
+      message: 'Este website utiliza cookies estritamente necessários ao seu funcionamento e pode carregar conteúdos de terceiros (como vídeo e mapas). Pode aceitar ou recusar cookies não essenciais.',
+      policyLink: 'Política de Cookies',
+      accept: 'Aceitar Todos',
+      reject: 'Apenas Essenciais'
     },
     common: {
       learnMore: 'Saber Mais',
@@ -498,6 +506,10 @@ const translations = {
           others: "Outros Serviços"
         },
         message: "Mensagem",
+        privacyConsentPrefix: "Li e aceito a",
+        privacyConsentLink: "Política de Privacidade",
+        privacyConsentSuffix: "e autorizo o tratamento dos meus dados pessoais para resposta ao meu pedido.",
+        privacyError: "Por favor, confirme que leu e aceita a Política de Privacidade antes de enviar.",
         submit: "Enviar Pedido"
       },
       locationTitle: "Localização"
@@ -642,75 +654,135 @@ const translations = {
       ],
       contactInfo: "Qualquer questão adicional estamos disponíveis para esclarecer. (qualidade@joaquimfernandes.pt)",
       legalInfo: {
-        title: "Lei 144/2015 de 8 de Setembro",
+        title: "Lei n.º 144/2015, de 8 de setembro (RAL)",
         intro: "Em caso de litígio o consumidor pode recorrer a uma Entidade de Resolução Alternativa de Litígios de Consumo:",
-        entityName: "Centro de Arbitragem de Consumo do Algarve Tribunal Arbitral",
-        address: "Ninho de Empresas, Edif. ANJE Estrada da Penha, 3º andar, sala 26 8000 Faro, Portugal",
-        phone: "Telefone: 289 823 135",
-        email: "E-mail: apoio@consumidoronline.pt",
-        portal: "Mais informações em Portal do Consumidor www.consumidoronline.pt"
+        entityName: "CIMAAL — Centro de Informação, Mediação e Arbitragem de Conflitos de Consumo do Algarve",
+        address: "Avenida 5 de Outubro, n.º 55, R/C Dtº, 8000-075 Faro, Portugal",
+        phone: "Telefone: +351 289 823 135 (Chamada para a rede fixa nacional)",
+        email: "E-mail: info@consumoalgarve.pt",
+        website: "www.consumoalgarve.pt",
+        portal: "Mais informações no Portal do Consumidor: www.consumidor.gov.pt"
       }
     },
     privacyPage: {
       title: "Política de Privacidade",
-      intro: "A JF respeita a sua privacidade e compromete-se a proteger os seus dados pessoais. Esta política descreve como recolhemos, utilizamos e protegemos a sua informação, em conformidade com o Regulamento Geral de Proteção de Dados (RGPD).",
+      intro: "A JF respeita a sua privacidade e compromete-se a proteger os seus dados pessoais. Esta política descreve como recolhemos, utilizamos e protegemos a sua informação, em conformidade com o Regulamento Geral de Proteção de Dados (Regulamento (UE) 2016/679 — RGPD) e com a Lei n.º 58/2019, de 8 de agosto.",
+      legalInfo: {
+        title: "Identificação Legal da Empresa",
+        companyLabel: "Denominação Social",
+        companyName: "Joaquim & Fernandes - Electricidade e Telecomunicações LDA",
+        nifLabel: "NIF",
+        nif: "PT 501717307",
+        emailLabel: "Email",
+        email: "mail@joaquimfernandes.pt",
+        addressLabel: "Morada",
+        address: "Est. Nac 125 Bias do Norte 8700-066 Olhão, 8700-066, Olhão"
+      },
       sections: [
         {
           title: "1. Responsável pelo Tratamento",
-          content: "A entidade responsável pelo tratamento dos seus dados pessoais é a JF, com sede na Estrada Nacional 125, Bias Norte, Moncarapacho, 8700-066 Olhão. Para qualquer questão relacionada com a proteção de dados, pode contactar-nos através do email mail@joaquimfernandes.pt."
+          content: "A entidade responsável pelo tratamento dos seus dados pessoais é a Joaquim & Fernandes - Electricidade e Telecomunicações LDA (NIF: PT 501717307), com sede em Est. Nac 125 Bias do Norte 8700-066 Olhão, 8700-066, Olhão. Para qualquer questão relacionada com a proteção de dados ou para exercer os seus direitos, pode contactar-nos através do email mail@joaquimfernandes.pt ou do telefone +351 289 790 500."
         },
         {
           title: "2. Dados Recolhidos",
-          content: "Recolhemos dados que nos fornece voluntariamente através dos nossos formulários de contacto, pedidos de orçamento e candidaturas de emprego. Estes podem incluir: Nome, Email, Telefone, Morada e Curriculum Vitae (no caso de recrutamento). Recolhemos também dados técnicos de navegação (Cookies) de forma anónima para melhorar o desempenho do site."
+          content: "Recolhemos os dados pessoais que nos fornece voluntariamente através dos nossos formulários de contacto, pedidos de orçamento, propostas de parceria e candidaturas de emprego. Estes podem incluir: Nome, Email, Telefone, Morada, dados da empresa, fotografias/projetos técnicos e Curriculum Vitae (no caso de recrutamento). Recolhemos também dados estritamente necessários de preferência técnica (cookies/armazenamento local) conforme descrito na nossa Política de Cookies."
         },
         {
-          title: "3. Finalidade do Tratamento",
-          content: "Os seus dados são tratados para as seguintes finalidades: \n- Gestão de pedidos de orçamento e contacto comercial;\n- Execução de contratos de prestação de serviços;\n- Processos de recrutamento e seleção;\n- Cumprimento de obrigações legais (faturação)."
+          title: "3. Finalidade e Fundamento Jurídico do Tratamento",
+          content: "Os seus dados são tratados apenas quando existe fundamento jurídico válido ao abrigo do artigo 6.º do RGPD:\n- Gestão de pedidos de orçamento, esclarecimentos e contactos comerciais (diligências pré-contratuais a pedido do titular e interesse legítimo);\n- Execução de contratos de prestação de serviços e empreitadas (execução contratual);\n- Processos de recrutamento e seleção mediante envio de candidatura e CV (consentimento e diligências pré-contratuais);\n- Cumprimento de obrigações legais e fiscais, nomeadamente faturação e arquivo contabilístico (obrigação jurídica)."
         },
         {
-          title: "4. Partilha de Dados",
-          content: "Não vendemos os seus dados a terceiros. Os seus dados podem ser partilhados apenas com subcontratantes estritamente necessários para a prestação do serviço (ex: contabilidade, informática), garantindo que estes cumprem também o RGPD, ou com autoridades públicas quando exigido por lei."
+          title: "4. Partilha de Dados e Subcontratantes",
+          content: "Não vendemos nem cedemos os seus dados a terceiros para fins comerciais. Os seus dados podem ser comunicados apenas a subcontratantes estritamente necessários à operação do website e prestação do serviço (ex.: alojamento, processamento seguro de formulários, contabilidade e suporte informático), vinculados por contrato e obrigação de confidencialidade nos termos do RGPD, ou a autoridades públicas e judiciais quando exigido por lei."
         },
         {
-          title: "5. Direitos do Titular",
-          content: "Ao abrigo do RGPD, tem o direito de aceder, retificar, limitar, opor-se ao tratamento e solicitar o apagamento dos seus dados pessoais (direito ao esquecimento). Para exercer estes direitos, basta enviar um pedido por escrito para o nosso email geral."
+          title: "5. Prazos de Conservação",
+          content: "Os dados pessoais são conservados apenas pelo período estritamente necessário à finalidade para a qual foram recolhidos ou pelo prazo imposto por lei:\n- Dados de faturação e documentos contratuais/fiscais: 10 anos (nos termos da legislação fiscal portuguesa);\n- Pedidos de orçamento e contactos comerciais sem adjudicação: até 2 anos após o último contacto;\n- Candidaturas espontâneas e processos de recrutamento: até 1 ano após a conclusão do processo ou receção do CV, salvo solicitação anterior de apagamento."
         },
         {
-          title: "6. Segurança e Retenção",
-          content: "Implementamos medidas de segurança técnicas e organizativas para proteger os seus dados. Os dados são conservados apenas pelo período necessário para a finalidade para a qual foram recolhidos, ou conforme exigido por lei (ex: 10 anos para dados de faturação)."
+          title: "6. Direitos do Titular e Reclamação à CNPD",
+          content: "Nos termos do RGPD e da Lei n.º 58/2019, tem o direito de acesso, retificação, apagamento (direito ao esquecimento), limitação do tratamento, portabilidade dos dados e oposição ao tratamento, bem como o direito de retirar o consentimento a qualquer momento sem comprometer a licitude do tratamento efetuado até então.\n\nPara exercer estes direitos, envie o seu pedido por escrito para mail@joaquimfernandes.pt.\n\nCaso considere que o tratamento dos seus dados viola a legislação em vigor, tem igualmente o direito de apresentar reclamação junto da autoridade de controlo competente em Portugal:\nComissão Nacional de Proteção de Dados (CNPD) — Av. D. Carlos I, 134, 1.º, 1200-651 Lisboa | Tel.: +351 213 928 400 | Email: geral@cnpd.pt | Website: www.cnpd.pt."
+        },
+        {
+          title: "7. Segurança dos Dados",
+          content: "Implementamos medidas técnicas e organizativas adequadas (incluindo comunicações encriptadas via HTTPS e controlo de acesso restrito) para proteger os seus dados pessoais contra perda, destruição, alteração ou acesso não autorizado."
         }
       ],
-      lastUpdated: "Última atualização: Outubro 2024"
+      lastUpdated: "Última atualização: Novembro 2026"
+    },
+    cookiesPage: {
+      title: "Política de Cookies",
+      intro: "Em cumprimento da Lei n.º 41/2004, de 18 de agosto (alterada pela Lei n.º 46/2012), e do Regulamento Geral de Proteção de Dados (RGPD), explicamos de forma transparente como este website utiliza cookies e tecnologias de armazenamento local.",
+      preferencesTitle: "Gestão das Suas Preferências",
+      preferencesDesc: "Pode rever ou alterar a sua escolha de cookies a qualquer momento. A recusa de cookies não essenciais não impede a navegação nas páginas informativas do site.",
+      currentStatusLabel: "Estado atual do consentimento:",
+      statusAccepted: "Todos os cookies aceites",
+      statusRejected: "Apenas cookies essenciais",
+      statusUnset: "Ainda não definido",
+      acceptBtn: "Aceitar Todos",
+      rejectBtn: "Apenas Essenciais",
+      sections: [
+        {
+          title: "1. O que são Cookies?",
+          content: "Cookies são pequenos ficheiros de texto ou entradas de armazenamento local guardados no seu navegador quando visita um website. Permitem memorizar preferências técnicas (como o idioma selecionado ou a decisão sobre cookies) para assegurar o correto funcionamento da página."
+        },
+        {
+          title: "2. Tipos de Cookies e Armazenamento Utilizados",
+          content: "- Cookies / Armazenamento Estritamente Necessários (Técnicos): Indispensáveis para o funcionamento do site e não exigem consentimento prévio nos termos da lei (ex.: registo da sua escolha de consentimento em 'cookie-consent' e preferência de idioma).\n- Conteúdos e Serviços de Terceiros Incorporados: O site integra vídeo institucional na página inicial (YouTube em modo incorporado) e mapa de localização na página de contactos (Google Maps), bem como tipografia (Google Fonts). Estes serviços externos podem definir cookies técnicos ou de preferência dos respetivos fornecedores de acordo com as suas políticas de privacidade."
+        },
+        {
+          title: "3. Prazos de Conservação",
+          content: "As preferências técnicas de consentimento e idioma permanecem guardadas no armazenamento local do seu navegador até que as altere através desta página ou limpe os dados de navegação do seu dispositivo."
+        },
+        {
+          title: "4. Como Desativar Cookies no Navegador",
+          content: "Pode bloquear, restringir ou eliminar cookies a qualquer momento nas definições do seu navegador (Google Chrome, Mozilla Firefox, Apple Safari, Microsoft Edge). Para mais informações sobre proteção de dados e contacto do responsável pelo tratamento, consulte a nossa Política de Privacidade."
+        }
+      ],
+      lastUpdated: "Última atualização: Novembro 2026"
     },
     termsPage: {
       title: "Termos e Condições",
-      intro: "Bem-vindo ao website da JF. Ao aceder e utilizar este site, concorda com os seguintes termos e condições de utilização.",
+      intro: "Bem-vindo ao website da Joaquim & Fernandes - Electricidade e Telecomunicações LDA. Em cumprimento do Decreto-Lei n.º 7/2004, de 7 de janeiro, o acesso e utilização deste website regem-se pelos seguintes termos e condições.",
+      legalBoxTitle: "Identificação do Prestador de Serviços (DL n.º 7/2004)",
+      legalItems: [
+        "Denominação Social: Joaquim & Fernandes - Electricidade e Telecomunicações LDA",
+        "NIF / NIPC: PT 501717307",
+        "Alvará de Construção (IMPIC): N.º 8887",
+        "Sede: Est. Nac 125 Bias do Norte 8700-066 Olhão, 8700-066, Olhão, Portugal",
+        "Email: mail@joaquimfernandes.pt | Telefone: +351 289 790 500"
+      ],
       sections: [
         {
           title: "1. Propriedade Intelectual",
-          content: "Todo o conteúdo presente neste site (textos, imagens, logótipos, vídeos) é propriedade exclusiva da JF ou dos seus parceiros, estando protegido pela legislação de Direitos de Autor e Propriedade Industrial. É proibida a cópia, reprodução ou distribuição sem autorização prévia."
+          content: "Todo o conteúdo presente neste site (textos, imagens, logótipos, vídeos, código e design) é propriedade exclusiva da Joaquim & Fernandes - Electricidade e Telecomunicações LDA ou dos seus parceiros, estando protegido pelo Código do Direito de Autor e dos Direitos Conexos e pelo Código da Propriedade Industrial. É proibida a cópia, reprodução ou distribuição sem autorização prévia por escrito."
         },
         {
           title: "2. Utilização do Site",
-          content: "O utilizador compromete-se a utilizar o site para fins legais e a não praticar atos que possam danificar, inutilizar ou sobrecarregar o site, ou impedir a sua utilização normal por outros utilizadores."
+          content: "O utilizador compromete-se a utilizar o site exclusivamente para fins lícitos e a não praticar atos que possam danificar, inutilizar, sobrecarregar ou comprometer a segurança e o funcionamento normal do website."
         },
         {
-          title: "3. Limitação de Responsabilidade",
-          content: "A JF esforça-se por manter a informação do site atualizada e precisa. No entanto, não garantimos a ausência de erros ou omissões e não nos responsabilizamos por danos resultantes da utilização da informação aqui contida. As propostas comerciais e orçamentos requerem sempre confirmação oficial por parte da empresa."
+          title: "3. Limitação de Responsabilidade e Orçamentos",
+          content: "A empresa esforça-se por manter toda a informação técnica e institucional atualizada e exata. A informação constante do site tem caráter meramente informativo e não constitui proposta contratual vinculativa; todos os orçamentos, prazos e condições técnicas carecem de confirmação formal e escrita pela gerência ou equipa técnica."
         },
         {
           title: "4. Ligações Externas",
-          content: "Este site pode conter ligações para sites de terceiros (ex: parceiros, redes sociais). A JF não controla nem é responsável pelo conteúdo ou políticas de privacidade desses sites externos."
+          content: "Este site pode conter ligações para websites de terceiros (parceiros, redes sociais, entidades públicas). A empresa não controla nem assume responsabilidade pelo conteúdo ou políticas de privacidade desses websites externos."
         },
         {
-          title: "5. Resolução Alternativa de Litígios (RAL)",
-          content: "Em caso de litígio de consumo, o consumidor pode recorrer a uma Entidade de Resolução Alternativa de Litígios de Consumo competente. A JF é aderente aos centros de arbitragem da região do Algarve. Mais informações no Portal do Consumidor (www.consumidor.pt)."
+          title: "5. Resolução Alternativa de Litígios (RAL — Lei n.º 144/2015)",
+          content: "Nos termos da Lei n.º 144/2015, de 8 de setembro, em caso de litígio de consumo o consumidor pode recorrer a uma Entidade de Resolução Alternativa de Litígios de Consumo competente:\nCIMAAL — Centro de Informação, Mediação e Arbitragem de Conflitos de Consumo do Algarve\nMorada: Avenida 5 de Outubro, n.º 55, R/C Dtº, 8000-075 Faro, Portugal\nTelefone: +351 289 823 135 | Email: info@consumoalgarve.pt | Website: www.consumoalgarve.pt\nMais informações no Portal do Consumidor: www.consumidor.gov.pt."
         },
         {
-          title: "6. Lei Aplicável e Foro",
-          content: "Estes termos regem-se pela lei portuguesa. Para qualquer litígio emergente da interpretação ou aplicação destes termos, será competente o Tribunal de Faro, com expressa renúncia a qualquer outro."
+          title: "6. Livro de Reclamações Eletrónico (DL n.º 156/2005 e DL n.º 74/2017)",
+          content: "Em conformidade com a legislação portuguesa aplicável, disponibilizamos acesso direto ao Livro de Reclamações Eletrónico através da plataforma oficial: https://www.livroreclamacoes.pt/Inicio/."
+        },
+        {
+          title: "7. Lei Aplicável e Foro Competente",
+          content: "Estes termos regem-se exclusivamente pela lei portuguesa. Para qualquer litígio emergente da interpretação ou aplicação destes termos, sem prejuízo das normas imperativas aplicáveis aos consumidores, é competente o Tribunal Judicial da Comarca de Faro."
         }
-      ]
+      ],
+      lastUpdated: "Última atualização: Novembro 2026"
     },
     about: {
       heroTitle: "A História da Joaquim & Fernandes",
@@ -828,14 +900,23 @@ const translations = {
       placeholder: 'Your email',
       subscribe: 'Subscribe',
       rights: 'All rights reserved.',
+      legalIdentification: 'Joaquim & Fernandes - Electricidade e Telecomunicações, Lda | Tax ID: PT 501717307 | IMPIC Permit No. 8887',
       designedBy: 'Website developed by',
       privacy: 'Privacy Policy',
+      cookies: 'Cookie Policy',
       terms: 'Terms & Conditions',
       quality: 'Quality Policy',
+      arbitrationCenters: 'Arbitration Centers (ADR)',
       complaintsBook: 'Complaints Book',
       faqTitle: 'Frequently Asked Questions',
       faqDesc: 'Consult our support area to clarify technical questions.',
       faqButton: 'View FAQs'
+    },
+    cookieBanner: {
+      message: 'This website uses strictly necessary cookies for its operation and may load third-party content (such as embedded video and maps). You can accept or refuse non-essential cookies.',
+      policyLink: 'Cookie Policy',
+      accept: 'Accept All',
+      reject: 'Essential Only'
     },
     common: {
       learnMore: 'Learn More',
@@ -957,6 +1038,10 @@ const translations = {
           outros: "Other Services"
         },
         message: "Message",
+        privacyConsentPrefix: "I have read and accept the",
+        privacyConsentLink: "Privacy Policy",
+        privacyConsentSuffix: "and authorize the processing of my personal data to respond to my request.",
+        privacyError: "Please confirm that you have read and accept the Privacy Policy before submitting.",
         submit: "Send Request"
       },
       locationTitle: "Location"
@@ -1170,10 +1255,21 @@ const translations = {
     privacyPage: {
       title: "Privacy Policy",
       intro: "JF respects your privacy and is committed to protecting your personal data. This policy describes how we collect, use, and protect your information, in compliance with the General Data Protection Regulation (GDPR).",
+      legalInfo: {
+        title: "Company Legal Identification",
+        companyLabel: "Legal Name",
+        companyName: "Joaquim & Fernandes - Electricidade e Telecomunicações LDA",
+        nifLabel: "Tax ID (NIF)",
+        nif: "PT 501717307",
+        emailLabel: "Email",
+        email: "mail@joaquimfernandes.pt",
+        addressLabel: "Address",
+        address: "Est. Nac 125 Bias do Norte 8700-066 Olhão, 8700-066, Olhão"
+      },
       sections: [
         {
           title: "1. Data Controller",
-          content: "The entity responsible for processing your personal data is JF, headquartered at Estrada Nacional 125, Bias Norte, Moncarapacho, 8700-066 Olhão. For any questions related to data protection, you can contact us via email mail@joaquimfernandes.pt."
+          content: "The entity responsible for processing your personal data is Joaquim & Fernandes - Electricidade e Telecomunicações LDA (NIF: PT 501717307), headquartered at Est. Nac 125 Bias do Norte 8700-066 Olhão, 8700-066, Olhão. For any questions related to data protection, you can contact us via email at mail@joaquimfernandes.pt."
         },
         {
           title: "2. Collected Data",
@@ -1568,14 +1664,23 @@ const translations = {
     "placeholder": "Tu correo electrónico",
     "subscribe": "Suscribir",
     "rights": "Reservados todos los derechos.",
+    "legalIdentification": "Joaquim & Fernandes - Electricidade e Telecomunicações, Lda | NIF: PT 501717307 | Licencia IMPIC N.º 8887",
     "designedBy": "Sitio web desarrollado por",
-    "privacy": "política de privacidad",
+    "privacy": "Política de Privacidad",
+    "cookies": "Política de Cookies",
     "terms": "Términos y condiciones",
     "quality": "Política de Calidad",
+    "arbitrationCenters": "Centros de Arbitraje (RAL)",
     "complaintsBook": "Libro de reclamaciones",
     "faqTitle": "Preguntas frecuentes",
     "faqDesc": "Consulta nuestra área de soporte para aclarar dudas técnicas.",
     "faqButton": "Ver preguntas frecuentes"
+  },
+  "cookieBanner": {
+    "message": "Este sitio web utiliza cookies estrictamente necesarias para su funcionamiento y puede cargar contenidos de terceros (como vídeo y mapas). Puede aceptar o rechazar las cookies no esenciales.",
+    "policyLink": "Política de Cookies",
+    "accept": "Aceptar Todas",
+    "reject": "Solo Esenciales"
   },
   "common": {
     "learnMore": "Descubra más",
@@ -2111,6 +2216,10 @@ const translations = {
         "others": "Otros servicios"
       },
       "message": "Mensaje",
+      "privacyConsentPrefix": "He leído y acepto la",
+      "privacyConsentLink": "Política de Privacidad",
+      "privacyConsentSuffix": "y autorizo el tratamiento de mis datos personales para responder a mi solicitud.",
+      "privacyError": "Por favor, confirme que ha leído y acepta la Política de Privacidad antes de enviar.",
       "submit": "Enviar solicitud"
     },
     "locationTitle": "Ubicación"
@@ -2291,76 +2400,136 @@ const translations = {
     ],
     "contactInfo": "Estamos disponibles para aclarar cualquier duda adicional. (qualidade@joaquimfernandes.pt)",
     "legalInfo": {
-      "title": "Ley 144/2015 de 8 de septiembre",
+      "title": "Ley n.º 144/2015 de 8 de septiembre (RAL)",
       "intro": "En caso de controversia, el consumidor puede recurrir a una Entidad Alternativa de Resolución de Controversias del Consumidor:",
-      "entityName": "Tribunal de Arbitraje del Centro de Arbitraje del Consumidor del Algarve",
-      "address": "Ninho de Empresas, Edif. ANJE Estrada da Penha, 3er piso, habitación 26 8000 Faro, Portugal",
-      "phone": "Teléfono: 289 823 135",
-      "email": "Correo electrónico: apoio@consumidoronline.pt",
-      "portal": "Más información en el Portal del Consumidor www.consumidoronline.pt"
+      "entityName": "CIMAAL — Centro de Información, Mediación y Arbitraje de Conflictos de Consumo del Algarve",
+      "address": "Avenida 5 de Outubro, n.º 55, R/C Dtº, 8000-075 Faro, Portugal",
+      "phone": "Teléfono: +351 289 823 135 (Llamada a red fija nacional portuguesa)",
+      "email": "Correo electrónico: info@consumoalgarve.pt",
+      "website": "www.consumoalgarve.pt",
+      "portal": "Más información en el Portal del Consumidor: www.consumidor.gov.pt"
     }
   },
     "privacyPage": {
-      "title": "política de privacidad",
-      "intro": "JF respeta su privacidad y se compromete a proteger sus datos personales. Esta política describe cómo recopilamos, usamos y protegemos su información de acuerdo con el Reglamento General de Datos (RGPD).",
+      "title": "Política de Privacidad",
+      "intro": "JF respeta su privacidad y se compromete a proteger sus datos personales. Esta política describe cómo recopilamos, usamos y protegemos su información de acuerdo con el Reglamento General de Protección de Datos (Reglamento (UE) 2016/679 — RGPD) y la Ley portuguesa n.º 58/2019.",
+      "legalInfo": {
+        "title": "Identificación Legal de la Empresa",
+        "companyLabel": "Denominación Social",
+        "companyName": "Joaquim & Fernandes - Electricidade e Telecomunicações LDA",
+        "nifLabel": "NIF",
+        "nif": "PT 501717307",
+        "emailLabel": "Email",
+        "email": "mail@joaquimfernandes.pt",
+        "addressLabel": "Dirección",
+        "address": "Est. Nac 125 Bias do Norte 8700-066 Olhão, 8700-066, Olhão"
+      },
       "sections": [
         {
           "title": "1. Responsable del Tratamiento",
-          "content": "La entidad responsable del tratamiento de sus datos personales es JF, con sede en Estrada Nacional 125, Bias Norte, Moncarapacho, 8700-066 Olhão. Para cualquier consulta relacionada con la protección de datos, puede contactarnos por correo electrónico a mail@joaquimfernandes.pt."
+          "content": "La entidad responsable del tratamiento de sus datos personales es Joaquim & Fernandes - Electricidade e Telecomunicações LDA (NIF: PT 501717307), con sede en Est. Nac 125 Bias do Norte 8700-066 Olhão, 8700-066, Olhão. Para cualquier consulta relacionada con la protección de datos, puede contactarnos por correo electrónico a mail@joaquimfernandes.pt o al teléfono +351 289 790 500."
         },
-      {
-        "title": "2. Datos recopilados",
-        "content": "Recopilamos datos que usted nos proporciona voluntariamente a través de nuestros formularios de contacto, solicitudes de cotización y solicitudes de empleo. Estos podrán incluir: Nombre, Correo Electrónico, Teléfono, Dirección y Curriculum Vitae (en el caso de contratación). También recopilamos datos técnicos de navegación (Cookies) de forma anónima para mejorar el rendimiento del sitio."
-      },
-      {
-        "title": "3. Finalidad del Tratamiento",
-        "content": "Sus datos son tratados con las siguientes finalidades:\n- Gestión de solicitudes de cotización y contacto comercial; \n- Ejecución de contratos de prestación de servicios; \n- Procesos de reclutamiento y selección; \n- Cumplimiento de obligaciones legales (facturación)."
-      },
-      {
-        "title": "4. Intercambio de datos",
-        "content": "No vendemos sus datos a terceros. Sus datos solo podrán compartirse con subcontratistas estrictamente necesarios para proporcionar el servicio (por ejemplo, contabilidad, TI), garantizando que también cumplan con el RGPD, o con autoridades públicas cuando así lo exija la ley."
-      },
-      {
-        "title": "5. Derechos del Titular",
-        "content": "Según el RGPD, tienes derecho a acceder, rectificar, limitar, oponerte al tratamiento y solicitar la supresión de tus datos personales (derecho al olvido). Para ejercer estos derechos, simplemente envíe una solicitud por escrito a nuestra dirección de correo electrónico general."
-      },
-      {
-        "title": "6. Seguridad y retención",
-        "content": "Implementamos medidas de seguridad técnicas y organizativas para proteger tus datos. Los datos solo se conservan durante el período necesario para el fin para el que fueron recopilados o según lo exija la ley (por ejemplo, 10 años para los datos de facturación)."
-      }
-    ],
-    "lastUpdated": "Última actualización: octubre de 2024"
-  },
+        {
+          "title": "2. Datos recopilados",
+          "content": "Recopilamos los datos que usted nos proporciona voluntariamente a través de nuestros formularios de contacto, solicitudes de presupuesto, propuestas de colaboración y candidaturas de empleo. Estos podrán incluir: Nombre, Correo Electrónico, Teléfono, Dirección, datos de empresa, imágenes/proyectos técnicos y Curriculum Vitae (en el caso de contratación). También recopilamos datos técnicos estrictamente necesarios (cookies/almacenamiento local) según nuestra Política de Cookies."
+        },
+        {
+          "title": "3. Finalidad y Base Jurídica del Tratamiento",
+          "content": "Sus datos son tratados únicamente bajo una base jurídica válida conforme al artículo 6 del RGPD:\n- Gestión de solicitudes de presupuesto y contacto comercial (medidas precontractuales e interés legítimo);\n- Ejecución de contratos de prestación de servicios y obra (ejecución contractual);\n- Procesos de reclutamiento y selección mediante envío de candidatura y CV (consentimiento y medidas precontractuales);\n- Cumplimiento de obligaciones legales y fiscales, incluida la facturación (obligación legal)."
+        },
+        {
+          "title": "4. Intercambio de datos y Encargados del Tratamiento",
+          "content": "No vendemos ni cedemos sus datos a terceros con fines comerciales. Sus datos solo podrán compartirse con subcontratistas estrictamente necesarios para el funcionamiento del sitio web y la prestación del servicio (p. ej., alojamiento, envío seguro de formularios, contabilidad, TI), sujetos a obligaciones RGPD, o con autoridades públicas cuando así lo exija la ley."
+        },
+        {
+          "title": "5. Plazos de Conservación",
+          "content": "Los datos personales se conservan únicamente durante el tiempo necesario para la finalidad recogida o el plazo legal aplicable:\n- Datos de facturación y documentación fiscal/contractual: 10 años (según la legislación fiscal portuguesa);\n- Solicitudes de presupuesto y consultas comerciales sin adjudicación: hasta 2 años tras el último contacto;\n- Candidaturas espontáneas y procesos de selección: hasta 1 año tras la finalización del proceso o recepción del CV, salvo solicitud previa de supresión."
+        },
+        {
+          "title": "6. Derechos del Titular y Reclamación ante la CNPD",
+          "content": "Según el RGPD y la Ley portuguesa n.º 58/2019, tiene derecho a acceder, rectificar, suprimir (derecho al olvido), limitar, portar y oponerse al tratamiento de sus datos personales, así como a retirar su consentimiento en cualquier momento.\n\nPara ejercer estos derechos, envíe una solicitud por escrito a mail@joaquimfernandes.pt.\n\nSi considera que el tratamiento vulnera la normativa vigente, también tiene derecho a presentar una reclamación ante la autoridad de control competente en Portugal:\nComissão Nacional de Proteção de Dados (CNPD) — Av. D. Carlos I, 134, 1.º, 1200-651 Lisboa | Tel.: +351 213 928 400 | Email: geral@cnpd.pt | Web: www.cnpd.pt."
+        },
+        {
+          "title": "7. Seguridad de los Datos",
+          "content": "Implementamos medidas técnicas y organizativas adecuadas (incluido cifrado HTTPS y control de acceso restringido) para proteger sus datos frente a pérdida, alteración o acceso no autorizado."
+        }
+      ],
+      "lastUpdated": "Última actualización: noviembre de 2026"
+    },
+    "cookiesPage": {
+      "title": "Política de Cookies",
+      "intro": "En cumplimiento de la Ley portuguesa n.º 41/2004 (modificada por la Ley n.º 46/2012) y del Reglamento General de Protección de Datos (RGPD), explicamos de forma transparente cómo este sitio web utiliza cookies y almacenamiento local.",
+      "preferencesTitle": "Gestione sus Preferencias",
+      "preferencesDesc": "Puede revisar o modificar su elección de cookies en cualquier momento. Rechazar las cookies no esenciales no impide la navegación por el sitio.",
+      "currentStatusLabel": "Estado actual del consentimiento:",
+      "statusAccepted": "Todas las cookies aceptadas",
+      "statusRejected": "Solo cookies esenciales",
+      "statusUnset": "Aún no definido",
+      "acceptBtn": "Aceptar Todas",
+      "rejectBtn": "Solo Esenciales",
+      "sections": [
+        {
+          "title": "1. ¿Qué son las Cookies?",
+          "content": "Las cookies son pequeños archivos de texto o registros de almacenamiento local guardados en su navegador cuando visita un sitio web. Permiten recordar preferencias técnicas (como el idioma o la elección de cookies) para asegurar el funcionamiento adecuado."
+        },
+        {
+          "title": "2. Tipos de Cookies y Almacenamiento Utilizados",
+          "content": "- Almacenamiento Estricto / Técnico: Necesario para el funcionamiento básico del sitio y exento de consentimiento previo por ley (por ejemplo, registro de su elección en 'cookie-consent' y preferencia de idioma).\n- Servicios de Terceros Incorporados: El sitio integra un vídeo institucional en la página de inicio (YouTube) y un mapa interactivo en la página de contacto (Google Maps), así como tipografías (Google Fonts), que pueden utilizar cookies técnicas o de preferencia según sus propias políticas."
+        },
+        {
+          "title": "3. Plazos de Conservación",
+          "content": "Las preferencias técnicas de consentimiento e idioma permanecen guardadas en su navegador hasta que las modifique en esta página o borre los datos de navegación."
+        },
+        {
+          "title": "4. Cómo Desactivar Cookies en el Navegador",
+          "content": "Puede bloquear o eliminar cookies en la configuración de su navegador (Chrome, Firefox, Safari, Edge). Para más información sobre protección de datos, consulte nuestra Política de Privacidad."
+        }
+      ],
+      "lastUpdated": "Última actualización: noviembre de 2026"
+    },
     "termsPage": {
       "title": "Términos y condiciones",
-      "intro": "Bienvenido al sitio web de JF. Al acceder y utilizar este sitio web, usted acepta los siguientes términos y condiciones de uso.",
+      "intro": "Bienvenido al sitio web de Joaquim & Fernandes - Electricidade e Telecomunicações LDA. De conformidad con el Decreto-Ley portugués n.º 7/2004, el acceso y uso de este sitio web se rigen por los siguientes términos y condiciones.",
+      "legalBoxTitle": "Identificación del Prestador de Servicios (DL 7/2004)",
+      "legalItems": [
+        "Denominación Social: Joaquim & Fernandes - Electricidade e Telecomunicações LDA",
+        "NIF / NIPC: PT 501717307",
+        "Licencia de Construcción (IMPIC): N.º 8887",
+        "Sede: Est. Nac 125 Bias do Norte 8700-066 Olhão, 8700-066, Olhão, Portugal",
+        "Email: mail@joaquimfernandes.pt | Teléfono: +351 289 790 500"
+      ],
       "sections": [
         {
           "title": "1. Propiedad intelectual",
-          "content": "Todo el contenido de este sitio web (textos, imágenes, logotipos, vídeos) es propiedad exclusiva de JF o sus socios, y está protegido por la legislación de Copyright y Propiedad Industrial. Queda prohibida la copia, reproducción o distribución sin autorización previa."
+          "content": "Todo el contenido de este sitio web (textos, imágenes, logotipos, vídeos, código y diseño) es propiedad exclusiva de Joaquim & Fernandes - Electricidade e Telecomunicações LDA o sus socios, y está protegido por la legislación de Derechos de Autor y Propiedad Industrial. Queda prohibida su copia, reproducción o distribución sin autorización previa."
         },
-      {
-        "title": "2. Uso del Sitio",
-        "content": "El usuario se compromete a utilizar el sitio web con fines lícitos y a no realizar actos que puedan dañar, inutilizar o sobrecargar el sitio web, o impedir su normal utilización por otros usuarios."
-      },
         {
-          "title": "3. Limitación de responsabilidad",
-          "content": "JF se esfuerza por mantener la información del sitio web actualizada y precisa. Sin embargo, no garantizamos la ausencia de errores u omisiones y no somos responsables de los daños resultantes del uso de la información aquí contenida. Las propuestas comerciales y presupuestos siempre requieren de la confirmación oficial por parte de la empresa."
+          "title": "2. Uso del Sitio",
+          "content": "El usuario se compromete a utilizar el sitio web exclusivamente con fines lícitos y a no realizar actos que puedan dañar, inutilizar, sobrecargar o comprometer la seguridad y el funcionamiento normal del sitio."
+        },
+        {
+          "title": "3. Limitación de responsabilidad y Presupuestos",
+          "content": "La empresa se esfuerza por mantener la información actualizada y precisa. El contenido del sitio tiene carácter meramente informativo y no constituye oferta contractual vinculante; todas las propuestas, presupuestos y condiciones técnicas requieren confirmación formal por escrito."
         },
         {
           "title": "4. Enlaces externos",
-          "content": "Este sitio web puede contener enlaces a sitios web de terceros (por ejemplo, socios, redes sociales). JF no controla ni es responsable del contenido o las políticas de privacidad de estos sitios web externos."
+          "content": "Este sitio web puede contener enlaces a sitios web de terceros (socios, redes sociales, entidades públicas). La empresa no controla ni es responsable del contenido o las políticas de privacidad de estos sitios externos."
         },
         {
-          "title": "5. Resolución alternativa de disputas (ADR)",
-          "content": "En caso de controversia en materia de consumo, el consumidor podrá recurrir a una Entidad de Resolución Alternativa de Controversias competente. JF es miembro de centros de arbitraje de la región del Algarve. Más información en el Portal del Consumidor (www.consumidoronline.pt)."
+          "title": "5. Resolución alternativa de conflictos (RAL — Ley 144/2015)",
+          "content": "En caso de controversia en materia de consumo, el consumidor podrá recurrir a una Entidad de Resolución Alternativa de Conflictos competente:\nCIMAAL — Centro de Informação, Mediação e Arbitragem de Conflitos de Consumo do Algarve\nDirección: Avenida 5 de Outubro, n.º 55, R/C Dtº, 8000-075 Faro, Portugal\nTeléfono: +351 289 823 135 | Email: info@consumoalgarve.pt | Web: www.consumoalgarve.pt\nMás información en el Portal del Consumidor: www.consumidor.gov.pt."
         },
-      {
-        "title": "6. Ley aplicable y lugar de celebración",
-        "content": "Estos términos se rigen por la ley portuguesa. Para cualquier controversia que surja de la interpretación o aplicación de los presentes términos, será competente el Tribunal de Faro, con renuncia expresa a cualquier otro."
-      }
-    ]
-  },
+        {
+          "title": "6. Libro de Reclamaciones Electrónico (DL 156/2005 y DL 74/2017)",
+          "content": "De conformidad con la legislación portuguesa aplicable, facilitamos acceso directo al Libro de Reclamaciones Electrónico a través de la plataforma oficial: https://www.livroreclamacoes.pt/Inicio/."
+        },
+        {
+          "title": "7. Ley aplicable y jurisdicción",
+          "content": "Estos términos se rigen exclusivamente por la ley portuguesa. Para cualquier controversia que surja de la interpretación o aplicación de los presentes términos, sin perjuicio de las normas imperativas aplicables a los consumidores, será competente el Tribunal de Faro."
+        }
+      ],
+      "lastUpdated": "Última actualización: noviembre de 2026"
+    },
   "about": {
     "heroTitle": "Nuestra Historia",
     "heroDesc": "",
@@ -2547,14 +2716,23 @@ const translations = {
     "placeholder": "Votre email",
     "subscribe": "S'abonner",
     "rights": "Tous droits réservés.",
+    "legalIdentification": "Joaquim & Fernandes - Electricidade e Telecomunicações, Lda | NIF : PT 501717307 | Licence IMPIC N° 8887",
     "designedBy": "Site développé par",
-    "privacy": "politique de confidentialité",
+    "privacy": "Politique de Confidentialité",
+    "cookies": "Politique de Cookies",
     "terms": "Termes et conditions",
     "quality": "Politique Qualité",
+    "arbitrationCenters": "Centres d'Arbitrage (RAL)",
     "complaintsBook": "Livre des plaintes",
     "faqTitle": "Foire aux questions",
     "faqDesc": "Consultez notre espace support pour clarifier les questions techniques.",
     "faqButton": "Voir FAQ"
+  },
+  "cookieBanner": {
+    "message": "Ce site utilise des cookies strictement nécessaires à son fonctionnement et peut charger des contenus tiers (tels que vidéo et cartes). Vous pouvez accepter ou refuser les cookies non essentiels.",
+    "policyLink": "Politique de Cookies",
+    "accept": "Tout Accepter",
+    "reject": "Essentiels Uniquement"
   },
   "common": {
     "learnMore": "En savoir plus",
@@ -3104,6 +3282,10 @@ const translations = {
         "others": "Autres services"
       },
       "message": "Message",
+      "privacyConsentPrefix": "J'ai lu et j'accepte la",
+      "privacyConsentLink": "Politique de Confidentialité",
+      "privacyConsentSuffix": "et j'autorise le traitement de mes données personnelles pour répondre à ma demande.",
+      "privacyError": "Veuillez confirmer que vous avez lu et accepté la Politique de Confidentialité avant d'envoyer.",
       "submit": "Soumettre la demande"
     },
     "locationTitle": "Emplacement"
@@ -3284,75 +3466,135 @@ const translations = {
     ],
     "contactInfo": "Nous sommes disponibles pour clarifier toute question supplémentaire. (qualidade@joaquimfernandes.pt)",
     "legalInfo": {
-      "title": "Loi 144/2015 du 8 septembre",
+      "title": "Loi n° 144/2015 du 8 septembre (RAL)",
       "intro": "En cas de litige, le consommateur peut recourir à un organisme de règlement alternatif des litiges de consommation :",
-      "entityName": "Tribunal d'arbitrage du Centre d'arbitrage de la consommation de l'Algarve",
-      "address": "Ninho de Empresas, Edif. ANJE Estrada da Penha, 3ème étage, bureau 26 8000 Faro, Portugal",
-      "phone": "Téléphone : 289 823 135",
-      "email": "Courriel : apoio@consumidoronline.pt",
-      "portal": "Plus d'informations sur le portail des consommateurs www.consumidoronline.pt"
+      "entityName": "CIMAAL — Centre d'Information, Médiation et Arbitrage des Litiges de Consommation de l'Algarve",
+      "address": "Avenida 5 de Outubro, n.º 55, R/C Dtº, 8000-075 Faro, Portugal",
+      "phone": "Téléphone : +351 289 823 135 (Appel vers le réseau fixe national portugais)",
+      "email": "Courriel : info@consumoalgarve.pt",
+      "website": "www.consumoalgarve.pt",
+      "portal": "Plus d'informations sur le portail des consommateurs : www.consumidor.gov.pt"
     }
   },
   "privacyPage": {
-    "title": "politique de confidentialité",
-    "intro": "JF respecte votre vie privée et s'engage à protéger vos données personnelles. Cette politique décrit la manière dont nous collectons, utilisons et protégeons vos informations conformément au Règlement Général sur la Protection des Données (RGPD).",
+    "title": "Politique de Confidentialité",
+    "intro": "JF respecte votre vie privée et s'engage à protéger vos données personnelles. Cette politique décrit la manière dont nous collectons, utilisons et protégeons vos informations conformément au Règlement Général sur la Protection des Données (Règlement (UE) 2016/679 — RGPD) et à la Loi portugaise n° 58/2019.",
+    "legalInfo": {
+      "title": "Identification Légale de l'Entreprise",
+      "companyLabel": "Dénomination Sociale",
+      "companyName": "Joaquim & Fernandes - Electricidade e Telecomunicações LDA",
+      "nifLabel": "NIF",
+      "nif": "PT 501717307",
+      "emailLabel": "Email",
+      "email": "mail@joaquimfernandes.pt",
+      "addressLabel": "Adresse",
+      "address": "Est. Nac 125 Bias do Norte 8700-066 Olhão, 8700-066, Olhão"
+    },
     "sections": [
       {
         "title": "1. Responsable du traitement",
-        "content": "Le responsable du traitement de vos données personnelles est JF, dont le siège social est situé Estrada Nacional 125, Bias Norte, Moncarapacho, 8700-066 Olhão. Pour toute question relative à la protection des données, vous pouvez nous contacter par e-mail à mail@joaquimfernandes.pt."
+        "content": "Le responsable du traitement de vos données personnelles est Joaquim & Fernandes - Electricidade e Telecomunicações LDA (NIF : PT 501717307), dont le siège social est situé Est. Nac 125 Bias do Norte 8700-066 Olhão, 8700-066, Olhão. Pour toute question relative à la protection des données, vous pouvez nous contacter par e-mail à mail@joaquimfernandes.pt ou par téléphone au +351 289 790 500."
       },
       {
         "title": "2. Données collectées",
-        "content": "Nous collectons les données que vous nous fournissez volontairement via nos formulaires de contact, demandes de devis et candidatures. Ceux-ci peuvent inclure : nom, e-mail, téléphone, adresse et curriculum vitae (en cas de recrutement). Nous collectons également des données techniques de navigation (Cookies) de manière anonyme pour améliorer les performances du site."
+        "content": "Nous collectons les données que vous nous fournissez volontairement via nos formulaires de contact, demandes de devis, propositions de partenariat et candidatures. Celles-ci peuvent inclure : nom, e-mail, téléphone, adresse, informations sur l'entreprise, photos/projets techniques et curriculum vitae (en cas de recrutement). Nous collectons également des données techniques strictement nécessaires (cookies/stockage local) conformément à notre Politique de Cookies."
       },
       {
-        "title": "3. Objectif du traitement",
-        "content": "Vos données sont traitées aux fins suivantes :\n- Gestion des demandes de devis et des contacts commerciaux ; \n- Exécution des contrats de prestations de services ; \n- Processus de recrutement et de sélection ; \n- Respect des obligations légales (facturation)."
+        "title": "3. Finalité et base juridique du traitement",
+        "content": "Vos données sont traitées uniquement sur une base juridique valide conformément à l'article 6 du RGPD :\n- Gestion des demandes de devis et des contacts commerciaux (mesures précontractuelles et intérêt légitime) ;\n- Exécution des contrats de prestation de services et de travaux (exécution contractuelle) ;\n- Processus de recrutement et de sélection via l'envoi de candidature et CV (consentement et mesures précontractuelles) ;\n- Respect des obligations légales et fiscales, notamment la facturation (obligation légale)."
       },
       {
-        "title": "4. Partage de données",
-        "content": "Nous ne vendons pas vos données à des tiers. Vos données ne peuvent être partagées qu'avec des sous-traitants strictement nécessaires à la fourniture du service (par exemple comptable, informatique), en garantissant qu'ils sont également conformes au RGPD, ou avec les autorités publiques lorsque la loi l'exige."
+        "title": "4. Partage des données et sous-traitants",
+        "content": "Nous ne vendons ni ne cédons vos données à des tiers à des fins commerciales. Vos données ne peuvent être partagées qu'avec des sous-traitants strictement nécessaires au fonctionnement du site et à la fourniture du service (par exemple hébergement, traitement sécurisé des formulaires, comptabilité, informatique), soumis aux obligations du RGPD, ou avec les autorités publiques lorsque la loi l'exige."
       },
       {
-        "title": "5. Droits du Titulaire",
-        "content": "Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, de limitation, d'opposition au traitement et de demande d'effacement de vos données personnelles (droit à l'oubli). Pour exercer ces droits, il suffit d'adresser une demande écrite à notre adresse email générale."
+        "title": "5. Durées de conservation",
+        "content": "Les données personnelles ne sont conservées que pendant la durée nécessaire à la finalité pour laquelle elles ont été collectées ou selon les délais légaux applicables :\n- Données de facturation et documents fiscaux/contractuels : 10 ans (selon la législation fiscale portugaise) ;\n- Demandes de devis et contacts commerciaux sans conclusion de contrat : jusqu'à 2 ans après le dernier contact ;\n- Candidatures spontanées et processus de recrutement : jusqu'à 1 an après la clôture du processus ou la réception du CV, sauf demande préalable de suppression."
       },
       {
-        "title": "6. Sécurité et conservation",
-        "content": "Nous mettons en œuvre des mesures de sécurité techniques et organisationnelles pour protéger vos données. Les données ne sont conservées que pendant la durée nécessaire à la finalité pour laquelle elles ont été collectées, ou conformément à la loi (par exemple 10 ans pour les données de facturation)."
+        "title": "6. Droits du Titulaire et réclamation auprès de la CNPD",
+        "content": "Conformément au RGPD et à la Loi portugaise n° 58/2019, vous disposez d'un droit d'accès, de rectification, d'effacement (droit à l'oubli), de limitation, de portabilité et d'opposition au traitement de vos données personnelles, ainsi que du droit de retirer votre consentement à tout moment.\n\nPour exercer ces droits, adressez une demande écrite à mail@joaquimfernandes.pt.\n\nSi vous estimez que le traitement de vos données n'est pas conforme à la réglementation, vous avez également le droit d'introduire une réclamation auprès de l'autorité de contrôle compétente au Portugal :\nComissão Nacional de Proteção de Dados (CNPD) — Av. D. Carlos I, 134, 1.º, 1200-651 Lisboa | Tél. : +351 213 928 400 | Email : geral@cnpd.pt | Site : www.cnpd.pt."
+      },
+      {
+        "title": "7. Sécurité des données",
+        "content": "Nous mettons en œuvre des mesures techniques et organisationnelles appropriées (y compris chiffrement HTTPS et contrôle d'accès restreint) pour protéger vos données contre toute perte, altération ou accès non autorisé."
       }
     ],
-    "lastUpdated": "Dernière mise à jour : octobre 2024"
+    "lastUpdated": "Dernière mise à jour : novembre 2026"
+  },
+  "cookiesPage": {
+    "title": "Politique de Cookies",
+    "intro": "Conformément à la Loi portugaise n° 41/2004 (modifiée par la Loi n° 46/2012) et au Règlement Général sur la Protection des Données (RGPD), cette politique explique comment ce site utilise les cookies et le stockage local.",
+    "preferencesTitle": "Gérer vos Préférences",
+    "preferencesDesc": "Vous pouvez consulter ou modifier votre choix concernant les cookies à tout moment. Le refus des cookies non essentiels n'empêche pas la navigation sur le site.",
+    "currentStatusLabel": "État actuel du consentement :",
+    "statusAccepted": "Tous les cookies acceptés",
+    "statusRejected": "Cookies essentiels uniquement",
+    "statusUnset": "Non encore défini",
+    "acceptBtn": "Tout Accepter",
+    "rejectBtn": "Essentiels Uniquement",
+    "sections": [
+      {
+        "title": "1. Que sont les Cookies ?",
+        "content": "Les cookies sont de petits fichiers texte ou entrées de stockage local enregistrés dans votre navigateur lorsque vous visitez un site Web. Ils permettent de mémoriser des préférences techniques (telles que la langue ou votre choix de consentement) pour assurer le bon fonctionnement du site."
+      },
+      {
+        "title": "2. Types de Cookies et Stockage Utilisés",
+        "content": "- Stockage Strictement Nécessaire (Technique) : Indispensable au fonctionnement du site et exempté de consentement préalable par la loi (ex. : enregistrement de votre choix dans 'cookie-consent' et préférence de langue).\n- Services Tiers Intégrés : Le site intègre une vidéo institutionnelle sur la page d'accueil (YouTube) et une carte interactive sur la page de contact (Google Maps), ainsi que des polices (Google Fonts), qui peuvent déposer des cookies techniques ou de préférence selon leurs propres politiques."
+      },
+      {
+        "title": "3. Durées de Conservation",
+        "content": "Les préférences techniques de consentement et de langue restent enregistrées dans le stockage local de votre navigateur jusqu'à ce que vous les modifiiez sur cette page ou effaciez les données de navigation."
+      },
+      {
+        "title": "4. Désactivation des Cookies dans le Navigateur",
+        "content": "Vous pouvez bloquer ou supprimer les cookies à tout moment dans les paramètres de votre navigateur (Chrome, Firefox, Safari, Edge). Pour plus d'informations sur la protection des données, consultez notre Politique de Confidentialité."
+      }
+    ],
+    "lastUpdated": "Dernière mise à jour : novembre 2026"
   },
   "termsPage": {
     "title": "Termes et conditions",
-    "intro": "Bienvenue sur le site JF. En accédant et en utilisant ce site Web, vous acceptez les termes et conditions d'utilisation suivants.",
+    "intro": "Bienvenue sur le site Web de Joaquim & Fernandes - Electricidade e Telecomunicações LDA. Conformément au Décret-Loi portugais n° 7/2004, l'accès et l'utilisation de ce site Web sont régis par les conditions suivantes.",
+    "legalBoxTitle": "Identification du Prestataire de Services (DL 7/2004)",
+    "legalItems": [
+      "Dénomination Sociale : Joaquim & Fernandes - Electricidade e Telecomunicações LDA",
+      "NIF / NIPC : PT 501717307",
+      "Licence de Construction (IMPIC) : N° 8887",
+      "Siège : Est. Nac 125 Bias do Norte 8700-066 Olhão, 8700-066, Olhão, Portugal",
+      "Email : mail@joaquimfernandes.pt | Téléphone : +351 289 790 500"
+    ],
     "sections": [
       {
         "title": "1. Propriété intellectuelle",
-        "content": "Tout le contenu de ce site (textes, images, logos, vidéos) est la propriété exclusive de JF ou de ses partenaires, et est protégé par la législation sur le droit d'auteur et la propriété industrielle. La copie, la reproduction ou la distribution sans autorisation préalable sont interdites."
+        "content": "Tout le contenu de ce site (textes, images, logos, vidéos, code et design) est la propriété exclusive de Joaquim & Fernandes - Electricidade e Telecomunicações LDA ou de ses partenaires, protégé par la législation sur le droit d'auteur et la propriété industrielle. Toute copie, reproduction ou distribution sans autorisation écrite préalable est interdite."
       },
       {
         "title": "2. Utilisation du Site",
-        "content": "L'utilisateur s'engage à utiliser le site Web à des fins licites et à ne pas accomplir d'actes qui pourraient endommager, désactiver ou surcharger le site Web, ou empêcher son utilisation normale par d'autres utilisateurs."
+        "content": "L'utilisateur s'engage à utiliser le site uniquement à des fins licites et à ne pas accomplir d'actes susceptibles d'endommager, de désactiver, de surcharger ou de compromettre la sécurité et le fonctionnement normal du site."
       },
       {
-        "title": "3. Limitation de responsabilité",
-        "content": "JF s'efforce de maintenir les informations présentes sur le site Internet à jour et exactes. Cependant, nous ne garantissons pas l'absence d'erreurs ou d'omissions et ne sommes pas responsables des dommages résultant de l'utilisation des informations contenues dans ce document. Les propositions commerciales et les budgets nécessitent toujours une confirmation officielle de l'entreprise."
+        "title": "3. Limitation de responsabilité et Devis",
+        "content": "L'entreprise s'efforce de maintenir les informations à jour et exactes. Les informations figurant sur le site sont purement informatives et ne constituent pas une offre contractuelle contraignante ; tous les devis, délais et conditions techniques nécessitent une confirmation écrite officielle."
       },
       {
         "title": "4. Liens externes",
-        "content": "Ce site Internet peut contenir des liens vers des sites Internet de tiers (par exemple partenaires, réseaux sociaux). JF ne contrôle pas ou n'est pas responsable du contenu ou des politiques de confidentialité de ces sites Web externes."
+        "content": "Ce site peut contenir des liens vers des sites tiers (partenaires, réseaux sociaux, organismes publics). L'entreprise ne contrôle pas et n'est pas responsable du contenu ou des politiques de confidentialité de ces sites externes."
       },
       {
-        "title": "5. Modes alternatifs de règlement des litiges (MARC)",
-        "content": "En cas de litige de consommation, le consommateur peut recourir à une entité compétente de règlement alternatif des litiges. JF est membre des centres d'arbitrage de la région de l'Algarve. Plus d'informations sur le portail des consommateurs (www.consumidor.pt)."
+        "title": "5. Règlement alternatif des litiges (RAL — Loi 144/2015)",
+        "content": "Conformément à la Loi portugaise n° 144/2015, en cas de litige de consommation, le consommateur peut recourir à une entité compétente de règlement alternatif des litiges :\nCIMAAL — Centro de Informação, Mediação e Arbitragem de Conflitos de Consumo do Algarve\nAdresse : Avenida 5 de Outubro, n.º 55, R/C Dtº, 8000-075 Faro, Portugal\nTéléphone : +351 289 823 135 | Email : info@consumoalgarve.pt | Site : www.consumoalgarve.pt\nPlus d'informations sur le Portail des Consommateurs : www.consumidor.gov.pt."
       },
       {
-        "title": "6. Droit applicable et lieu",
-        "content": "Ces conditions sont régies par la loi portugaise. Pour tout litige découlant de l'interprétation ou de l'application des présentes conditions, le Tribunal de Faro sera compétent, renonçant expressément à tout autre."
+        "title": "6. Livre des Plaintes Électronique (DL 156/2005 et DL 74/2017)",
+        "content": "Conformément à la législation portugaise applicable, un accès direct au Livre des Plaintes Électronique est disponible via la plateforme officielle : https://www.livroreclamacoes.pt/Inicio/."
+      },
+      {
+        "title": "7. Droit applicable et juridiction",
+        "content": "Ces conditions sont régies exclusivement par la loi portugaise. Pour tout litige découlant de l'interprétation ou de l'application des présentes conditions, sans préjudice des règles impératives applicables aux consommateurs, le Tribunal de Faro sera compétent."
       }
-    ]
+    ],
+    "lastUpdated": "Dernière mise à jour : novembre 2026"
   },
   "about": {
     "heroTitle": "Notre histoire",

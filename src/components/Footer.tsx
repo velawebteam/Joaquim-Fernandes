@@ -101,9 +101,9 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* Copyright */}
-        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 font-body">
-          <div className="flex flex-col md:flex-row items-center gap-1 md:gap-4 text-center md:text-left w-full justify-between">
+        {/* Copyright & Legal Links */}
+        <div className="border-t border-gray-800 pt-8 flex flex-col gap-4 text-xs text-gray-500 font-body">
+          <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4 text-center md:text-left w-full justify-between">
              <div className="flex flex-col md:flex-row items-center gap-1 md:gap-2">
                <span>&copy; {new Date().getFullYear()} JF. {t.footer.rights}</span>
                <span className="hidden md:inline text-gray-700">|</span>
@@ -111,9 +111,10 @@ const Footer: React.FC = () => {
                  {t.footer.designedBy} <a href="https://agencia-vela.com" target="_blank" rel="noopener noreferrer" className="text-brand-light hover:text-white transition-colors font-medium">Agência Vela</a>
                </span>
              </div>
-             <div className="flex flex-wrap justify-center gap-4 mt-4 md:mt-0">
+             <div className="flex flex-wrap justify-center gap-4 mt-2 md:mt-0">
                <Link to="/politica-qualidade" className="hover:text-white transition-colors">{t.footer.quality}</Link>
                <Link to="/privacidade" className="hover:text-white transition-colors">{t.footer.privacy}</Link>
+               <Link to="/politica-cookies" className="hover:text-white transition-colors">{t.footer.cookies}</Link>
                <Link to="/termos" className="hover:text-white transition-colors">{t.footer.terms}</Link>
                <a 
                  href="https://www.consumoalgarve.pt/index.php/pt" 
@@ -133,6 +134,11 @@ const Footer: React.FC = () => {
                </a>
              </div>
           </div>
+          {t.footer.legalIdentification && (
+            <div className="text-center md:text-left text-[11px] text-gray-500 border-t border-gray-800/70 pt-3">
+              {t.footer.legalIdentification}
+            </div>
+          )}
         </div>
       </div>
     </footer>

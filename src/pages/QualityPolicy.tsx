@@ -145,10 +145,17 @@ const QualityPolicy: React.FC = () => {
                    <p>{content.legalInfo.address}</p>
                    <p>{content.legalInfo.phone}</p>
                    <p>{content.legalInfo.email}</p>
+                   {content.legalInfo.website && (
+                     <p>
+                       <a href="https://www.consumoalgarve.pt/index.php/pt" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-medium">
+                         {content.legalInfo.website}
+                       </a>
+                     </p>
+                   )}
                </div>
                
                <p className="text-xs uppercase tracking-wider font-semibold text-gray-400">
-                   <a href="http://www.consumidoronline.pt" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+                   <a href="https://www.consumidor.gov.pt" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
                       {content.legalInfo.portal}
                    </a>
                </p>

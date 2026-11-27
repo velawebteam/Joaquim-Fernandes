@@ -268,7 +268,10 @@ const Careers: React.FC = () => {
            />
            
            <p className="mt-6 text-xs text-gray-400">
-             {t.careers.spontaneousDisclaimer}
+             {t.careers.spontaneousDisclaimer}{' '}
+             <Link to="/privacidade" className="text-brand-light underline hover:text-white transition-colors">
+               {t.footer.privacy}
+             </Link>
            </p>
          </div>
       </div>

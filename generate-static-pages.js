@@ -47,6 +47,7 @@ const ROUTES = [
   '/perguntas-frequentes',
   '/politica-qualidade',
   '/privacidade',
+  '/politica-cookies',
   '/termos',
   '/plrs',
   '/infraestruturas',
@@ -420,6 +421,13 @@ function getRouteData(lang, routePath) {
 
     case '/privacidade': {
       const p = t.privacyPage || ptT.privacyPage;
+      const legal = p.legalInfo;
+      const legalHtml = legal
+        ? `<section><h2>${escapeHtml(legal.title)}</h2><ul><li><strong>${escapeHtml(legal.companyLabel)}:</strong> ${escapeHtml(legal.companyName)}</li><li><strong>${escapeHtml(legal.nifLabel)}:</strong> ${escapeHtml(legal.nif)}</li><li><strong>${escapeHtml(legal.emailLabel)}:</strong> ${escapeHtml(legal.email)}</li><li><strong>${escapeHtml(legal.addressLabel)}:</strong> ${escapeHtml(legal.address)}</li></ul></section>`
+        : '';
+      const sectionsHtml = (p.sections || [])
+        .map((s) => `<section><h2>${escapeHtml(s.title)}</h2><p>${escapeHtml(s.content)}</p></section>`)
+        .join('');
       return {
         title: formatTitle(`${p.title} | JF`),
         description: p.intro,
@@ -428,13 +436,37 @@ function getRouteData(lang, routePath) {
           { name: navHome, url: `${BASE_URL}${homeUrl}` },
           { name: p.title, url: currentUrl },
         ],
-        bodyHtml: `<h1>${escapeHtml(p.title)}</h1><p>${escapeHtml(p.intro)}</p>`,
+        bodyHtml: `<h1>${escapeHtml(p.title)}</h1><p>${escapeHtml(p.intro)}</p>${legalHtml}${sectionsHtml}`,
+        extraGraph: [],
+      };
+    }
+
+    case '/politica-cookies': {
+      const ck = t.cookiesPage || ptT.cookiesPage;
+      const sectionsHtml = (ck.sections || [])
+        .map((s) => `<section><h2>${escapeHtml(s.title)}</h2><p>${escapeHtml(s.content)}</p></section>`)
+        .join('');
+      return {
+        title: formatTitle(`${ck.title} | JF`),
+        description: ck.intro,
+        keywords: DEFAULT_KEYWORDS,
+        breadcrumbs: [
+          { name: navHome, url: `${BASE_URL}${homeUrl}` },
+          { name: ck.title, url: currentUrl },
+        ],
+        bodyHtml: `<h1>${escapeHtml(ck.title)}</h1><p>${escapeHtml(ck.intro)}</p>${sectionsHtml}`,
         extraGraph: [],
       };
     }
 
     case '/termos': {
       const tm = t.termsPage || ptT.termsPage;
+      const legalItemsHtml = (tm.legalItems || [])
+        .map((item) => `<li>${escapeHtml(item)}</li>`)
+        .join('');
+      const sectionsHtml = (tm.sections || [])
+        .map((s) => `<section><h2>${escapeHtml(s.title)}</h2><p>${escapeHtml(s.content)}</p></section>`)
+        .join('');
       return {
         title: formatTitle(`${tm.title} | JF`),
         description: tm.intro,
@@ -443,7 +475,7 @@ function getRouteData(lang, routePath) {
           { name: navHome, url: `${BASE_URL}${homeUrl}` },
           { name: tm.title, url: currentUrl },
         ],
-        bodyHtml: `<h1>${escapeHtml(tm.title)}</h1><p>${escapeHtml(tm.intro)}</p>`,
+        bodyHtml: `<h1>${escapeHtml(tm.title)}</h1><p>${escapeHtml(tm.intro)}</p>${legalItemsHtml ? `<ul>${legalItemsHtml}</ul>` : ''}${sectionsHtml}`,
         extraGraph: [],
       };
     }

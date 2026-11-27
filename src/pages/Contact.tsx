@@ -29,6 +29,7 @@ const Contact: React.FC = () => {
     companyType: '',
     companyContact: '',
     projectImages: null as FileList | null,
+    privacyAccepted: false,
   });
 
   // Handle URL Query Params for Pre-filling
@@ -159,7 +160,8 @@ const Contact: React.FC = () => {
       setFormData({ 
         name: '', email: '', phone: '', address: '', subject: '', 
         interest: [], selectedJobs: [], message: '', cvFile: null,
-        companyName: '', companyAddress: '', companyType: '', companyContact: ''
+        companyName: '', companyAddress: '', companyType: '', companyContact: '',
+        projectImages: null, privacyAccepted: false
       });
     }
     setSubmitStatus('idle');
@@ -172,6 +174,11 @@ const Contact: React.FC = () => {
     // Double check subject is selected (HTML5 required handles this mostly, but good for safety)
     if (!formData.subject) {
       alert("Por favor, selecione um assunto.");
+      return;
+    }
+
+    if (!formData.privacyAccepted) {
+      alert(t.contact.form.privacyError || "Por favor, confirme que leu e aceita a Política de Privacidade antes de enviar.");
       return;
     }
 
@@ -847,7 +854,7 @@ const Contact: React.FC = () => {
                   )}
                 </AnimatePresence>
 
-                <div className="mb-8">
+                <div className="mb-6">
                   <label htmlFor="message" className="block text-sm font-bold text-gray-700 mb-2">
                     {formData.subject === 'parceria' ? t.contact.form.proposalMessage : t.contact.form.message}
                   </label>
@@ -860,6 +867,29 @@ const Contact: React.FC = () => {
                     onChange={handleChange}
                     className="w-full bg-gray-50 border border-gray-300 rounded p-3 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors resize-none disabled:opacity-50"
                   ></textarea>
+                </div>
+
+                {/* Mandatory GDPR Consent Checkbox */}
+                <div className="mb-8">
+                  <label className="flex items-start gap-3 cursor-pointer select-none text-sm text-gray-600">
+                    <input
+                      type="checkbox"
+                      required
+                      disabled={isSubmitting}
+                      checked={formData.privacyAccepted}
+                      onChange={(e) => setFormData(prev => ({ ...prev, privacyAccepted: e.target.checked }))}
+                      onInvalid={handleInvalid}
+                      onInput={handleInputValidation}
+                      className="mt-1 h-4 w-4 rounded border-gray-300 text-accent focus:ring-accent shrink-0 cursor-pointer"
+                    />
+                    <span>
+                      {t.contact.form.privacyConsentPrefix}{' '}
+                      <Link to="/privacidade" className="text-accent font-semibold underline hover:text-corporate transition-colors">
+                        {t.contact.form.privacyConsentLink}
+                      </Link>{' '}
+                      {t.contact.form.privacyConsentSuffix} <span className="text-red-500">*</span>
+                    </span>
+                  </label>
                 </div>
 
                 <button
